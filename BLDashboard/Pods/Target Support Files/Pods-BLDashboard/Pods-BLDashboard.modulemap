@@ -1,0 +1,6 @@
+framework module Pods_BLDashboard {
+  umbrella header "Pods-BLDashboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
