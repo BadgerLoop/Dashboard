@@ -163,6 +163,7 @@
 				8CC3C7B01C1CDD7700AD308A /* Frameworks */,
 				8CC3C7B11C1CDD7700AD308A /* CopyFiles */,
 				6F808C7D2A10456C25664579 /* Copy Pods Resources */,
+				8CC3C7BA1C1CE33700AD308A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -179,6 +180,9 @@
 		8CC3C78F1C1CDCDF00AD308A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = BadgerLoop;
@@ -298,6 +302,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backend/Pods-Backend-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8CC3C7BA1C1CE33700AD308A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backend/Pods-Backend-frameworks.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
