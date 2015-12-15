@@ -17,7 +17,7 @@ let app = RiffleDomain(domain: "xs.demo.badgerloop.bldashboard")
 
 class ContainerAgent: RiffleDomain {
     override func onJoin() {
-        print("Backend fully setup")
+        print("Backend fully setup .")
     }
 }
 
