@@ -17,9 +17,18 @@ let app = RiffleDomain(domain: "xs.demo.badgerloop.bldashboard")
 
 class ContainerAgent: RiffleDomain {
     override func onJoin() {
-        print("Backend fully setup .")
+        print("Registering from transmit")
+        register("transmit", transmitData)
+        print("Backend fully setup.")
+    }
+
+
+    func transmitData() -> AnyObject{
+        return "Got transmit"
     }
 }
+
+
 
 //Your container
 let container = ContainerAgent(name: "container", superdomain: app)

@@ -15,6 +15,13 @@ class ViewController: UIViewController, RiffleDelegate {
     var me: RiffleDomain?
     var container: RiffleDomain?
 
+    @IBAction func beginTransmission(sender: AnyObject) {
+        print("Calling backend")
+        //User wants to begin receiving data from backend
+        container!.call("transmit") { ( response: String) -> () in
+            print(response)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
