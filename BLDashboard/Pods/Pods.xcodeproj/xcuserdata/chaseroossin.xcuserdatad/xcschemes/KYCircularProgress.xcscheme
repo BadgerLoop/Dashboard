@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1F4C2E47FC9D8E2B8A04EE83'
-               BlueprintName = 'Pods-BLDashboard-AFNetworking'
+               BlueprintIdentifier = 'E23AAC80D48C54D272FD3C39'
+               BlueprintName = 'KYCircularProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'AFNetworking.framework'>
+               BuildableName = 'KYCircularProgress.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

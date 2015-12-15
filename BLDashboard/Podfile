@@ -3,6 +3,7 @@ use_frameworks!
 target :BLDashboard, :exclusive => true do
   platform :ios, '9.0'
   pod 'Riffle'
+  pod 'KYCircularProgress'
 end
 
 target :Backend, :exclusive => true do
