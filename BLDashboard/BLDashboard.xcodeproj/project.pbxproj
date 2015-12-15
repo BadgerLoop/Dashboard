@@ -15,6 +15,7 @@
 		8CC3C7A51C1CDCDF00AD308A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3C7A41C1CDCDF00AD308A /* Assets.xcassets */; };
 		8CC3C7A81C1CDCDF00AD308A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3C7A61C1CDCDF00AD308A /* LaunchScreen.storyboard */; };
 		8CC3C7B61C1CDD7700AD308A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3C7B51C1CDD7700AD308A /* main.swift */; };
+		8CDA9D041C20A7740000A495 /* ProgressGaugeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDA9D031C20A7740000A495 /* ProgressGaugeManager.swift */; };
 		DC696082021EB2375EFAE20D /* Pods_BLDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B341D5C6630809B18F781E /* Pods_BLDashboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		8CC3C7A91C1CDCDF00AD308A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CC3C7B31C1CDD7700AD308A /* Backend */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Backend; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3C7B51C1CDD7700AD308A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8CDA9D031C20A7740000A495 /* ProgressGaugeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressGaugeManager.swift; sourceTree = "<group>"; };
 		A6B341D5C6630809B18F781E /* Pods_BLDashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLDashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E64FE6AEB5E12A64BD5063 /* Pods-Backend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backend/Pods-Backend.release.xcconfig"; sourceTree = "<group>"; };
 		C1A200BD79D97471A738D2A0 /* Pods_Backend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC3C79A1C1CDCDF00AD308A /* AppDelegate.swift */,
+				8CDA9D051C20A77C0000A495 /* Managers */,
 				8CC3C79C1C1CDCDF00AD308A /* ViewController.swift */,
 				8CC3C79E1C1CDCDF00AD308A /* Main.storyboard */,
 				8CC3C7A41C1CDCDF00AD308A /* Assets.xcassets */,
@@ -109,6 +112,14 @@
 				8CC3C7B51C1CDD7700AD308A /* main.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		8CDA9D051C20A77C0000A495 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA9D031C20A7740000A495 /* ProgressGaugeManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		8E122A3251D8D6831DFD37B1 /* Frameworks */ = {
@@ -325,6 +336,7 @@
 			files = (
 				8CC3C7A31C1CDCDF00AD308A /* BLDashboard.xcdatamodeld in Sources */,
 				8CC3C79D1C1CDCDF00AD308A /* ViewController.swift in Sources */,
+				8CDA9D041C20A7740000A495 /* ProgressGaugeManager.swift in Sources */,
 				8CC3C79B1C1CDCDF00AD308A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,9 +22,16 @@ class ContainerAgent: RiffleDomain {
         print("Backend fully setup.")
     }
 
-
+    //User called backend to start feeding it data
+    //Lets give them pseudo temp data
     func transmitData() -> AnyObject{
-        return "Got transmit"
+        print("User called transmit")
+        for x in 1...100{
+            sleep(1)
+            print("Sending Temp data to user: \(x)")
+            self.publish("temp", x)
+        }
+        return "Finished Transmission"
     }
 }
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import Riffle
+import KYCircularProgress
 
 class ViewController: UIViewController, RiffleDelegate {
 
@@ -15,12 +16,18 @@ class ViewController: UIViewController, RiffleDelegate {
     var me: RiffleDomain?
     var container: RiffleDomain?
 
+    private var tempGauge: KYCircularProgress!
+
     @IBAction func beginTransmission(sender: AnyObject) {
         print("Calling backend")
         //User wants to begin receiving data from backend
         container!.call("transmit") { ( response: String) -> () in
             print(response)
         }
+
+        //Begin to subscribe to temp gauge datastream
+        //Everytime backend publishes new temp, update temp gauge in updateTemp()
+        self.container!.subscribe("temp", self.updateTemp)
     }
 
     override func viewDidLoad() {
@@ -37,6 +44,10 @@ class ViewController: UIViewController, RiffleDelegate {
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
         me!.join("A-ox9WOI.mSxcJ8dQCdyVunYtISCPptVG1IuSsLU7iV2DVxFMhLeaU8EaHzlhWeB3xlZ6FBqHQTRpZmUcXtxVnqH6wzgxoJEk3KfwcEd1KwRe1DpQ3oURbSzt5P-F.F95bEp-nTE.lGiphtFXwRQ0CXx-a14QocjsZWw4-eCZmk_")
+
+        //Setting up gauges
+        tempGauge = ProgressGaugeManager.configureGauge(view, gauge: tempGauge)
+
     }
 
     //Function called when joining backend ran successfuly
@@ -47,6 +58,12 @@ class ViewController: UIViewController, RiffleDelegate {
 
     func onLeave() {
         print("Session left!")
+    }
+
+    //Update temp gauge with returned data
+    func updateTemp(temp: Int){
+        print("Temp received: \(temp) degrees")
+        tempGauge.progress = Double(Float(temp)/100)
     }
 }
 
