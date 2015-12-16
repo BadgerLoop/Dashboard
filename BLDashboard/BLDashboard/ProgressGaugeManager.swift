@@ -26,11 +26,13 @@ class ProgressGaugeManager{
         gauge!.lineWidth = 8.0
         gauge!.progressGuideColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.4)
 
-        let textLabel = UILabel(frame: CGRectMake(gauge!.frame.origin.x + 120.0, 170.0, 80.0, 32.0))
+        let gauageWidth = gauge!.frame.size.width
+        let gaugeHeight = gauge!.frame.size.height
+        let textLabel = UILabel(frame: CGRectMake((gauageWidth/2)-40, (gaugeHeight/2)+100, 80.0, 32.0))
         textLabel.font = UIFont(name: "HelveticaNeue-UltraLight", size: 32)
         textLabel.textAlignment = .Center
-        textLabel.textColor = UIColor.greenColor()
-        textLabel.alpha = 0.3
+        textLabel.textColor = UIColor.whiteColor()
+        textLabel.alpha = 1.0
         gauge!.addSubview(textLabel)
 
         gauge!.progressChangedClosure() {

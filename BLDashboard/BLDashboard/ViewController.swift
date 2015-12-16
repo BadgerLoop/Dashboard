@@ -20,14 +20,15 @@ class ViewController: UIViewController, RiffleDelegate {
 
     @IBAction func beginTransmission(sender: AnyObject) {
         print("Calling backend")
-        //User wants to begin receiving data from backend
-        container!.call("transmit") { ( response: String) -> () in
-            print(response)
-        }
-
-        //Begin to subscribe to temp gauge datastream
-        //Everytime backend publishes new temp, update temp gauge in updateTemp()
-        self.container!.subscribe("temp", self.updateTemp)
+//        //User wants to begin receiving data from backend
+//        container!.call("transmit") { ( response: String) -> () in
+//            print(response)
+//        }
+//
+//        //Begin to subscribe to temp gauge datastream
+//        //Everytime backend publishes new temp, update temp gauge in updateTemp()
+//        self.container!.subscribe("temp", self.updateTemp)
+        tempGauge.progress = 0.5
     }
 
     override func viewDidLoad() {
