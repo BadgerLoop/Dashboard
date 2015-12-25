@@ -52,15 +52,13 @@ class ViewController: UIViewController, RiffleDelegate {
         tempGauge = ProgressGaugeManager.configureGauge(view, gauge: tempGauge)
     }
 
-    override func viewDidAppear(animated: Bool) {
-        //Show Complete
-        SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
-    }
-
     //Function called when joining backend ran successfuly
     func onJoin() {
         print("User joined!")
         container = RiffleDomain(name: "container", superdomain: app!)
+
+        //Show Setup Complete Notification
+        SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
     }
 
     func onLeave() {
