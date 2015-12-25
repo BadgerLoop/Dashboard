@@ -11,9 +11,15 @@ import UIKit
 import KYCircularProgress
 
 class ProgressGaugeManager{
+    /**
+    This class function generates a halfcircle progress view
 
-    //This class function generates a halfcircle progress view
-    //TODO: Center in view
+    @param Current View and gauage you are creating
+
+    @return Gauge that was set up for reference in view
+     
+    @TODO Autolayout
+    */
     class func configureGauge(view: UIView, var gauge: KYCircularProgress?) -> KYCircularProgress{
         print("Configuring Gauge...")
         print("Center \(view.center)")
