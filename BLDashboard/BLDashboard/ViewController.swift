@@ -46,7 +46,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
-        me!.join("A-ox9WOI.mSxcJ8dQCdyVunYtISCPptVG1IuSsLU7iV2DVxFMhLeaU8EaHzlhWeB3xlZ6FBqHQTRpZmUcXtxVnqH6wzgxoJEk3KfwcEd1KwRe1DpQ3oURbSzt5P-F.F95bEp-nTE.lGiphtFXwRQ0CXx-a14QocjsZWw4-eCZmk_")
+        me!.join(Config().localAgentKey)
 
         //Setting up gauges
         tempGauge = ProgressGaugeManager.configureGauge(view, gauge: tempGauge)

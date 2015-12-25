@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6DB340948DCEEA05E2E586FA /* Pods_Backend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1A200BD79D97471A738D2A0 /* Pods_Backend.framework */; };
 		8CB3172A1C2DE1A100B73E47 /* Venera-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CB317291C2DE13D00B73E47 /* Venera-900.otf */; };
+		8CB3172D1C2DE38300B73E47 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3172C1C2DE38300B73E47 /* Config.swift */; };
+		8CB3172F1C2DE48F00B73E47 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB3172E1C2DE48F00B73E47 /* Config.swift */; };
 		8CC3C79B1C1CDCDF00AD308A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3C79A1C1CDCDF00AD308A /* AppDelegate.swift */; };
 		8CC3C79D1C1CDCDF00AD308A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3C79C1C1CDCDF00AD308A /* ViewController.swift */; };
 		8CC3C7A01C1CDCDF00AD308A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3C79E1C1CDCDF00AD308A /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		58BEF10BB0D6C9E9F7085E18 /* Pods-BLDashboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLDashboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLDashboard/Pods-BLDashboard.release.xcconfig"; sourceTree = "<group>"; };
 		6A1B2DAA577D98ABC525C213 /* Pods-Backend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backend/Pods-Backend.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB317291C2DE13D00B73E47 /* Venera-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Venera-900.otf"; sourceTree = "<group>"; };
+		8CB3172C1C2DE38300B73E47 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8CB3172E1C2DE48F00B73E47 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		8CC3C7971C1CDCDF00AD308A /* BLDashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLDashboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3C79A1C1CDCDF00AD308A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CC3C79C1C1CDCDF00AD308A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC3C7B51C1CDD7700AD308A /* main.swift */,
+				8CB3172E1C2DE48F00B73E47 /* Config.swift */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				8CDA9D031C20A7740000A495 /* ProgressGaugeManager.swift */,
+				8CB3172C1C2DE38300B73E47 /* Config.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			files = (
 				8CC3C7A31C1CDCDF00AD308A /* BLDashboard.xcdatamodeld in Sources */,
 				8CC3C79D1C1CDCDF00AD308A /* ViewController.swift in Sources */,
+				8CB3172D1C2DE38300B73E47 /* Config.swift in Sources */,
 				8CDA9D041C20A7740000A495 /* ProgressGaugeManager.swift in Sources */,
 				8CC3C79B1C1CDCDF00AD308A /* AppDelegate.swift in Sources */,
 			);
@@ -358,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC3C7B61C1CDD7700AD308A /* main.swift in Sources */,
+				8CB3172F1C2DE48F00B73E47 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

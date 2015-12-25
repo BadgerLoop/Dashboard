@@ -42,6 +42,6 @@ let container = ContainerAgent(name: "container", superdomain: app)
 
 //Joining container with your token
 //Copy from: Auth() -> Authorized Key Management -> 'container' key
-container.join("jRyWJzO6nbZeCvjnYcddp3TsblyACIWg00sRAe6GiZFYVs534rH4dQdeNqDD1n5Eylffo8Uep4wSYdV4dAKGwZ4HQ4cwLNJD8.9QjMopiagDW1b3nJ66isicMFh4TG.Xhx7h8IuDjpCn1D2NsA-4AKM5xDqUqlUr8xfr14cicCw_")
+container.join(Config().containerKey)
 
 NSRunLoop.currentRunLoop().run()
