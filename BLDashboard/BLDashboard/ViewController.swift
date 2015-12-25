@@ -10,6 +10,7 @@ import UIKit
 import Riffle
 import KYCircularProgress
 import SVProgressHUD
+import SCLAlertView
 
 class ViewController: UIViewController, RiffleDelegate {
 
@@ -53,7 +54,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
     override func viewDidAppear(animated: Bool) {
         //Show Complete
-        SVProgressHUD.showSuccessWithStatus("Successfully Setup Gauges & Backend Config.")
+        SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
     }
 
     //Function called when joining backend ran successfuly

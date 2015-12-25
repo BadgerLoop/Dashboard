@@ -5,6 +5,7 @@ target :BLDashboard, :exclusive => true do
   pod 'Riffle'
   pod 'KYCircularProgress'
   pod 'SVProgressHUD'
+  pod 'SCLAlertView'
 end
 
 target :Backend, :exclusive => true do

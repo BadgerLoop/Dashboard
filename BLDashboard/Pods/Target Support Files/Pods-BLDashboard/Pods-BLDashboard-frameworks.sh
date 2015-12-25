@@ -90,6 +90,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BLDashboard/KYCircularProgress.framework"
   install_framework "Pods-BLDashboard/MPMessagePack.framework"
   install_framework "Pods-BLDashboard/Riffle.framework"
+  install_framework "Pods-BLDashboard/SCLAlertView.framework"
   install_framework "Pods-BLDashboard/SVProgressHUD.framework"
   install_framework "Pods-BLDashboard/SocketRocket.framework"
 fi
@@ -100,6 +101,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BLDashboard/KYCircularProgress.framework"
   install_framework "Pods-BLDashboard/MPMessagePack.framework"
   install_framework "Pods-BLDashboard/Riffle.framework"
+  install_framework "Pods-BLDashboard/SCLAlertView.framework"
   install_framework "Pods-BLDashboard/SVProgressHUD.framework"
   install_framework "Pods-BLDashboard/SocketRocket.framework"
 fi

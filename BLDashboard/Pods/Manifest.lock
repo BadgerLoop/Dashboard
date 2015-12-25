@@ -30,12 +30,14 @@ PODS:
     - CocoaAsyncSocket (= 7.4.1)
     - MPMessagePack (= 1.3.2)
     - SocketRocket (= 0.4.1)
+  - SCLAlertView (0.4.3)
   - SocketRocket (0.4.1)
   - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - KYCircularProgress
   - Riffle
+  - SCLAlertView
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   KYCircularProgress: 69a6d6852d96ca2be2830cc659b85aab3bb1cee6
   MPMessagePack: 23bbb933ef1046edcf104e3556ab4a6b4b0a69d4
   Riffle: 1c9bcbb549c46735ef20f9125c9277c4b4396382
+  SCLAlertView: a5c726a80a938fd3127edd7dbc19da33fb936ca3
   SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa
   SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 

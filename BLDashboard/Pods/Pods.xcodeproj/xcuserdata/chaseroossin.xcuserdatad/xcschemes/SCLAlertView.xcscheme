@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BE56CB57E8E8C692A01D9A4C'
-               BlueprintName = 'Pods-BLDashboard-CocoaAsyncSocket'
+               BlueprintIdentifier = '8DB9DDCDB3DC838B34DB498A'
+               BlueprintName = 'SCLAlertView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'CocoaAsyncSocket.framework'>
+               BuildableName = 'SCLAlertView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
