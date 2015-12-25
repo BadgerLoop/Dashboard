@@ -19,18 +19,20 @@ class ViewController: UIViewController, RiffleDelegate {
     var container: RiffleDomain?
 
     private var tempGauge: KYCircularProgress!
+    private var transmitting = false
 
     @IBAction func beginTransmission(sender: AnyObject) {
-        print("Calling backend")
-        //User wants to begin receiving data from backend
-        container!.call("transmit") { ( response: String) -> () in
-            print(response)
-            SVProgressHUD.showErrorWithStatus("Backend Finished Transmitting")
-        }
+        if(!transmitting){
+            print("Calling backend")
+            transmitting = true
 
-        //Begin to subscribe to temp gauge datastream
-        //Everytime backend publishes new temp, update temp gauge in updateTemp()
-        self.container!.subscribe("temp", self.updateTemp)
+            //User wants to begin receiving data from backend
+            container!.call("transmit") { ( response: String) -> () in
+                print(response)
+                SCLAlertView().showWarning("Backend:", subTitle: response)
+                self.transmitting = false
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -56,6 +58,10 @@ class ViewController: UIViewController, RiffleDelegate {
     func onJoin() {
         print("User joined!")
         container = RiffleDomain(name: "container", superdomain: app!)
+
+        //Begin to subscribe to temp gauge datastream
+        //Everytime backend publishes new temp, update temp gauge in updateTemp()
+        self.container!.subscribe("temp", self.updateTemp)
 
         //Show Setup Complete Notification
         SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
