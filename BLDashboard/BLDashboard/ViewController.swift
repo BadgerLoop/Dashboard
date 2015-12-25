@@ -9,6 +9,7 @@
 import UIKit
 import Riffle
 import KYCircularProgress
+import SVProgressHUD
 
 class ViewController: UIViewController, RiffleDelegate {
 
@@ -20,15 +21,15 @@ class ViewController: UIViewController, RiffleDelegate {
 
     @IBAction func beginTransmission(sender: AnyObject) {
         print("Calling backend")
-//        //User wants to begin receiving data from backend
-//        container!.call("transmit") { ( response: String) -> () in
-//            print(response)
-//        }
-//
-//        //Begin to subscribe to temp gauge datastream
-//        //Everytime backend publishes new temp, update temp gauge in updateTemp()
-//        self.container!.subscribe("temp", self.updateTemp)
-        tempGauge.progress = 0.5
+        //User wants to begin receiving data from backend
+        container!.call("transmit") { ( response: String) -> () in
+            print(response)
+            SVProgressHUD.showErrorWithStatus("Backend Finished Transmitting")
+        }
+
+        //Begin to subscribe to temp gauge datastream
+        //Everytime backend publishes new temp, update temp gauge in updateTemp()
+        self.container!.subscribe("temp", self.updateTemp)
     }
 
     override func viewDidLoad() {
@@ -48,7 +49,11 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Setting up gauges
         tempGauge = ProgressGaugeManager.configureGauge(view, gauge: tempGauge)
+    }
 
+    override func viewDidAppear(animated: Bool) {
+        //Show Complete
+        SVProgressHUD.showSuccessWithStatus("Successfully Setup Gauges & Backend Config.")
     }
 
     //Function called when joining backend ran successfuly

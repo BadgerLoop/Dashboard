@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '0B34E10306FFF6263C03759C'
-               BlueprintName = 'Pods-BLDashboard-GHODictionary'
+               BlueprintIdentifier = '573C109EA1325D3652E83ABE'
+               BlueprintName = 'SVProgressHUD'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'GHODictionary.framework'>
+               BuildableName = 'SVProgressHUD.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

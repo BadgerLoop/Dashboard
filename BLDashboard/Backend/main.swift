@@ -26,7 +26,7 @@ class ContainerAgent: RiffleDomain {
     //Lets give them pseudo temp data
     func transmitData() -> AnyObject{
         print("User called transmit")
-        for x in 1...100{
+        for x in 1...10{
             sleep(1)
             print("Sending Temp data to user: \(x)")
             self.publish("temp", x)

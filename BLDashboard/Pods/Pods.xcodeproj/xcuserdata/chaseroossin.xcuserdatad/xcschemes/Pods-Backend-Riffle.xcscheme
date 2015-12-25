@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A3A5187D962CA6829F5F377F'
+               BlueprintIdentifier = 'C80410AAC2219A19DACE23B9'
                BlueprintName = 'Pods-Backend-Riffle'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Riffle.framework'>

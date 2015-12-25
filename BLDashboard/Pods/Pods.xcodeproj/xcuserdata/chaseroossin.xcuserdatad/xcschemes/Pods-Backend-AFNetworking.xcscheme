@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4483F1B00F8DB8086D1FFF73'
+               BlueprintIdentifier = '54FE633057E09943E9CC02AF'
                BlueprintName = 'Pods-Backend-AFNetworking'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'AFNetworking.framework'>

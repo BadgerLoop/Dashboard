@@ -31,10 +31,12 @@ PODS:
     - MPMessagePack (= 1.3.2)
     - SocketRocket (= 0.4.1)
   - SocketRocket (0.4.1)
+  - SVProgressHUD (1.1.3)
 
 DEPENDENCIES:
   - KYCircularProgress
   - Riffle
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
@@ -44,5 +46,6 @@ SPEC CHECKSUMS:
   MPMessagePack: 23bbb933ef1046edcf104e3556ab4a6b4b0a69d4
   Riffle: 1c9bcbb549c46735ef20f9125c9277c4b4396382
   SocketRocket: ee0b5c34182d37bb4f1f8d628bbe737718126daa
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
 
 COCOAPODS: 0.39.0
