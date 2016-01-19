@@ -39,7 +39,7 @@ class ViewController: UIViewController, RiffleDelegate {
         super.viewDidLoad()
 
         //This is your apps backend - Find it in Backend/main.swift
-        app = RiffleDomain(domain: "xs.demo.badgerloop.bldashboard")
+        app = RiffleDomain(domain: Config().domain)
 
         //Set up your domain
         me = RiffleDomain(name: "localagent", superdomain: app!)
