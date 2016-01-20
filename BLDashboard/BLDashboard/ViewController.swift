@@ -19,19 +19,21 @@ class ViewController: UIViewController, RiffleDelegate {
     var container: RiffleDomain?
 
     private var tempGauge: KYCircularProgress!
-    private var transmitting = false
+    @IBOutlet weak var transmitButton: UIButton!
 
     @IBAction func beginTransmission(sender: AnyObject) {
-        if(!transmitting){
+        if(!transmitButton.selected){
             print("Calling backend")
-            transmitting = true
+            transmitButton.selected = true
 
             //User wants to begin receiving data from backend
             container!.call("transmit") { ( response: String) -> () in
                 print(response)
                 SCLAlertView().showWarning("Backend:", subTitle: response)
-                self.transmitting = false
+                self.transmitButton.selected = false
             }
+        }else{
+            SCLAlertView().showWarning("Already Transmitting", subTitle: "")
         }
     }
 
@@ -52,6 +54,10 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Setting up gauges
         tempGauge = ProgressGaugeManager.configureGauge(view, gauge: tempGauge)
+
+        //Set up transmit button state
+        transmitButton.setTitle("Begin Transmission", forState: .Normal)
+        transmitButton.setTitle("Transmitting", forState: .Selected)
     }
 
     //Function called when joining backend ran successfuly
