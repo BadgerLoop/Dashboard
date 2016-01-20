@@ -12,7 +12,6 @@ import Riffle
 print("Starting up the backend...")
 
 //This is your apps backend
-//Change USERNAME to your username that you used to sign up with at my.exis.io
 let app = RiffleDomain(domain: Config().domain)
 
 class ContainerAgent: RiffleDomain {
