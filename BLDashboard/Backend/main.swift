@@ -30,7 +30,7 @@ class ContainerAgent: RiffleDomain {
         transmitting = true
 
         print("User called transmit")
-        for x in 1...10{
+        for x in 10...100{
             sleep(1)
             print(transmitting)
             if(transmitting){

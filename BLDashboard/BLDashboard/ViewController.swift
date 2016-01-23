@@ -34,18 +34,19 @@ class ViewController: UIViewController, RiffleDelegate {
                 self.transmitButton.selected = false
             }
         }else{
+//            SCLAlertView().showWarning("Already Transmitting", subTitle: "")
+//            let alertView = SCLAlertView()
+//            alertView.showCloseButton = true
+//            alertView.addButton("Stop Transmitting") {
+//                print("User wants to stop receiving data")
+//                self.container!.call("stop_transmit") { ( response: String) -> () in
+//                    print(response)
+//                    SCLAlertView().showWarning("Backend:", subTitle: response)
+//                    self.transmitButton.selected = false
+//                }
+//            }
+//            alertView.showWarning("Already Transmitting", subTitle: "What would you like to do?")
             SCLAlertView().showWarning("Already Transmitting", subTitle: "")
-            let alertView = SCLAlertView()
-            alertView.showCloseButton = true
-            alertView.addButton("Stop Transmitting") {
-                print("User wants to stop receiving data")
-                self.container!.call("stop_transmit") { ( response: String) -> () in
-                    print(response)
-                    SCLAlertView().showWarning("Backend:", subTitle: response)
-                    self.transmitButton.selected = false
-                }
-            }
-            alertView.showWarning("Already Transmitting", subTitle: "What would you like to do?")
         }
     }
 
@@ -90,7 +91,9 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Update temp gauge with returned data
     func updateTemp(temp: Int){
-        print("Temp received: \(temp) degrees")
+        let preciseTemp = CGFloat(temp)/100
+        print("Temp received: \(preciseTemp) degrees")
+        LeftGauge.progress = preciseTemp
     }
 }
 
