@@ -101,12 +101,12 @@ class ViewController: UIViewController, RiffleDelegate {
         print("Temp received: \(preciseTemp) degrees")
         LeftGauge.progress = preciseTemp
     }
-    func updateOptEn(energy: Any){}
-    func updateTherm(therm: Any){}
-    func updateAccel(accel: Any){}
-    func updateGyro(gyro: Any){}
-    func updateProx(prox: Any){}
-    func updateLatency(latency: Any){}
-    func updateBattVolt(voltage: Any){}
+    func updateOptEn(energy: Int){}
+    func updateTherm(therm: Int){}
+    func updateAccel(accel: Int){}
+    func updateGyro(gyro: Int){}
+    func updateProx(prox: Int){}
+    func updateLatency(latency: Int){}
+    func updateBattVolt(voltage: Int){}
 }
 
