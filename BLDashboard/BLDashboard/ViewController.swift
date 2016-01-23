@@ -77,7 +77,7 @@ class ViewController: UIViewController, RiffleDelegate {
         print("User joined!")
         container = RiffleDomain(name: "container", superdomain: app!)
 
-        //Subscribe to all the endpoints weve create
+        //Subscribe to all the endpoints we've created
         self.container!.subscribe("temp", self.updateTemp)
         self.container!.subscribe("bpm_optEn", self.updateOptEn)
         self.container!.subscribe("ecm_therm", self.updateTherm)
