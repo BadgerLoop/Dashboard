@@ -34,6 +34,14 @@
                                     <action selector="beginTransmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3a-0S-tfx"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-e3-6X4" customClass="JSKTimerView">
+                                <rect key="frame" x="151" y="269" width="120" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08f-jU-xCi" customClass="JSKTimerView">
+                                <rect key="frame" x="335" y="269" width="120" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -47,6 +55,8 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="LeftGauge" destination="yYE-e3-6X4" id="7X7-d3-vtf"/>
+                        <outlet property="RightGauge" destination="08f-jU-xCi" id="zTo-sP-EyR"/>
                         <outlet property="transmitButton" destination="8QN-a6-e9a" id="5g9-MV-3j4"/>
                     </connections>
                 </viewController>

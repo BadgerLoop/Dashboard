@@ -1,0 +1,6 @@
+framework module JSKTimerView {
+  umbrella header "JSKTimerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

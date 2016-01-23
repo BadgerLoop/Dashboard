@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7E054D92DE78E06B58E0B057'
-               BlueprintName = 'KYCircularProgress'
+               BlueprintIdentifier = '2F31549FD414C2A16269B6A8'
+               BlueprintName = 'JSKTimerView'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'KYCircularProgress.framework'>
+               BuildableName = 'JSKTimerView.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
