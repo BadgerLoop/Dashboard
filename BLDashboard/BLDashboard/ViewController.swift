@@ -77,9 +77,15 @@ class ViewController: UIViewController, RiffleDelegate {
         print("User joined!")
         container = RiffleDomain(name: "container", superdomain: app!)
 
-        //Begin to subscribe to temp gauge datastream
-        //Everytime backend publishes new temp, update temp gauge in updateTemp()
+        //Subscribe to all the endpoints weve create
         self.container!.subscribe("temp", self.updateTemp)
+        self.container!.subscribe("bpm_optEn", self.updateOptEn)
+        self.container!.subscribe("ecm_therm", self.updateTherm)
+        self.container!.subscribe("vcm_accel", self.updateAccel)
+        self.container!.subscribe("vcm_gyro", self.updateGyro)
+        self.container!.subscribe("mcm_prox", self.updateProx)
+        self.container!.subscribe("wcm_latency", self.updateLatency)
+        self.container!.subscribe("bpm2_battVolt", self.updateBattVolt)
 
         //Show Setup Complete Notification
         SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
@@ -89,11 +95,18 @@ class ViewController: UIViewController, RiffleDelegate {
         print("Session left!")
     }
 
-    //Update temp gauge with returned data
+    //Update gauges with returned data
     func updateTemp(temp: Int){
         let preciseTemp = CGFloat(temp)/100
         print("Temp received: \(preciseTemp) degrees")
         LeftGauge.progress = preciseTemp
     }
+    func updateOptEn(energy: Any){}
+    func updateTherm(therm: Any){}
+    func updateAccel(accel: Any){}
+    func updateGyro(gyro: Any){}
+    func updateProx(prox: Any){}
+    func updateLatency(latency: Any){}
+    func updateBattVolt(voltage: Any){}
 }
 
