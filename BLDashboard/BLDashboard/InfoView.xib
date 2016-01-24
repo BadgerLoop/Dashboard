@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Venera-900.otf">
@@ -22,34 +21,20 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-z9-08V">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJY-z9-08V">
                     <rect key="frame" x="8" y="154" width="584" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="100" id="UrE-O7-Mba"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="71"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="50"/>
+                    <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I79-o3-Zhh">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="I79-o3-Zhh">
                     <rect key="frame" x="8" y="371" width="584" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="100" id="faV-Ol-PDS"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="71"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="pJY-z9-08V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="0fN-Rd-rt4"/>
-                <constraint firstAttribute="bottom" secondItem="I79-o3-Zhh" secondAttribute="bottom" constant="129" id="377-FK-O6x"/>
-                <constraint firstItem="pJY-z9-08V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="154" id="B0h-BK-gzu"/>
-                <constraint firstItem="pJY-z9-08V" firstAttribute="leading" secondItem="I79-o3-Zhh" secondAttribute="leading" id="gOT-SK-iDe"/>
-                <constraint firstItem="I79-o3-Zhh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ove-Bj-k4O"/>
-                <constraint firstItem="pJY-z9-08V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uxt-M7-C4N"/>
-            </constraints>
+            <point key="canvasLocation" x="424" y="367"/>
         </view>
     </objects>
 </document>

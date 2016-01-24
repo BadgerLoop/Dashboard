@@ -1,5 +1,5 @@
-2016-01-24 16:45:46.929 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 71250
-2016-01-24 16:45:46.929 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-24 16:45:46.930 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-24 16:45:47.692 [Info] [main] [ViewController.swift:79] onJoin() > Dashboard is now connected
-2016-01-24 16:45:47.695 [Info] [main] [ViewController.swift:92] onJoin() > All endpoints subscribed to
+2016-01-24 17:16:57.694 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 76343
+2016-01-24 17:16:57.694 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-24 17:16:57.694 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-24 17:16:58.408 [Info] [main] [ViewController.swift:77] onJoin() > Dashboard is now connected
+2016-01-24 17:16:58.409 [Info] [main] [ViewController.swift:90] onJoin() > All endpoints subscribed to

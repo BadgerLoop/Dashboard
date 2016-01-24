@@ -24,7 +24,7 @@
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bldashboard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-pK-eLf">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-a6-e9a">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-a6-e9a">
                                 <rect key="frame" x="234" y="532" width="133" height="30"/>
                                 <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="13"/>
                                 <state key="normal" title="Begin Transmission">
@@ -43,7 +43,27 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="72" y="139" width="95" height="81"/>
+                                <rect key="frame" x="87" y="139" width="62" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="46" y="291" width="62" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="87" y="440" width="62" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-qq-12X" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="447" y="440" width="62" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-AV-SfN" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="495" y="291" width="62" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-7T-eFc" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="447" y="139" width="62" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -51,17 +71,20 @@
                         <constraints>
                             <constraint firstItem="iqL-pK-eLf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2kY-Pz-knm"/>
                             <constraint firstItem="iqL-pK-eLf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3bQ-Jl-h0J"/>
-                            <constraint firstItem="8QN-a6-e9a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GWm-AL-PUj"/>
                             <constraint firstItem="iqL-pK-eLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X1J-U1-Dqy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8QN-a6-e9a" secondAttribute="bottom" constant="38" id="duk-dg-Kcs"/>
                             <constraint firstItem="iqL-pK-eLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tX0-92-IGS"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="LeftBottomInfo" destination="qRo-W2-4bI" id="PK0-e6-cI0"/>
                         <outlet property="LeftGauge" destination="yYE-e3-6X4" id="7X7-d3-vtf"/>
+                        <outlet property="LeftMiddleInfo" destination="UFJ-7k-qdX" id="gwz-Sq-d9Q"/>
+                        <outlet property="LeftTopInfo" destination="ebL-Qy-Hog" id="xEb-cB-bIq"/>
+                        <outlet property="RightBottomInfo" destination="nsf-qq-12X" id="dCI-XP-qrO"/>
                         <outlet property="RightGauge" destination="08f-jU-xCi" id="zTo-sP-EyR"/>
-                        <outlet property="TopLeftInfo" destination="ebL-Qy-Hog" id="F7f-mv-sMI"/>
+                        <outlet property="RightMiddleInfo" destination="0wg-AV-SfN" id="tCn-zT-RHP"/>
+                        <outlet property="RightTopInfo" destination="NNV-7T-eFc" id="yIF-gD-MP2"/>
                         <outlet property="transmitButton" destination="8QN-a6-e9a" id="5g9-MV-3j4"/>
                     </connections>
                 </viewController>

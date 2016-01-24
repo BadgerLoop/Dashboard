@@ -36,4 +36,11 @@ class InfoView: UIView {
     func setSensor(sensor: String){
         self.sensorLabel.text = sensor
     }
+    func setUpView(data: Double, sensor: String){
+        dataLabel.text = "\(data)"
+        sensorLabel.text = sensor
+    }
+    func getData() -> String{
+        return "Data: \(dataLabel.text) \nSensor: \(sensorLabel.text)"
+    }
 }
