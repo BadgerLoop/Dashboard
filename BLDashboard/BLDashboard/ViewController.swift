@@ -83,6 +83,7 @@ class ViewController: UIViewController, RiffleDelegate {
         //Subscribe to all the endpoints we've created
         self.container!.subscribe("bpm_optEn", self.updateOptEn)
         self.container!.subscribe("ecm_therm", self.updateTherm)
+        self.container!.subscribe("ecm_therm_2", self.updateTherm2)
         self.container!.subscribe("vcm_accel", self.updateAccel)
         self.container!.subscribe("vcm_gyro", self.updateGyro)
         self.container!.subscribe("mcm_prox", self.updateProx)
@@ -100,6 +101,7 @@ class ViewController: UIViewController, RiffleDelegate {
     //Update gauges with returned data
     func updateOptEn(energy: Int){}
     func updateTherm(therm: Int){}
+    func updateTherm2(therm: Int){}
     func updateAccel(accel: Int){}
     func updateGyro(gyro: Int){}
     func updateProx(prox: Int){}
