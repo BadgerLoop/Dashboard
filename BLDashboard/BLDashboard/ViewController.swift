@@ -27,12 +27,12 @@ class ViewController: UIViewController, RiffleDelegate {
 
     @IBAction func beginTransmission(sender: AnyObject) {
         if(!transmitButton.selected){
-            print("Calling backend")
+            log.info("Calling backend")
             transmitButton.selected = true
 
             //User wants to begin receiving data from backend
             container!.call("transmit") { ( response: String) -> () in
-                print(response)
+                self.log.info(response)
                 SCLAlertView().showWarning("Backend:", subTitle: response)
                 self.transmitButton.selected = false
             }
@@ -81,7 +81,6 @@ class ViewController: UIViewController, RiffleDelegate {
         container = RiffleDomain(name: "container", superdomain: app!)
 
         //Subscribe to all the endpoints we've created
-        self.container!.subscribe("temp", self.updateTemp)
         self.container!.subscribe("bpm_optEn", self.updateOptEn)
         self.container!.subscribe("ecm_therm", self.updateTherm)
         self.container!.subscribe("vcm_accel", self.updateAccel)
@@ -99,11 +98,6 @@ class ViewController: UIViewController, RiffleDelegate {
     }
 
     //Update gauges with returned data
-    func updateTemp(temp: Int){
-        let preciseTemp = CGFloat(temp)/100
-        print("Temp received: \(preciseTemp) degrees")
-        LeftGauge.progress = preciseTemp
-    }
     func updateOptEn(energy: Int){}
     func updateTherm(therm: Int){}
     func updateAccel(accel: Int){}
