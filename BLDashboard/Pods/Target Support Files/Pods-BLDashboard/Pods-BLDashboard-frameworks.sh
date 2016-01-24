@@ -93,6 +93,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-BLDashboard/SCLAlertView.framework"
   install_framework "Pods-BLDashboard/SVProgressHUD.framework"
   install_framework "Pods-BLDashboard/SocketRocket.framework"
+  install_framework "Pods-BLDashboard/XCGLogger.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BLDashboard/AFNetworking.framework"
@@ -104,4 +105,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-BLDashboard/SCLAlertView.framework"
   install_framework "Pods-BLDashboard/SVProgressHUD.framework"
   install_framework "Pods-BLDashboard/SocketRocket.framework"
+  install_framework "Pods-BLDashboard/XCGLogger.framework"
 fi

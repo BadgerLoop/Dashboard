@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DD5F170D737EBF0CD74D4D6B'
-               BlueprintName = 'JSKTimerView'
+               BlueprintIdentifier = 'A7452D81355EB9849186D15E'
+               BlueprintName = 'Pods-BLDashboard-XCGLogger'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'JSKTimerView.framework'>
+               BuildableName = 'XCGLogger.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

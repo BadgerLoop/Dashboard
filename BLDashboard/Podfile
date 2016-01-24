@@ -6,9 +6,11 @@ target :BLDashboard, :exclusive => true do
   pod "JSKTimerView"
   pod 'SVProgressHUD'
   pod 'SCLAlertView'
+  pod 'XCGLogger', '~> 3.2'
 end
 
 target :Backend, :exclusive => true do
   platform :osx, '10.10'
   pod 'Riffle'
+  pod 'XCGLogger', '~> 3.2'
 end

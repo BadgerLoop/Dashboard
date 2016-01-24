@@ -11,12 +11,15 @@ import Riffle
 import JSKTimerView
 import SVProgressHUD
 import SCLAlertView
+import XCGLogger
 
 class ViewController: UIViewController, RiffleDelegate {
 
     var app: RiffleDomain?
     var me: RiffleDomain?
     var container: RiffleDomain?
+
+    let log = XCGLogger.defaultInstance()
 
     @IBOutlet weak var transmitButton: UIButton!
     @IBOutlet weak var LeftGauge: JSKTimerView!
@@ -74,7 +77,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Function called when joining backend ran successfuly
     func onJoin() {
-        print("User joined!")
+        log.info("Dashboard is now connected")
         container = RiffleDomain(name: "container", superdomain: app!)
 
         //Subscribe to all the endpoints we've created
@@ -92,7 +95,7 @@ class ViewController: UIViewController, RiffleDelegate {
     }
 
     func onLeave() {
-        print("Session left!")
+        log.info("User has disconnected")
     }
 
     //Update gauges with returned data

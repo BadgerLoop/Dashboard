@@ -8,6 +8,7 @@
 
 import Foundation
 import Riffle
+import XCGLogger
 
 print("Starting up the backend...")
 
