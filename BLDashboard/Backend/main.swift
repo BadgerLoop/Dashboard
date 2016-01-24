@@ -15,6 +15,8 @@ print("Starting up the backend...")
 //This is your apps backend
 let app = RiffleDomain(domain: Config().domain)
 
+let log = XCGLogger.defaultInstance()
+
 var transmitting = true
 
 class ContainerAgent: RiffleDomain {
@@ -31,12 +33,16 @@ class ContainerAgent: RiffleDomain {
         transmitting = true
 
         print("User called transmit")
-        for x in 10...100{
+        for x in 1...100{
+
+            var rando = Double(arc4random_uniform(100) + 1)
+            rando = rando/100
+
             sleep(1)
             print(transmitting)
             if(transmitting){
                 print("Sending Temp data to user: \(x)")
-                self.publish("temp", x)
+//                self.publish("temp", rando)
             }
         }
         return "Finished Transmission"
