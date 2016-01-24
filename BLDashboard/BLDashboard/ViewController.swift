@@ -90,6 +90,8 @@ class ViewController: UIViewController, RiffleDelegate {
         self.container!.subscribe("wcm_latency", self.updateLatency)
         self.container!.subscribe("bpm2_battVolt", self.updateBattVolt)
 
+        log.info("All endpoints subscribed to")
+
         //Show Setup Complete Notification
         SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
     }
