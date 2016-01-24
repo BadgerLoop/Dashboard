@@ -19,6 +19,10 @@ let log = XCGLogger.defaultInstance()
 
 var transmitting = true
 
+let listOfEndPoints: [String] = ["bpm_optEn", "ecm_therm", "ecm_therm2",
+                                 "vcm_accel", "vcm_gyro", "mcm_prox",
+                                 "wcm_latency", "bpm2_battVolt"]
+
 class ContainerAgent: RiffleDomain {
     override func onJoin() {
         print("Registering from transmit")
@@ -34,15 +38,16 @@ class ContainerAgent: RiffleDomain {
 
         print("User called transmit")
         for x in 1...100{
-
-            var rando = Double(arc4random_uniform(100) + 1)
-            rando = rando/100
-
             sleep(1)
-            print(transmitting)
             if(transmitting){
-                print("Sending Temp data to user: \(x)")
-//                self.publish("temp", rando)
+                //send data to each endpoint
+                for endpoint in listOfEndPoints{
+                    var rando = Double(arc4random_uniform(100) + 1)
+                    rando = rando/100
+                    print("\(endpoint): \(rando)")
+                    self.publish(endpoint, rando)
+                }
+                print("\n")
             }
         }
         return "Finished Transmission"

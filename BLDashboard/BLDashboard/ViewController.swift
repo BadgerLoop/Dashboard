@@ -99,13 +99,29 @@ class ViewController: UIViewController, RiffleDelegate {
     }
 
     //Update gauges with returned data
-    func updateOptEn(energy: Double){}
-    func updateTherm(therm: Double){}
-    func updateTherm2(therm: Double){}
-    func updateAccel(accel: Double){}
-    func updateGyro(gyro: Double){}
-    func updateProx(prox: Double){}
-    func updateLatency(latency: Double){}
-    func updateBattVolt(voltage: Double){}
+    func updateOptEn(energy: Double){
+        log.info("Energy: \(energy)")
+    }
+    func updateTherm(therm: Double){
+        log.info("Therm: \(therm)")
+    }
+    func updateTherm2(therm: Double){
+        log.info("Therm_2: \(therm)")
+    }
+    func updateAccel(accel: Double){
+        log.info("Accel: \(accel)")
+    }
+    func updateGyro(gyro: Double){
+        log.info("Gyro: \(gyro)")
+    }
+    func updateProx(prox: Double){
+        log.info("Prox: \(prox)")
+    }
+    func updateLatency(latency: Double){
+        log.info("Latency: \(latency)")
+    }
+    func updateBattVolt(voltage: Double){
+        log.info("BatVolt: \(voltage)")
+    }
 }
 
