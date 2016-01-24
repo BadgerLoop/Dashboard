@@ -37,19 +37,7 @@ class ViewController: UIViewController, RiffleDelegate {
                 self.transmitButton.selected = false
             }
         }else{
-//            SCLAlertView().showWarning("Already Transmitting", subTitle: "")
-//            let alertView = SCLAlertView()
-//            alertView.showCloseButton = true
-//            alertView.addButton("Stop Transmitting") {
-//                print("User wants to stop receiving data")
-//                self.container!.call("stop_transmit") { ( response: String) -> () in
-//                    print(response)
-//                    SCLAlertView().showWarning("Backend:", subTitle: response)
-//                    self.transmitButton.selected = false
-//                }
-//            }
-//            alertView.showWarning("Already Transmitting", subTitle: "What would you like to do?")
-            SCLAlertView().showWarning("Already Transmitting", subTitle: "")
+            SVProgressHUD.showInfoWithStatus("Already Transmitting")
         }
     }
 
@@ -73,6 +61,10 @@ class ViewController: UIViewController, RiffleDelegate {
         //Set up transmit button state
         transmitButton.setTitle("Begin Transmission", forState: .Normal)
         transmitButton.setTitle("Transmitting", forState: .Selected)
+
+        //Config Gauges
+        LeftGauge.labelTextColor = UIColor.whiteColor()
+        RightGauge.labelTextColor = UIColor.whiteColor()
     }
 
     //Function called when joining backend ran successfuly
