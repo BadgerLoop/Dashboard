@@ -25,6 +25,9 @@ class ViewController: UIViewController, RiffleDelegate {
     @IBOutlet weak var LeftGauge: JSKTimerView!
     @IBOutlet weak var RightGauge: JSKTimerView!
 
+    @IBOutlet weak var TopLeftInfo: InfoView!
+
+
     @IBAction func beginTransmission(sender: AnyObject) {
         if(!transmitButton.selected){
             log.info("Calling backend")
@@ -65,6 +68,10 @@ class ViewController: UIViewController, RiffleDelegate {
         //Config Gauges
         LeftGauge.labelTextColor = UIColor.whiteColor()
         RightGauge.labelTextColor = UIColor.whiteColor()
+
+        TopLeftInfo.setData(10.0)
+        TopLeftInfo.setSensor("GYRO")
+
     }
 
     //Function called when joining backend ran successfuly
