@@ -11,8 +11,8 @@ import Foundation
 class Sensor {
     var title: String
     var subtitle: String
-    var dataValue: Double
-    var dataArrayValues: [Double]
+    var dataValue: Double?
+    var dataArrayValues: [Double]?
     var dataType: DataType
 
     //Init for all sensors excluding Gyro and Accel
@@ -20,7 +20,6 @@ class Sensor {
         self.title = title
         self.subtitle = subtitle
         self.dataValue = dataValue
-        self.dataArrayValues = [0.0,0.0,0.0]
         self.dataType = dataType
     }
 
@@ -28,7 +27,6 @@ class Sensor {
     init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType){
         self.title = title
         self.subtitle = subtitle
-        self.dataValue = 0.0
         self.dataArrayValues = dataArrayValues
         self.dataType = dataType
     }
@@ -57,9 +55,9 @@ class Sensor {
     func debug() -> String{
         switch(dataType){
         case .ACCEL:
-            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues)\nData Type: \(dataType)"
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues)\nData Type: \(dataType)\n"
         default:
-            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue)\nData Type: \(dataType)"
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue)\nData Type: \(dataType)\n"
         }
 
     }
