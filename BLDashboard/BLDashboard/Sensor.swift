@@ -33,7 +33,7 @@ class Sensor {
 
     enum DataType: String{
         case RPM = "RPM"
-        case THERM = "Degrees C"
+        case THERM = "\u{00B0} C" //degrees celcius
         case ACCEL = "X, Y, Z"
         case PROX = "mm"
         case BFIELD = "Teslas"
