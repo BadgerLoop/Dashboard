@@ -18,15 +18,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bldashboard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-pK-eLf">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-a6-e9a">
-                                <rect key="frame" x="234" y="532" width="133" height="30"/>
-                                <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="13"/>
+                                <rect key="frame" x="285" y="637" width="453" height="53"/>
+                                <fontDescription key="fontDescription" name="Venera900" family="Venera" pointSize="21"/>
                                 <state key="normal" title="Begin Transmission">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -35,35 +35,35 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-e3-6X4" customClass="JSKTimerView">
-                                <rect key="frame" x="151" y="269" width="120" height="120"/>
+                                <rect key="frame" x="278" y="338" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08f-jU-xCi" customClass="JSKTimerView">
-                                <rect key="frame" x="335" y="269" width="120" height="120"/>
+                                <rect key="frame" x="588" y="338" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="87" y="139" width="62" height="75"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="46" y="291" width="62" height="75"/>
+                                <rect key="frame" x="157" y="182" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="87" y="440" width="62" height="75"/>
+                                <rect key="frame" x="157" y="570" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-qq-12X" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="447" y="440" width="62" height="75"/>
+                                <rect key="frame" x="776" y="570" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-AV-SfN" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="495" y="291" width="62" height="75"/>
+                                <rect key="frame" x="854" y="381" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-7T-eFc" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="447" y="139" width="62" height="75"/>
+                                <rect key="frame" x="776" y="182" width="90" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="81" y="373" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -76,6 +76,7 @@
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="LeftBottomInfo" destination="qRo-W2-4bI" id="PK0-e6-cI0"/>
                         <outlet property="LeftGauge" destination="yYE-e3-6X4" id="7X7-d3-vtf"/>
