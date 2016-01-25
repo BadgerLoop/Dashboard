@@ -18,9 +18,9 @@ class ViewController: UIViewController, RiffleDelegate {
     var app: RiffleDomain?
     var me: RiffleDomain?
     var container: RiffleDomain?
-
     let log = XCGLogger.defaultInstance()
 
+    //Buttons and Gauges
     @IBOutlet weak var transmitButton: UIButton!
     @IBOutlet weak var LeftGauge: JSKTimerView!
     @IBOutlet weak var RightGauge: JSKTimerView!
@@ -33,6 +33,8 @@ class ViewController: UIViewController, RiffleDelegate {
     @IBOutlet weak var RightMiddleInfo: InfoView!
     @IBOutlet weak var RightBottomInfo: InfoView!
 
+    //Sensors
+    var bpm, bpm2, ecm, ecm2, vcmA, vcmG, mcm, wcm: Sensor!
 
     @IBAction func beginTransmission(sender: AnyObject) {
         if(!transmitButton.selected){
@@ -65,8 +67,6 @@ class ViewController: UIViewController, RiffleDelegate {
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
         me!.join(Config().localAgentKey)
 
-        //Setting up gauges
-
         //Set up transmit button state
         transmitButton.setTitle("Begin Transmission", forState: .Normal)
         transmitButton.setTitle("Transmitting", forState: .Selected)
@@ -75,6 +75,9 @@ class ViewController: UIViewController, RiffleDelegate {
         LeftGauge.labelTextColor = UIColor.whiteColor()
         RightGauge.labelTextColor = UIColor.whiteColor()
 
+        //Config Sensors
+        bpm = Sensor(title: "BPM", subtitle: "Optimal Energy", dataValue: 0.0, dataType: .RPM)
+        
     }
 
     //Function called when joining backend ran successfuly
