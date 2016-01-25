@@ -18,6 +18,10 @@
 		8CC3C7A51C1CDCDF00AD308A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3C7A41C1CDCDF00AD308A /* Assets.xcassets */; };
 		8CC3C7A81C1CDCDF00AD308A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC3C7A61C1CDCDF00AD308A /* LaunchScreen.storyboard */; };
 		8CC3C7B61C1CDD7700AD308A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3C7B51C1CDD7700AD308A /* main.swift */; };
+		8CD87B5B1C55795800B3FFEA /* blackbox.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CD87B5A1C55795800B3FFEA /* blackbox.txt */; };
+		8CD87B5D1C55862F00B3FFEA /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD87B5C1C55862F00B3FFEA /* InfoView.xib */; };
+		8CD87B601C5587C600B3FFEA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD87B5F1C5587C600B3FFEA /* InfoView.swift */; };
+		8CD87B631C56B2F100B3FFEA /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD87B621C56B2F100B3FFEA /* Sensor.swift */; };
 		DC696082021EB2375EFAE20D /* Pods_BLDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B341D5C6630809B18F781E /* Pods_BLDashboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,11 @@
 		8CC3C7A91C1CDCDF00AD308A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CC3C7B31C1CDD7700AD308A /* Backend */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Backend; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC3C7B51C1CDD7700AD308A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8CD87B5A1C55795800B3FFEA /* blackbox.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = blackbox.txt; sourceTree = "<group>"; };
+		8CD87B5C1C55862F00B3FFEA /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		8CD87B5F1C5587C600B3FFEA /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		8CD87B611C56B26300B3FFEA /* DS-DIGI.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DS-DIGI.TTF"; sourceTree = "<group>"; };
+		8CD87B621C56B2F100B3FFEA /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
 		A6B341D5C6630809B18F781E /* Pods_BLDashboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLDashboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E64FE6AEB5E12A64BD5063 /* Pods-Backend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backend.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backend/Pods-Backend.release.xcconfig"; sourceTree = "<group>"; };
 		C1A200BD79D97471A738D2A0 /* Pods_Backend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +87,7 @@
 		8CB3172B1C2DE1A600B73E47 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				8CD87B611C56B26300B3FFEA /* DS-DIGI.TTF */,
 				8CB317291C2DE13D00B73E47 /* Venera-900.otf */,
 				8CC3C7A41C1CDCDF00AD308A /* Assets.xcassets */,
 			);
@@ -107,14 +117,17 @@
 		8CC3C7991C1CDCDF00AD308A /* BLDashboard */ = {
 			isa = PBXGroup;
 			children = (
-				8CB3172B1C2DE1A600B73E47 /* Assets */,
 				8CC3C79A1C1CDCDF00AD308A /* AppDelegate.swift */,
+				8CB3172B1C2DE1A600B73E47 /* Assets */,
+				8CD87B641C56B32200B3FFEA /* Model */,
+				8CD87B5E1C55865000B3FFEA /* Views */,
 				8CDA9D051C20A77C0000A495 /* Managers */,
 				8CC3C79C1C1CDCDF00AD308A /* ViewController.swift */,
 				8CC3C79E1C1CDCDF00AD308A /* Main.storyboard */,
 				8CC3C7A61C1CDCDF00AD308A /* LaunchScreen.storyboard */,
 				8CC3C7A91C1CDCDF00AD308A /* Info.plist */,
 				8CC3C7A11C1CDCDF00AD308A /* BLDashboard.xcdatamodeld */,
+				8CD87B5A1C55795800B3FFEA /* blackbox.txt */,
 			);
 			path = BLDashboard;
 			sourceTree = "<group>";
@@ -126,6 +139,23 @@
 				8CB3172E1C2DE48F00B73E47 /* Config.swift */,
 			);
 			path = Backend;
+			sourceTree = "<group>";
+		};
+		8CD87B5E1C55865000B3FFEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CD87B5C1C55862F00B3FFEA /* InfoView.xib */,
+				8CD87B5F1C5587C600B3FFEA /* InfoView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8CD87B641C56B32200B3FFEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CD87B621C56B2F100B3FFEA /* Sensor.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		8CDA9D051C20A77C0000A495 /* Managers */ = {
@@ -244,7 +274,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD87B5D1C55862F00B3FFEA /* InfoView.xib in Resources */,
 				8CB3172A1C2DE1A100B73E47 /* Venera-900.otf in Resources */,
+				8CD87B5B1C55795800B3FFEA /* blackbox.txt in Resources */,
 				8CC3C7A81C1CDCDF00AD308A /* LaunchScreen.storyboard in Resources */,
 				8CC3C7A51C1CDCDF00AD308A /* Assets.xcassets in Resources */,
 				8CC3C7A01C1CDCDF00AD308A /* Main.storyboard in Resources */,
@@ -350,8 +382,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC3C7A31C1CDCDF00AD308A /* BLDashboard.xcdatamodeld in Sources */,
+				8CD87B631C56B2F100B3FFEA /* Sensor.swift in Sources */,
 				8CC3C79D1C1CDCDF00AD308A /* ViewController.swift in Sources */,
 				8CB3172D1C2DE38300B73E47 /* Config.swift in Sources */,
+				8CD87B601C5587C600B3FFEA /* InfoView.swift in Sources */,
 				8CC3C79B1C1CDCDF00AD308A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
