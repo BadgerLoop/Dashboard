@@ -13,6 +13,8 @@ class InfoView: UIView {
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var sensorLabel: UILabel!
 
+    var sensor: Sensor!
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadViewFromNib ()
@@ -36,10 +38,6 @@ class InfoView: UIView {
     func setSensor(sensor: Sensor){
         self.sensorLabel.text = sensor.subtitle
         self.dataLabel.text = "\(sensor.dataValue) \(sensor.dataType.rawValue)"
-    }
-    func setUpView(data: Double, sensor: String){
-        dataLabel.text = "\(data)"
-        sensorLabel.text = sensor
     }
     func getData() -> String{
         return "Data: \(dataLabel.text) \nSensor: \(sensorLabel.text)"
