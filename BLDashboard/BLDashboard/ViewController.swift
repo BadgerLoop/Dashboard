@@ -118,6 +118,13 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Show Setup Complete Notification
         SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
+
+        //TESTING PURPOSES WHILE BUTTON ISNT UP - REMOVE *******************
+        container!.call("transmit") { ( response: String) -> () in
+            self.log.info(response)
+            SCLAlertView().showWarning("Backend:", subTitle: response)
+            self.transmitButton.selected = false
+        }
     }
 
     func onLeave() {
@@ -126,36 +133,36 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Update gauges with returned data
     func updateOptEn(energy: Double){
-        log.info("Energy: \(energy)")
         bpm.setValue(energy)
+        log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
-        log.info("BatVolt: \(voltage)")
         bpm2.setValue(voltage)
+        log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
-        log.info("Therm: \(therm)")
         ecm.setValue(therm)
+        log.debug(ecm.debug())
     }
     func updateTherm2(therm: Double){
-        log.info("Therm_2: \(therm)")
         ecm2.setValue(therm)
+        log.debug(ecm2.debug())
     }
     func updateAccel(accel: [Double]){
-        log.info("Accel: \(accel)")
         vcmA.setValue(accel)
+        log.debug(vcmA.debug())
     }
     func updateGyro(gyro: [Double]){
-        log.info("Gyro: \(gyro)")
         vcmG.setValue(gyro)
+        log.debug(vcmG.debug())
     }
     func updateProx(prox: Double){
-        log.info("Prox: \(prox)")
         mcm.setValue(prox)
+        log.debug(mcm.debug())
     }
     func updateLatency(latency: Double){
-        log.info("Latency: \(latency)")
         wcm.setValue(latency)
+        log.debug(wcm.debug())
     }
 }
 

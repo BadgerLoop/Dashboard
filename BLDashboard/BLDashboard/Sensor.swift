@@ -52,4 +52,15 @@ class Sensor {
     func setValue(values: [Double]){
         self.dataArrayValues = values
     }
+
+    //Debug printing purposes
+    func debug() -> String{
+        switch(dataType){
+        case .ACCEL:
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues)\nData Type: \(dataType)"
+        default:
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue)\nData Type: \(dataType)"
+        }
+
+    }
 }
