@@ -12,12 +12,24 @@ class Sensor {
     var title: String
     var subtitle: String
     var dataValue: Double
+    var dataArrayValues: [Double]
     var dataType: DataType
 
+    //Init for all sensors excluding Gyro and Accell
     init(title: String, subtitle: String, dataValue: Double, dataType: DataType){
         self.title = title
         self.subtitle = subtitle
         self.dataValue = dataValue
+        self.dataArrayValues = [0.0,0.0,0.0]
+        self.dataType = dataType
+    }
+
+    //Init for Gyro and Accell
+    init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType){
+        self.title = title
+        self.subtitle = subtitle
+        self.dataValue = 0.0
+        self.dataArrayValues = dataArrayValues
         self.dataType = dataType
     }
 
@@ -25,7 +37,7 @@ class Sensor {
         case RPM = "RPM"
         case THERM = "Degrees C"
         case ACCEL = "X, Y, Z"
-        case PROX = "Millimeters"
+        case PROX = "mm"
         case BFIELD = "Teslas"
         case LATENCY = "ms"
         case VOLTS = "volts"

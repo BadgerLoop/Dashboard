@@ -77,7 +77,13 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Config Sensors
         bpm = Sensor(title: "BPM", subtitle: "Optimal Energy", dataValue: 0.0, dataType: .RPM)
-        
+        bpm2 = Sensor(title: "BPM2", subtitle: "Battery Voltage", dataValue: 0.0, dataType: .VOLTS)
+        ecm = Sensor(title: "ECM", subtitle: "Thermistor 1", dataValue: 0.0, dataType: .THERM)
+        ecm2 = Sensor(title: "ECM2", subtitle: "Thermistor 2", dataValue: 0.0, dataType: .THERM)
+        vcmA = Sensor(title: "VCMA", subtitle: "Accelerometer", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmG = Sensor(title: "VCMG", subtitle: "Gyroscope", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        mcm = Sensor(title: "MCM", subtitle: "Proximity", dataValue: 0.0, dataType: .PROX)
+        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
     }
 
     //Function called when joining backend ran successfuly
