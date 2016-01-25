@@ -30,11 +30,12 @@ class InfoView: UIView {
         self.addSubview(view);
     }
 
-    func setData(data: Double){
-        self.dataLabel.text = "\(data)"
+    func setData(sensor: Sensor){
+        self.dataLabel.text = "\(sensor.dataValue) \(sensor.dataType.rawValue)"
     }
-    func setSensor(sensor: String){
-        self.sensorLabel.text = sensor
+    func setSensor(sensor: Sensor){
+        self.sensorLabel.text = sensor.subtitle
+        self.dataLabel.text = "\(sensor.dataValue) \(sensor.dataType.rawValue)"
     }
     func setUpView(data: Double, sensor: String){
         dataLabel.text = "\(data)"

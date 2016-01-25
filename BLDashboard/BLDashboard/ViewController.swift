@@ -116,27 +116,35 @@ class ViewController: UIViewController, RiffleDelegate {
     //Update gauges with returned data
     func updateOptEn(energy: Double){
         log.info("Energy: \(energy)")
-    }
-    func updateTherm(therm: Double){
-        log.info("Therm: \(therm)")
-    }
-    func updateTherm2(therm: Double){
-        log.info("Therm_2: \(therm)")
-    }
-    func updateAccel(accel: Double){
-        log.info("Accel: \(accel)")
-    }
-    func updateGyro(gyro: Double){
-        log.info("Gyro: \(gyro)")
-    }
-    func updateProx(prox: Double){
-        log.info("Prox: \(prox)")
-    }
-    func updateLatency(latency: Double){
-        log.info("Latency: \(latency)")
+        bpm.setValue(energy)
     }
     func updateBattVolt(voltage: Double){
         log.info("BatVolt: \(voltage)")
+        bpm2.setValue(voltage)
+    }
+    func updateTherm(therm: Double){
+        log.info("Therm: \(therm)")
+        ecm.setValue(therm)
+    }
+    func updateTherm2(therm: Double){
+        log.info("Therm_2: \(therm)")
+        ecm2.setValue(therm)
+    }
+    func updateAccel(accel: [Double]){
+        log.info("Accel: \(accel)")
+        vcmA.setValue(accel)
+    }
+    func updateGyro(gyro: [Double]){
+        log.info("Gyro: \(gyro)")
+        vcmG.setValue(gyro)
+    }
+    func updateProx(prox: Double){
+        log.info("Prox: \(prox)")
+        mcm.setValue(prox)
+    }
+    func updateLatency(latency: Double){
+        log.info("Latency: \(latency)")
+        wcm.setValue(latency)
     }
 }
 
