@@ -15,7 +15,7 @@ class Sensor {
     var dataArrayValues: [Double]
     var dataType: DataType
 
-    //Init for all sensors excluding Gyro and Accell
+    //Init for all sensors excluding Gyro and Accel
     init(title: String, subtitle: String, dataValue: Double, dataType: DataType){
         self.title = title
         self.subtitle = subtitle
@@ -43,7 +43,13 @@ class Sensor {
         case VOLTS = "volts"
     }
 
+    //For all sensors excluding Gyro and Accel
     func setValue(value: Double){
         self.dataValue = value
+    }
+
+    //For setting Gyro/Accel
+    func setValue(values: [Double]){
+        self.dataArrayValues = values
     }
 }

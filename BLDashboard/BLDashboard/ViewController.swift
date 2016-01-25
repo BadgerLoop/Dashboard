@@ -84,6 +84,8 @@ class ViewController: UIViewController, RiffleDelegate {
         vcmG = Sensor(title: "VCMG", subtitle: "Gyroscope", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
         mcm = Sensor(title: "MCM", subtitle: "Proximity", dataValue: 0.0, dataType: .PROX)
         wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
+
+        log.debug("All sensors initialized")
     }
 
     //Function called when joining backend ran successfuly
