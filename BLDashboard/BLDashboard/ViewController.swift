@@ -76,24 +76,24 @@ class ViewController: UIViewController, RiffleDelegate {
         RightGauge.labelTextColor = UIColor.whiteColor()
 
         //Config Sensors and Linking to View
-        bpm = Sensor(title: "BPM", subtitle: "Optimal Energy", dataValue: 0.0, dataType: .RPM)
+        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM)
         LeftTopInfo.setSensor(bpm)
 
-        bpm2 = Sensor(title: "BPM2", subtitle: "Battery Voltage", dataValue: 0.0, dataType: .VOLTS)
+        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS)
         LeftMiddleInfo.setSensor(bpm2)
 
         wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
         LeftBottomInfo.setSensor(wcm)
 
-        mcm = Sensor(title: "MCM", subtitle: "Proximity", dataValue: 0.0, dataType: .PROX)
+        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX)
         RightTopInfo.setSensor(mcm)
 
-        vcmA = Sensor(title: "VCMA", subtitle: "Accelerometer", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
-        vcmG = Sensor(title: "VCMG", subtitle: "Gyroscope", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
         RightMiddleInfo.setSensor(vcmA)
 
-        ecm = Sensor(title: "ECM", subtitle: "Thermistor 1", dataValue: 0.0, dataType: .THERM)
-        ecm2 = Sensor(title: "ECM2", subtitle: "Thermistor 2", dataValue: 0.0, dataType: .THERM)
+        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM)
+        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
         RightBottomInfo.setSensor(ecm)
 
         log.debug("All sensors initialized")
