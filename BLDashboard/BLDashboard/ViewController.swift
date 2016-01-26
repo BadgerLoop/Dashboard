@@ -77,24 +77,24 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Config Sensors and Linking to View
         bpm = Sensor(title: "BPM", subtitle: "Optimal Energy", dataValue: 0.0, dataType: .RPM)
-        LeftTopInfo.sensor = bpm
+        LeftTopInfo.setSensor(bpm)
 
         bpm2 = Sensor(title: "BPM2", subtitle: "Battery Voltage", dataValue: 0.0, dataType: .VOLTS)
-        LeftMiddleInfo.sensor = bpm2
+        LeftMiddleInfo.setSensor(bpm2)
 
         wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
-        LeftBottomInfo.sensor = wcm
+        LeftBottomInfo.setSensor(wcm)
 
         mcm = Sensor(title: "MCM", subtitle: "Proximity", dataValue: 0.0, dataType: .PROX)
-        RightTopInfo.sensor = mcm
+        RightTopInfo.setSensor(mcm)
 
         vcmA = Sensor(title: "VCMA", subtitle: "Accelerometer", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
         vcmG = Sensor(title: "VCMG", subtitle: "Gyroscope", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
-        RightMiddleInfo.sensor = vcmA
+        RightMiddleInfo.setSensor(vcmA)
 
         ecm = Sensor(title: "ECM", subtitle: "Thermistor 1", dataValue: 0.0, dataType: .THERM)
         ecm2 = Sensor(title: "ECM2", subtitle: "Thermistor 2", dataValue: 0.0, dataType: .THERM)
-        RightBottomInfo.sensor = ecm
+        RightBottomInfo.setSensor(ecm)
 
         log.debug("All sensors initialized")
     }
