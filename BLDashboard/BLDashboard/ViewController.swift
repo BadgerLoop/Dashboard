@@ -90,7 +90,7 @@ class ViewController: UIViewController, RiffleDelegate {
         app = RiffleDomain(domain: Config().domain)
 
         //For local node - will need to remove local host and set to static IP
-        Riffle.setFabric("ws://localhost:8000/ws")
+//        Riffle.setFabric("ws://localhost:8000/ws")
 
         //Set up your domain
         me = RiffleDomain(name: "localagent", superdomain: app!)

@@ -332,7 +332,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     self.gaugeSubtitle = [[UILabel alloc] init];
     self.gaugeSubtitle.text = @"Gauge Subtitle";
     self.gaugeSubtitle.textAlignment = NSTextAlignmentCenter;
-    self.gaugeSubtitle.font = [UIFont fontWithName:@"DS-Digital" size:20.0];
+    self.gaugeSubtitle.font = [UIFont fontWithName:@"DS-Digital" size:25.0];
     self.gaugeSubtitle.textColor = [UIColor whiteColor];
     [self.gaugeSubtitle sizeToFit];
     self.gaugeSubtitle.translatesAutoresizingMaskIntoConstraints = NO;
