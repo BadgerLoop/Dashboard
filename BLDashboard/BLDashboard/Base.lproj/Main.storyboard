@@ -21,8 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bldashboard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-pK-eLf">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bldashboard" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-pK-eLf">
+                                <rect key="frame" x="-37" y="-128" width="1106" height="1065"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QN-a6-e9a">
                                 <rect key="frame" x="285" y="637" width="453" height="53"/>
@@ -34,46 +34,40 @@
                                     <action selector="beginTransmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3a-0S-tfx"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-e3-6X4" customClass="JSKTimerView">
-                                <rect key="frame" x="278" y="338" width="160" height="160"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08f-jU-xCi" customClass="JSKTimerView">
-                                <rect key="frame" x="588" y="338" width="160" height="160"/>
+                                <rect key="frame" x="599" y="325" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="157" y="182" width="90" height="90"/>
+                                <rect key="frame" x="154" y="163" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="157" y="570" width="90" height="90"/>
+                                <rect key="frame" x="157" y="557" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-qq-12X" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="776" y="570" width="90" height="90"/>
+                                <rect key="frame" x="790" y="557" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-AV-SfN" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="854" y="381" width="90" height="90"/>
+                                <rect key="frame" x="876" y="362" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-7T-eFc" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="776" y="182" width="90" height="90"/>
+                                <rect key="frame" x="791" y="162" width="90" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="81" y="373" width="90" height="90"/>
+                                <rect key="frame" x="71" y="360" width="90" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-e3-6X4" customClass="JSKTimerView">
+                                <rect key="frame" x="278" y="324" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="iqL-pK-eLf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="2kY-Pz-knm"/>
-                            <constraint firstItem="iqL-pK-eLf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3bQ-Jl-h0J"/>
-                            <constraint firstItem="iqL-pK-eLf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="X1J-U1-Dqy"/>
-                            <constraint firstItem="iqL-pK-eLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tX0-92-IGS"/>
-                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -95,6 +89,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bldashboard" width="960" height="540"/>
+        <image name="bldashboard" width="1024" height="768"/>
     </resources>
 </document>
