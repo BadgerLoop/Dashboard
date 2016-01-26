@@ -9,6 +9,8 @@
 import UIKit
 
 class InfoView: UIView {
+    
+    // pointless comment
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var sensorLabel: UILabel!

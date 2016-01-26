@@ -31,17 +31,21 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="I79-o3-Zhh">
                     <rect key="frame" x="8" y="371" width="584" height="100"/>
                     <fontDescription key="fontDescription" name="DS-Digital" family="DS-Digital" pointSize="71"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="I79-o3-Zhh" secondAttribute="bottom" constant="129" id="51y-Dc-f2j"/>
+                <constraint firstItem="I79-o3-Zhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="5Q5-4V-SWN"/>
                 <constraint firstItem="pJY-z9-08V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="9gC-er-tN7"/>
                 <constraint firstItem="pJY-z9-08V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9xV-C5-XAp"/>
                 <constraint firstItem="pJY-z9-08V" firstAttribute="leading" secondItem="I79-o3-Zhh" secondAttribute="leading" id="E6M-vR-DOr"/>
-                <constraint firstItem="pJY-z9-08V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="154" id="hUx-ov-Mkq"/>
+                <constraint firstAttribute="trailing" secondItem="pJY-z9-08V" secondAttribute="trailing" constant="8" id="Lox-Xl-gU0"/>
+                <constraint firstItem="pJY-z9-08V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-9" id="VJB-Ug-Ghs"/>
+                <constraint firstAttribute="bottom" secondItem="I79-o3-Zhh" secondAttribute="bottom" constant="-5" id="Vtx-WL-VcI"/>
+                <constraint firstAttribute="trailing" secondItem="I79-o3-Zhh" secondAttribute="trailing" constant="8" id="dB8-6k-oKj"/>
                 <constraint firstItem="I79-o3-Zhh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nyf-Nk-8xR"/>
+                <constraint firstItem="pJY-z9-08V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ttL-TE-STy"/>
             </constraints>
             <point key="canvasLocation" x="371" y="375"/>
         </view>
