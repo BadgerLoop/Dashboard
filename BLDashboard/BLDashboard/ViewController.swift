@@ -61,6 +61,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Sensors
     var bpm, bpm2, ecm, ecm2, vcmA, vcmG, mcm, wcm: Sensor!
+    let rightGaugeTypes : [Sensor.DataType] = [.ACCEL, .PROX, .THERM]
 
     @IBAction func beginTransmission(sender: AnyObject) {
         if(!transmitButton.selected){
@@ -193,19 +194,25 @@ class ViewController: UIViewController, RiffleDelegate {
         log.debug(wcm.debug())
     }
 
+    //Set up Left and Right Gauges
     func SetLeftGauge(sensor: Sensor){
-        print(sensor.debug())
         LeftGauge.progress = CGFloat(sensor.dataValue!)
-        LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType)")
+        LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
     }
     func SetRightGauge(sensor: Sensor){
-
+        RightGauge.progress = CGFloat(sensor.dataValue!)
+        RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
     }
 }
 
 extension ViewController : InfoViewDelegate{
-    func InfoViewTapped(infoView: InfoView) {
-        SetLeftGauge(infoView.sensor)
+    func InfoViewTapped(infoView: InfoView){
+        //Tapped sensor belongs in right sensor
+        if(rightGaugeTypes.contains(infoView.sensor.dataType)){
+            SetRightGauge(infoView.sensor)
+        }else{
+            SetLeftGauge(infoView.sensor)
+        }
     }
 }
 

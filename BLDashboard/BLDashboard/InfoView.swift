@@ -44,17 +44,14 @@ class InfoView: UIView {
 
     //Called when given InfoView tapped
     func viewTapped(sender:UITapGestureRecognizer){
-//        ViewController().SetLeftGauge(sensor)
         self.delegate?.InfoViewTapped(self)
     }
-    func setData(sensor: Sensor){
-        self.sensor = sensor
-        self.update()
-    }
+    //Set Views sensor
     func setSensor(sensor: Sensor){
         self.sensor = sensor
         self.update()
     }
+    //Update InfoView's UI
     func update(){
         switch(sensor.dataType){
         case .ACCEL:
