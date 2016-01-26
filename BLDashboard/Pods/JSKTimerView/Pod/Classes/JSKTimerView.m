@@ -309,6 +309,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     self.timerLabel = [[UILabel alloc] init];
     self.timerLabel.text = @"0";
     self.timerLabel.textAlignment = NSTextAlignmentCenter;
+    self.timerLabel.font = [UIFont fontWithName:@"DS-Digital" size:30.0];
     [self.timerLabel sizeToFit];
     self.timerLabel.translatesAutoresizingMaskIntoConstraints = NO;
     

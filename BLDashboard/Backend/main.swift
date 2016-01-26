@@ -40,8 +40,9 @@ class ContainerAgent: RiffleDomain {
         transmitting = true
 
         print("User called transmit")
+        sleep(5)
         for x in 1...100{
-            sleep(1)
+//            sleep(1)
             if(transmitting){
                 //send data to each endpoint
                 for endpoint in listOfEndPoints{
@@ -53,6 +54,7 @@ class ContainerAgent: RiffleDomain {
                 print("\n")
             }
         }
+        print("Finished Transmission")
         return "Finished Transmission"
     }
 
