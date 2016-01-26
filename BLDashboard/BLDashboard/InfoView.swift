@@ -19,11 +19,11 @@ class InfoView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        loadViewFromNib ()
+        loadViewFromNib()
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        loadViewFromNib ()
+        loadViewFromNib()
     }
     func loadViewFromNib() {
         let bundle = NSBundle(forClass: self.dynamicType)
@@ -31,9 +31,18 @@ class InfoView: UIView {
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+
+        //Add touch gesture to entire InfoView
+        let gesture = UITapGestureRecognizer(target: self, action: "viewTapped:")
+        view.addGestureRecognizer(gesture)
+
         self.addSubview(view);
     }
 
+    //Called when given InfoView tapped
+    func viewTapped(sender:UITapGestureRecognizer){
+        print("TAPPED: \(sensor.debug())")
+    }
     func setData(sensor: Sensor){
         self.sensor = sensor
         self.update()
