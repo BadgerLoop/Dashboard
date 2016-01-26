@@ -35,15 +35,22 @@ class InfoView: UIView {
     }
 
     func setData(sensor: Sensor){
-        self.dataLabel.text = "\(sensor.dataValue) \(sensor.dataType.rawValue)"
+        self.sensor = sensor
+        self.update()
     }
     func setSensor(sensor: Sensor){
         self.sensor = sensor
         self.update()
     }
     func update(){
-        self.sensorLabel.text = sensor.subtitle
-        self.dataLabel.text = "\(sensor.dataValue)\n\(sensor.dataType.rawValue)"
+        switch(sensor.dataType){
+        case .ACCEL:
+            self.sensorLabel.text = sensor.subtitle
+            self.dataLabel.text = "\(sensor.dataArrayValues!)\n\(sensor.dataType.rawValue)"
+        default:
+            self.sensorLabel.text = sensor.subtitle
+            self.dataLabel.text = "\(sensor.dataValue!)\n\(sensor.dataType.rawValue)"
+        }
     }
     func getData() -> String{
         return "Data: \(dataLabel.text) \nSensor: \(sensorLabel.text)"
