@@ -46,10 +46,10 @@ class InfoView: UIView {
         switch(sensor.dataType){
         case .ACCEL:
             self.sensorLabel.text = sensor.subtitle
-            self.dataLabel.text = "\(sensor.dataArrayValues!)\n\(sensor.dataType.rawValue)"
+            self.dataLabel.text = "\(sensor.dataArrayValues!) \(sensor.dataType.rawValue)"
         default:
             self.sensorLabel.text = sensor.subtitle
-            self.dataLabel.text = "\(sensor.dataValue!)\n\(sensor.dataType.rawValue)"
+            self.dataLabel.text = "\(sensor.dataValue!) \(sensor.dataType.rawValue)"
         }
     }
     func getData() -> String{
