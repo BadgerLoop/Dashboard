@@ -13,6 +13,9 @@ import XCGLogger
 print("Starting up the backend...")
 
 //This is your apps backend
+
+Riffle.setFabric("ws://localhost:8000/ws")
+
 let app = RiffleDomain(domain: Config().domain)
 
 let log = XCGLogger.defaultInstance()

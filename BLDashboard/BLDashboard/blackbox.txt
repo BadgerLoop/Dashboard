@@ -1,6 +1,776 @@
-2016-01-25 21:57:03.249 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 37952
-2016-01-25 21:57:03.249 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-25 21:57:03.249 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-25 21:57:03.266 [Debug] [main] [ViewController.swift:99] viewDidLoad() > All sensors initialized
-2016-01-25 21:57:03.963 [Info] [main] [ViewController.swift:104] onJoin() > Dashboard is now connected
-2016-01-25 21:57:03.964 [Info] [main] [ViewController.swift:117] onJoin() > All endpoints subscribed to
+2016-01-26 11:29:28.141 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 40578
+2016-01-26 11:29:28.141 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-26 11:29:28.141 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-26 11:29:28.158 [Debug] [main] [ViewController.swift:103] viewDidLoad() > All sensors initialized
+2016-01-26 11:29:28.205 [Info] [main] [ViewController.swift:108] onJoin() > Dashboard is now connected
+2016-01-26 11:29:28.208 [Info] [main] [ViewController.swift:121] onJoin() > All endpoints subscribed to
+2016-01-26 11:29:51.165 [Info] [main] [ViewController.swift:43] beginTransmission > Calling backend
+2016-01-26 11:29:52.176 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.99)
+Data Type: RPM
+
+2016-01-26 11:29:52.178 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.52)
+Data Type: THERM
+
+2016-01-26 11:29:52.179 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.84)
+Data Type: THERM
+
+2016-01-26 11:29:52.179 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:52.179 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:52.180 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.08)
+Data Type: PROX
+
+2016-01-26 11:29:52.180 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.47)
+Data Type: LATENCY
+
+2016-01-26 11:29:52.180 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.84)
+Data Type: VOLTS
+
+2016-01-26 11:29:53.180 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.61)
+Data Type: RPM
+
+2016-01-26 11:29:53.183 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.74)
+Data Type: THERM
+
+2016-01-26 11:29:53.184 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.68)
+Data Type: THERM
+
+2016-01-26 11:29:53.184 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:53.184 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:53.185 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.01)
+Data Type: PROX
+
+2016-01-26 11:29:53.185 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.51)
+Data Type: LATENCY
+
+2016-01-26 11:29:53.185 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.52)
+Data Type: VOLTS
+
+2016-01-26 11:29:54.182 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.26)
+Data Type: RPM
+
+2016-01-26 11:29:54.185 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.27)
+Data Type: THERM
+
+2016-01-26 11:29:54.186 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.94)
+Data Type: THERM
+
+2016-01-26 11:29:54.186 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:54.186 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:54.187 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.66)
+Data Type: PROX
+
+2016-01-26 11:29:54.187 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.63)
+Data Type: LATENCY
+
+2016-01-26 11:29:54.188 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.79)
+Data Type: VOLTS
+
+2016-01-26 11:29:55.187 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.18)
+Data Type: RPM
+
+2016-01-26 11:29:55.190 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.58)
+Data Type: THERM
+
+2016-01-26 11:29:55.190 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.91)
+Data Type: THERM
+
+2016-01-26 11:29:55.191 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:55.191 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:55.191 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.68)
+Data Type: PROX
+
+2016-01-26 11:29:55.192 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.88)
+Data Type: LATENCY
+
+2016-01-26 11:29:55.192 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.73)
+Data Type: VOLTS
+
+2016-01-26 11:29:56.193 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.82)
+Data Type: RPM
+
+2016-01-26 11:29:56.196 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.32)
+Data Type: THERM
+
+2016-01-26 11:29:56.197 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.73)
+Data Type: THERM
+
+2016-01-26 11:29:56.197 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:56.197 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:56.198 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.65)
+Data Type: PROX
+
+2016-01-26 11:29:56.198 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.8)
+Data Type: LATENCY
+
+2016-01-26 11:29:56.198 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.35)
+Data Type: VOLTS
+
+2016-01-26 11:29:57.199 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.71)
+Data Type: RPM
+
+2016-01-26 11:29:57.202 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.76)
+Data Type: THERM
+
+2016-01-26 11:29:57.202 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.03)
+Data Type: THERM
+
+2016-01-26 11:29:57.202 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:57.203 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:57.203 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.39)
+Data Type: PROX
+
+2016-01-26 11:29:57.203 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.83)
+Data Type: LATENCY
+
+2016-01-26 11:29:57.204 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.99)
+Data Type: VOLTS
+
+2016-01-26 11:29:58.203 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.35)
+Data Type: RPM
+
+2016-01-26 11:29:58.203 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.25)
+Data Type: THERM
+
+2016-01-26 11:29:58.203 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.32)
+Data Type: THERM
+
+2016-01-26 11:29:58.206 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:58.206 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:58.207 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.12)
+Data Type: PROX
+
+2016-01-26 11:29:58.207 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.57)
+Data Type: LATENCY
+
+2016-01-26 11:29:58.207 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.8)
+Data Type: VOLTS
+
+2016-01-26 11:29:59.205 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.09)
+Data Type: RPM
+
+2016-01-26 11:29:59.207 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.8)
+Data Type: THERM
+
+2016-01-26 11:29:59.208 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.41)
+Data Type: THERM
+
+2016-01-26 11:29:59.208 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:59.208 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:29:59.209 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.78)
+Data Type: PROX
+
+2016-01-26 11:29:59.209 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.79)
+Data Type: LATENCY
+
+2016-01-26 11:29:59.209 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.44)
+Data Type: VOLTS
+
+2016-01-26 11:30:00.212 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.08)
+Data Type: RPM
+
+2016-01-26 11:30:00.215 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.2)
+Data Type: THERM
+
+2016-01-26 11:30:00.216 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.34)
+Data Type: THERM
+
+2016-01-26 11:30:00.216 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:00.216 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:00.217 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.3)
+Data Type: PROX
+
+2016-01-26 11:30:00.217 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.39)
+Data Type: LATENCY
+
+2016-01-26 11:30:00.217 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.79)
+Data Type: VOLTS
+
+2016-01-26 11:30:01.215 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.65)
+Data Type: RPM
+
+2016-01-26 11:30:01.218 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.96)
+Data Type: THERM
+
+2016-01-26 11:30:01.219 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.76)
+Data Type: THERM
+
+2016-01-26 11:30:01.219 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:01.219 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:01.220 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.55)
+Data Type: PROX
+
+2016-01-26 11:30:01.220 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.48)
+Data Type: LATENCY
+
+2016-01-26 11:30:01.221 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.13)
+Data Type: VOLTS
+
+2016-01-26 11:30:02.221 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.5)
+Data Type: RPM
+
+2016-01-26 11:30:02.224 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.36)
+Data Type: THERM
+
+2016-01-26 11:30:02.225 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.09)
+Data Type: THERM
+
+2016-01-26 11:30:02.225 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:02.225 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:02.226 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.92)
+Data Type: PROX
+
+2016-01-26 11:30:02.226 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.17)
+Data Type: LATENCY
+
+2016-01-26 11:30:02.226 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.6)
+Data Type: VOLTS
+
+2016-01-26 11:30:03.227 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.97)
+Data Type: RPM
+
+2016-01-26 11:30:03.229 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.32)
+Data Type: THERM
+
+2016-01-26 11:30:03.230 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.34)
+Data Type: THERM
+
+2016-01-26 11:30:03.230 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:03.230 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:03.231 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.69)
+Data Type: PROX
+
+2016-01-26 11:30:03.231 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.77)
+Data Type: LATENCY
+
+2016-01-26 11:30:03.231 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.22)
+Data Type: VOLTS
+
+2016-01-26 11:30:04.233 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.95)
+Data Type: RPM
+
+2016-01-26 11:30:04.236 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.69)
+Data Type: THERM
+
+2016-01-26 11:30:04.237 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.1)
+Data Type: THERM
+
+2016-01-26 11:30:04.237 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:04.238 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:04.238 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.34)
+Data Type: PROX
+
+2016-01-26 11:30:04.238 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.46)
+Data Type: LATENCY
+
+2016-01-26 11:30:04.239 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.64)
+Data Type: VOLTS
+
+2016-01-26 11:30:05.238 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.27)
+Data Type: RPM
+
+2016-01-26 11:30:05.241 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.25)
+Data Type: THERM
+
+2016-01-26 11:30:05.241 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.02)
+Data Type: THERM
+
+2016-01-26 11:30:05.242 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:05.242 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:05.242 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.75)
+Data Type: PROX
+
+2016-01-26 11:30:05.243 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.24)
+Data Type: LATENCY
+
+2016-01-26 11:30:05.243 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.99)
+Data Type: VOLTS
+
+2016-01-26 11:30:06.245 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.04)
+Data Type: RPM
+
+2016-01-26 11:30:06.248 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.99)
+Data Type: THERM
+
+2016-01-26 11:30:06.249 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.63)
+Data Type: THERM
+
+2016-01-26 11:30:06.249 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:06.249 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:06.250 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.67)
+Data Type: PROX
+
+2016-01-26 11:30:06.250 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.7)
+Data Type: LATENCY
+
+2016-01-26 11:30:06.250 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.17)
+Data Type: VOLTS
+
+2016-01-26 11:30:07.252 [Debug] [main] [ViewController.swift:137] updateOptEn > 
+Sensor: BPM
+Subtitle: Opt. Energy
+Data Value: Optional(0.38)
+Data Type: RPM
+
+2016-01-26 11:30:07.256 [Debug] [main] [ViewController.swift:149] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: Optional(0.69)
+Data Type: THERM
+
+2016-01-26 11:30:07.256 [Debug] [main] [ViewController.swift:153] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: Optional(0.83)
+Data Type: THERM
+
+2016-01-26 11:30:07.257 [Debug] [main] [ViewController.swift:158] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:07.257 [Debug] [main] [ViewController.swift:162] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro
+Data Values: Optional([])
+Data Type: ACCEL
+
+2016-01-26 11:30:07.257 [Debug] [main] [ViewController.swift:167] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: Optional(0.27)
+Data Type: PROX
+
+2016-01-26 11:30:07.258 [Debug] [main] [ViewController.swift:172] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: Optional(0.8)
+Data Type: LATENCY
+
+2016-01-26 11:30:07.258 [Debug] [main] [ViewController.swift:144] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: Optional(0.59)
+Data Type: VOLTS
+
+2016-01-26 11:30:07.732 [Info] [main] [ViewController.swift:128] onLeave() > User has disconnected
