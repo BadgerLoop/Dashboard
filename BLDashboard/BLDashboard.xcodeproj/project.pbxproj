@@ -22,6 +22,7 @@
 		8CD87B5D1C55862F00B3FFEA /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD87B5C1C55862F00B3FFEA /* InfoView.xib */; };
 		8CD87B601C5587C600B3FFEA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD87B5F1C5587C600B3FFEA /* InfoView.swift */; };
 		8CD87B631C56B2F100B3FFEA /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD87B621C56B2F100B3FFEA /* Sensor.swift */; };
+		8CD87B651C56F1D000B3FFEA /* DS-DIGI.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 8CD87B611C56B26300B3FFEA /* DS-DIGI.TTF */; };
 		DC696082021EB2375EFAE20D /* Pods_BLDashboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B341D5C6630809B18F781E /* Pods_BLDashboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -274,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD87B651C56F1D000B3FFEA /* DS-DIGI.TTF in Resources */,
 				8CD87B5D1C55862F00B3FFEA /* InfoView.xib in Resources */,
 				8CB3172A1C2DE1A100B73E47 /* Venera-900.otf in Resources */,
 				8CD87B5B1C55795800B3FFEA /* blackbox.txt in Resources */,
