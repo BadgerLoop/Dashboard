@@ -86,6 +86,8 @@
 
 - (void)setLabel:(NSString*)label;
 
+- (void)setGaugeLabel:(NSString*)label;
+
 /**
  Starts the timer.
  */

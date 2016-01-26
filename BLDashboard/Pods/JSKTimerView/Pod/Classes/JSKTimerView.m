@@ -210,8 +210,13 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     }
 }
 
+//Added setLabel and setGaugeSubtitle in order for extra customization
 -(void)setLabel:(NSString *)label{
     self.timerLabel.text = label;
+}
+
+-(void)setGaugeLabel:(NSString *)label{
+    self.gaugeSubtitle.text = label;
 }
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated {

@@ -132,6 +132,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
         LeftSelectedSensor = bpm
         RightSelectedSensor = mcm
+        updateGaugeUI()
 
         log.debug("All sensors initialized")
     }
@@ -211,12 +212,14 @@ class ViewController: UIViewController, RiffleDelegate {
     func SetLeftGauge(sensor: Sensor){
         LeftGauge.progress = CGFloat(sensor.dataValue!)
         LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
+        LeftGauge.setGaugeLabel(sensor.subtitle)
         LeftSelectedSensor = sensor
         log.debug("\nLEFT GAUGE: \(LeftSelectedSensor.debug())")
     }
     func SetRightGauge(sensor: Sensor){
         RightGauge.progress = CGFloat(sensor.dataValue!)
         RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
+        RightGauge.setGaugeLabel(sensor.subtitle)
         RightSelectedSensor = sensor
         log.debug("\nRIGHT GAUGE: \(RightSelectedSensor.debug())")
     }
@@ -225,8 +228,10 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateGaugeUI(){
         LeftGauge.progress = CGFloat(LeftSelectedSensor.dataValue!)
         LeftGauge.setLabel("\(LeftSelectedSensor.dataValue!) \(LeftSelectedSensor.dataType.rawValue)")
+        LeftGauge.setGaugeLabel(LeftSelectedSensor.subtitle)
         RightGauge.progress = CGFloat(RightSelectedSensor.dataValue!)
         RightGauge.setLabel("\(RightSelectedSensor.dataValue!) \(RightSelectedSensor.dataType.rawValue)")
+        RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
     }
 }
 
