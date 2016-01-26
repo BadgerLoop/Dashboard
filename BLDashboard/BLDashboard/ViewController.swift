@@ -134,14 +134,17 @@ class ViewController: UIViewController, RiffleDelegate {
     //Update gauges with returned data
     func updateOptEn(energy: Double){
         bpm.setValue(energy)
+        LeftTopInfo.update()
         log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
         bpm2.setValue(voltage)
+        LeftMiddleInfo.update()
         log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
         ecm.setValue(therm)
+        RightBottomInfo.update()
         log.debug(ecm.debug())
     }
     func updateTherm2(therm: Double){
@@ -150,6 +153,7 @@ class ViewController: UIViewController, RiffleDelegate {
     }
     func updateAccel(accel: [Double]){
         vcmA.setValue(accel)
+        RightMiddleInfo.update()
         log.debug(vcmA.debug())
     }
     func updateGyro(gyro: [Double]){
@@ -158,10 +162,12 @@ class ViewController: UIViewController, RiffleDelegate {
     }
     func updateProx(prox: Double){
         mcm.setValue(prox)
+        RightTopInfo.update()
         log.debug(mcm.debug())
     }
     func updateLatency(latency: Double){
         wcm.setValue(latency)
+        LeftBottomInfo.update()
         log.debug(wcm.debug())
     }
 }

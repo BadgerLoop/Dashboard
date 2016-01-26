@@ -37,6 +37,8 @@ class InfoView: UIView {
     }
     func setSensor(sensor: Sensor){
         self.sensor = sensor
+    }
+    func update(){
         self.sensorLabel.text = sensor.subtitle
         self.dataLabel.text = "\(sensor.dataValue) \(sensor.dataType.rawValue)"
     }
