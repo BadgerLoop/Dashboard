@@ -118,13 +118,6 @@ class ViewController: UIViewController, RiffleDelegate {
 
         //Show Setup Complete Notification
         SCLAlertView().showSuccess("Successful Setup", subTitle: "Initialized gauges and backend connection")
-
-        //TESTING PURPOSES WHILE BUTTON ISNT UP - REMOVE *******************
-        container!.call("transmit") { ( response: String) -> () in
-            self.log.info(response)
-            SCLAlertView().showWarning("Backend:", subTitle: response)
-            self.transmitButton.selected = false
-        }
     }
 
     func onLeave() {
