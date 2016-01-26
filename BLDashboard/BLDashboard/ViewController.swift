@@ -130,6 +130,7 @@ class ViewController: UIViewController, RiffleDelegate {
         ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
         RightBottomInfo.setSensor(ecm)
 
+        //Initial sensors for 2 center gauges
         LeftSelectedSensor = bpm
         RightSelectedSensor = mcm
         updateGaugeUI()
