@@ -1,41 +1,6 @@
-2016-01-26 15:10:41.873 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 67860
-2016-01-26 15:10:41.873 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-26 15:10:41.874 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-26 15:10:41.891 [Debug] [main] [ViewController.swift:136] viewDidLoad() > All sensors initialized
-2016-01-26 15:10:41.924 [Info] [main] [ViewController.swift:141] onJoin() > Dashboard is now connected
-2016-01-26 15:10:41.925 [Info] [main] [ViewController.swift:154] onJoin() > All endpoints subscribed to
-2016-01-26 15:10:43.514 [Debug] [main] [ViewController.swift:215] SetLeftGauge > 
-LEFT GAUGE: 
-Sensor: BPM2
-Subtitle: Batt. Voltage
-Data Value: 0.0
-Data Type: VOLTS
-
-2016-01-26 15:10:44.517 [Debug] [main] [ViewController.swift:215] SetLeftGauge > 
-LEFT GAUGE: 
-Sensor: WCM
-Subtitle: Latency
-Data Value: 0.0
-Data Type: LATENCY
-
-2016-01-26 15:10:45.123 [Debug] [main] [ViewController.swift:215] SetLeftGauge > 
-LEFT GAUGE: 
-Sensor: BPM
-Subtitle: Opt. Energy
-Data Value: 0.0
-Data Type: RPM
-
-2016-01-26 15:10:45.939 [Debug] [main] [ViewController.swift:221] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: MCM
-Subtitle: Prox.
-Data Value: 0.0
-Data Type: PROX
-
-2016-01-26 15:10:46.757 [Debug] [main] [ViewController.swift:221] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM
-Subtitle: Therm. 1
-Data Value: 0.0
-Data Type: THERM
-
+2016-01-26 16:43:42.898 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 74965
+2016-01-26 16:43:42.898 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-26 16:43:42.899 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-26 16:43:42.917 [Debug] [main] [ViewController.swift:136] viewDidLoad() > All sensors initialized
+2016-01-26 16:43:42.950 [Info] [main] [ViewController.swift:141] onJoin() > Dashboard is now connected
+2016-01-26 16:43:42.950 [Info] [main] [ViewController.swift:154] onJoin() > All endpoints subscribed to

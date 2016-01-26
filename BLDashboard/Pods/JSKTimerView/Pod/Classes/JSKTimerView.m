@@ -41,6 +41,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
 @property (nonatomic, strong) UIColor *progressFinishedColor;
 
 @property (nonatomic, strong) UILabel *timerLabel;
+@property (nonatomic, strong) UILabel *gaugeSubtitle;
 @property (nonatomic, strong) UIBezierPath *strokePath;
 @property (nonatomic, strong) CAShapeLayer *progressLayer;
 
@@ -89,6 +90,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     
     [self createLayer];
     [self createLabel];
+    [self createGaugeSubtitle]; //Added for below the gauge to give description of what gauge is representing
     [self createPath];
 }
 
@@ -318,6 +320,23 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     NSLayoutConstraint *centerXConstraint = [NSLayoutConstraint constraintWithItem:self.timerLabel attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0];
     NSLayoutConstraint *centerYConstraint = [NSLayoutConstraint constraintWithItem:self.timerLabel attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0];
     
+    [self addConstraints:@[centerXConstraint, centerYConstraint]];
+}
+
+- (void)createGaugeSubtitle {
+    self.gaugeSubtitle = [[UILabel alloc] init];
+    self.gaugeSubtitle.text = @"Gauge Subtitle";
+    self.gaugeSubtitle.textAlignment = NSTextAlignmentCenter;
+    self.gaugeSubtitle.font = [UIFont fontWithName:@"DS-Digital" size:20.0];
+    self.gaugeSubtitle.textColor = [UIColor whiteColor];
+    [self.gaugeSubtitle sizeToFit];
+    self.gaugeSubtitle.translatesAutoresizingMaskIntoConstraints = NO;
+
+    [self addSubview:self.gaugeSubtitle];
+
+    NSLayoutConstraint *centerXConstraint = [NSLayoutConstraint constraintWithItem:self.gaugeSubtitle attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0];
+    NSLayoutConstraint *centerYConstraint = [NSLayoutConstraint constraintWithItem:self.gaugeSubtitle attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:100.0];
+
     [self addConstraints:@[centerXConstraint, centerYConstraint]];
 }
 
