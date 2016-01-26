@@ -44,7 +44,7 @@
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
                                 <rect key="frame" x="157" y="182" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
                                 <rect key="frame" x="157" y="570" width="90" height="90"/>

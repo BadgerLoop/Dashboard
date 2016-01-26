@@ -13,22 +13,17 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BadgerLoopLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-Wg-MA5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BadgerLoopLogoWhite" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-Wg-MA5">
+                                <rect key="frame" x="146" y="227" width="733" height="314"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="DQh-Wg-MA5" secondAttribute="trailing" id="48b-uM-9EJ"/>
-                            <constraint firstItem="DQh-Wg-MA5" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="5Bo-mM-eze"/>
-                            <constraint firstItem="DQh-Wg-MA5" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="F7r-Na-ktb"/>
-                            <constraint firstItem="DQh-Wg-MA5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SMW-1j-f8O"/>
-                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
