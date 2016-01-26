@@ -83,6 +83,9 @@
  */
 - (void)setTimerWithDuration:(NSInteger)durationInSeconds;
 
+
+- (void)setLabel:(NSString*)label;
+
 /**
  Starts the timer.
  */

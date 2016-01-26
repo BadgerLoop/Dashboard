@@ -191,6 +191,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     return self.totalTimeInSeconds;
 }
 
+
 #pragma mark - Timer Progress Methods
 
 - (void)setProgress:(CGFloat)progress {
@@ -205,6 +206,10 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     } else {
         [self stopTimer];
     }
+}
+
+-(void)setLabel:(NSString *)label{
+    self.timerLabel.text = label;
 }
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated {
@@ -370,6 +375,7 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     self.timerLabel.textColor = color;
     [self.timerLabel setNeedsDisplay];
 }
+
 
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
