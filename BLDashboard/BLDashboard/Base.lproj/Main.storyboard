@@ -38,33 +38,27 @@
                                 <rect key="frame" x="599" y="325" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="154" y="163" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="157" y="557" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-qq-12X" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="790" y="557" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-AV-SfN" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="876" y="362" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-7T-eFc" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="791" y="162" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
-                                <rect key="frame" x="71" y="360" width="90" height="90"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yYE-e3-6X4" customClass="JSKTimerView">
                                 <rect key="frame" x="278" y="324" width="160" height="160"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-Qy-Hog" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="152" y="163" width="90" height="90"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qRo-W2-4bI" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="155" y="557" width="90" height="90"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-qq-12X" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="788" y="557" width="90" height="90"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-AV-SfN" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="874" y="362" width="90" height="90"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NNV-7T-eFc" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="789" y="162" width="90" height="90"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-7k-qdX" customClass="InfoView" customModule="BLDashboard" customModuleProvider="target">
+                                <rect key="frame" x="69" y="360" width="90" height="90"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
