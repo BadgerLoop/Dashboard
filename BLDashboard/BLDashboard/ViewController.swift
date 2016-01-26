@@ -61,6 +61,10 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Sensors
     var bpm, bpm2, ecm, ecm2, vcmA, vcmG, mcm, wcm: Sensor!
+    var LeftSelectedSensor : Sensor! = nil
+    var RightSelectedSensor : Sensor! = nil
+
+    //Gauges
     let rightGaugeTypes : [Sensor.DataType] = [.ACCEL, .PROX, .THERM]
 
     @IBAction func beginTransmission(sender: AnyObject) {
@@ -126,6 +130,9 @@ class ViewController: UIViewController, RiffleDelegate {
         ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
         RightBottomInfo.setSensor(ecm)
 
+        LeftSelectedSensor = bpm
+        RightSelectedSensor = mcm
+
         log.debug("All sensors initialized")
     }
 
@@ -158,16 +165,19 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateOptEn(energy: Double){
         bpm.setValue(energy)
         LeftTopInfo.update()
+        updateGaugeUI()
         log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
         bpm2.setValue(voltage)
         LeftMiddleInfo.update()
+        updateGaugeUI()
         log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
         ecm.setValue(therm)
         RightBottomInfo.update()
+        updateGaugeUI()
         log.debug(ecm.debug())
     }
     func updateTherm2(therm: Double){
@@ -177,6 +187,7 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateAccel(accel: [Double]){
         vcmA.setValue(accel)
         RightMiddleInfo.update()
+        updateGaugeUI()
         log.debug(vcmA.debug())
     }
     func updateGyro(gyro: [Double]){
@@ -186,11 +197,13 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateProx(prox: Double){
         mcm.setValue(prox)
         RightTopInfo.update()
+        updateGaugeUI()
         log.debug(mcm.debug())
     }
     func updateLatency(latency: Double){
         wcm.setValue(latency)
         LeftBottomInfo.update()
+        updateGaugeUI()
         log.debug(wcm.debug())
     }
 
@@ -198,10 +211,22 @@ class ViewController: UIViewController, RiffleDelegate {
     func SetLeftGauge(sensor: Sensor){
         LeftGauge.progress = CGFloat(sensor.dataValue!)
         LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
+        LeftSelectedSensor = sensor
+        log.debug("\nLEFT GAUGE: \(LeftSelectedSensor.debug())")
     }
     func SetRightGauge(sensor: Sensor){
         RightGauge.progress = CGFloat(sensor.dataValue!)
         RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
+        RightSelectedSensor = sensor
+        log.debug("\nRIGHT GAUGE: \(RightSelectedSensor.debug())")
+    }
+
+    //Update gauge with newly passed in data
+    func updateGaugeUI(){
+        LeftGauge.progress = CGFloat(LeftSelectedSensor.dataValue!)
+        LeftGauge.setLabel("\(LeftSelectedSensor.dataValue!) \(LeftSelectedSensor.dataType.rawValue)")
+        RightGauge.progress = CGFloat(RightSelectedSensor.dataValue!)
+        RightGauge.setLabel("\(RightSelectedSensor.dataValue!) \(RightSelectedSensor.dataType.rawValue)")
     }
 }
 
