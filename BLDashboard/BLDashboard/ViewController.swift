@@ -28,12 +28,36 @@ class ViewController: UIViewController, RiffleDelegate {
     @IBOutlet weak var RightGauge: JSKTimerView!
 
     //Info Views
-    @IBOutlet weak var LeftTopInfo: InfoView!
-    @IBOutlet weak var LeftMiddleInfo: InfoView!
-    @IBOutlet weak var LeftBottomInfo: InfoView!
-    @IBOutlet weak var RightTopInfo: InfoView!
-    @IBOutlet weak var RightMiddleInfo: InfoView!
-    @IBOutlet weak var RightBottomInfo: InfoView!
+    @IBOutlet weak var LeftTopInfo: InfoView!{
+        didSet{
+            LeftTopInfo.delegate = self
+        }
+    }
+    @IBOutlet weak var LeftMiddleInfo: InfoView!{
+        didSet{
+            LeftMiddleInfo.delegate = self
+        }
+    }
+    @IBOutlet weak var LeftBottomInfo: InfoView!{
+        didSet{
+            LeftBottomInfo.delegate = self
+        }
+    }
+    @IBOutlet weak var RightTopInfo: InfoView!{
+        didSet{
+            RightTopInfo.delegate = self
+        }
+    }
+    @IBOutlet weak var RightMiddleInfo: InfoView!{
+        didSet{
+            RightMiddleInfo.delegate = self
+        }
+    }
+    @IBOutlet weak var RightBottomInfo: InfoView!{
+        didSet{
+            RightBottomInfo.delegate = self
+        }
+    }
 
     //Sensors
     var bpm, bpm2, ecm, ecm2, vcmA, vcmG, mcm, wcm: Sensor!
@@ -133,15 +157,11 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateOptEn(energy: Double){
         bpm.setValue(energy)
         LeftTopInfo.update()
-        LeftGauge.progress = CGFloat(energy)
-        LeftGauge.setLabel("\(energy)")
         log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
         bpm2.setValue(voltage)
         LeftMiddleInfo.update()
-        RightGauge.progress = CGFloat(voltage)
-        RightGauge.setLabel("\(voltage)")
         log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
@@ -171,6 +191,21 @@ class ViewController: UIViewController, RiffleDelegate {
         wcm.setValue(latency)
         LeftBottomInfo.update()
         log.debug(wcm.debug())
+    }
+
+    func SetLeftGauge(sensor: Sensor){
+        print(sensor.debug())
+        LeftGauge.progress = CGFloat(sensor.dataValue!)
+        LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType)")
+    }
+    func SetRightGauge(sensor: Sensor){
+
+    }
+}
+
+extension ViewController : InfoViewDelegate{
+    func InfoViewTapped(infoView: InfoView) {
+        SetLeftGauge(infoView.sensor)
     }
 }
 

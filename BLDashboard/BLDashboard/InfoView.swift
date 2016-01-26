@@ -8,14 +8,17 @@
 
 import UIKit
 
+protocol InfoViewDelegate{
+    func InfoViewTapped(infoView: InfoView)
+}
+
 class InfoView: UIView {
-    
-    // pointless comment
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var sensorLabel: UILabel!
 
     var sensor: Sensor!
+    var delegate : InfoViewDelegate? = nil
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,7 +44,8 @@ class InfoView: UIView {
 
     //Called when given InfoView tapped
     func viewTapped(sender:UITapGestureRecognizer){
-        print("TAPPED: \(sensor.debug())")
+//        ViewController().SetLeftGauge(sensor)
+        self.delegate?.InfoViewTapped(self)
     }
     func setData(sensor: Sensor){
         self.sensor = sensor
