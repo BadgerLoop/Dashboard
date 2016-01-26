@@ -128,11 +128,15 @@ class ViewController: UIViewController, RiffleDelegate {
     func updateOptEn(energy: Double){
         bpm.setValue(energy)
         LeftTopInfo.update()
+        LeftGauge.progress = CGFloat(energy)
+        LeftGauge.setLabel("\(energy)")
         log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
         bpm2.setValue(voltage)
         LeftMiddleInfo.update()
+        RightGauge.progress = CGFloat(voltage)
+        RightGauge.setLabel("\(voltage)")
         log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
