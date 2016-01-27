@@ -228,6 +228,7 @@ class ViewController: UIViewController, RiffleDelegate {
             RightGauge.progress = 0
             RightGauge.setLabel("\(sensor.dataArrayValues!) \(sensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(sensor.subtitle)
+            RightGauge.setProgressColor(ohShit(sensor))
             RightSelectedSensor = sensor
         }else{
             RightGauge.progress = CGFloat(sensor.dataValue!)
@@ -246,6 +247,23 @@ class ViewController: UIViewController, RiffleDelegate {
         RightGauge.progress = CGFloat(RightSelectedSensor.dataValue!)
         RightGauge.setLabel("\(RightSelectedSensor.dataValue!) \(RightSelectedSensor.dataType.rawValue)")
         RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
+    }
+
+    //Check if pod is upside down or accel too fast
+    func ohShit(sensor: Sensor)->UIColor{
+        let sensorData = sensor.dataArrayValues
+        if(sensor.dataType == .GYRO){
+            for axis in sensorData!{
+                //If greater than 180.0 meaning upside down return red
+                if axis > 180.0{return UIColor.redColor()}
+            }
+        }else{
+            for accel in sensorData!{
+                //If accel greater than 9.81 return red
+                if accel > 9.81{return UIColor.redColor()}
+            }
+        }
+        return UIColor.greenColor()
     }
 }
 

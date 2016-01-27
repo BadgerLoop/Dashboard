@@ -88,6 +88,8 @@
 
 - (void)setGaugeLabel:(NSString*)label;
 
+- (void)setProgressColor:(UIColor *)desiredColor;
+
 /**
  Starts the timer.
  */
