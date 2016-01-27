@@ -61,6 +61,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Sensors
     var bpm, bpm2, ecm, ecm2, vcmA, vcmG, mcm, wcm: Sensor!
+
     var LeftSelectedSensor : Sensor! = nil
     var RightSelectedSensor : Sensor! = nil
 
@@ -110,24 +111,24 @@ class ViewController: UIViewController, RiffleDelegate {
         RightGauge.labelTextColor = UIColor.whiteColor()
 
         //Config Sensors and Linking to View
-        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM)
+        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM, sibling: nil)
         LeftTopInfo.setSensor(bpm)
 
-        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS)
+        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS, sibling: nil)
         LeftMiddleInfo.setSensor(bpm2)
 
-        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
+        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY, sibling: nil)
         LeftBottomInfo.setSensor(wcm)
 
-        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX)
+        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX, sibling: nil)
         RightTopInfo.setSensor(mcm)
 
-        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
-        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL, sibling: vcmG)
+        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL, sibling: vcmA)
         RightMiddleInfo.setSensor(vcmA)
 
-        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM)
-        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
+        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM, sibling: ecm2)
+        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM, sibling: ecm)
         RightBottomInfo.setSensor(ecm)
 
         //Initial sensors for 2 center gauges

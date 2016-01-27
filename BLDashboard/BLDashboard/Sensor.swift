@@ -14,21 +14,24 @@ class Sensor {
     var dataValue: Double?
     var dataArrayValues: [Double]?
     var dataType: DataType
+    var sibling: Sensor?
 
     //Init for all sensors excluding Gyro and Accel
-    init(title: String, subtitle: String, dataValue: Double, dataType: DataType){
+    init(title: String, subtitle: String, dataValue: Double, dataType: DataType, sibling: Sensor?){
         self.title = title
         self.subtitle = subtitle
         self.dataValue = dataValue
         self.dataType = dataType
+        self.sibling = sibling
     }
 
     //Init for Gyro and Accell
-    init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType){
+    init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType, sibling: Sensor?){
         self.title = title
         self.subtitle = subtitle
         self.dataArrayValues = dataArrayValues
         self.dataType = dataType
+        self.sibling = sibling
     }
 
     enum DataType: String{
@@ -55,9 +58,9 @@ class Sensor {
     func debug() -> String{
         switch(dataType){
         case .ACCEL:
-            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues!)\nData Type: \(dataType)\n"
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues!)\nData Type: \(dataType)\nSibling: \(sibling)\n"
         default:
-            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue!)\nData Type: \(dataType)\n"
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue!)\nData Type: \(dataType)\nSibling: \(sibling)\n"
         }
 
     }
