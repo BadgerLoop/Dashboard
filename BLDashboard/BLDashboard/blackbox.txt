@@ -1,6 +1,2520 @@
-2016-01-26 22:21:02.454 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 11198
-2016-01-26 22:21:02.454 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-26 22:21:02.456 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-26 22:21:02.480 [Debug] [main] [ViewController.swift:143] viewDidLoad() > All sensors initialized
-2016-01-26 22:21:03.094 [Info] [main] [ViewController.swift:148] onJoin() > Dashboard is now connected
-2016-01-26 22:21:03.095 [Info] [main] [ViewController.swift:161] onJoin() > All endpoints subscribed to
+2016-01-27 00:21:14.737 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 20649
+2016-01-27 00:21:14.737 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-27 00:21:14.737 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-27 00:21:14.764 [Debug] [main] [ViewController.swift:143] viewDidLoad() > All sensors initialized
+2016-01-27 00:21:14.806 [Info] [main] [ViewController.swift:148] onJoin() > Dashboard is now connected
+2016-01-27 00:21:14.807 [Info] [main] [ViewController.swift:161] onJoin() > All endpoints subscribed to
+2016-01-27 00:21:21.591 [Info] [main] [ViewController.swift:73] beginTransmission > Calling backend
+2016-01-27 00:21:21.636 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.44
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:21.650 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.92
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.671 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.8
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.672 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.690 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.694 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.18
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:21.739 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.18
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:21.739 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.46
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:21.739 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.99
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:21.857 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.14
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.857 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.88
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.858 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.858 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.859 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.48
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:21.859 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.21
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:21.859 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.05
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:21.860 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.89
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:21.860 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.99
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.861 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.68
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.861 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.874 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.878 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.86
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:21.927 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.42
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:21.928 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.58
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:21.928 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.35
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:21.929 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.83
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.958 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.88
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.959 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.959 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:21.981 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.5
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:22.027 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.91
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:22.041 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.44
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:22.057 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.05
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:22.059 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.18
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:22.091 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.31
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:22.092 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:22.095 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:22.104 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.23
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:22.158 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.27
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:23.119 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.73
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:23.130 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.25
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:23.140 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.7
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.151 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.49
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.155 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.173 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.174 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.84
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:23.209 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.35
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:23.210 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.87
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:23.210 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.51
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:23.244 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.33
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.244 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.08
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.245 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.245 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.274 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.84
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:23.275 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.94
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:23.275 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.94
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:23.291 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.47
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:23.307 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.14
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:23.307 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.96
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.122 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.132 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.141 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.67
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:24.153 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.49
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:24.161 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.69
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:24.175 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.95
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:24.208 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.39
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.209 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.56
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.209 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.209 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.225 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.84
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:24.270 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.08
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:24.279 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.66
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:24.289 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.71
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:24.299 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.39
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.310 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.8
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.319 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.340 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:24.341 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.64
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:24.345 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.28
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:25.121 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.87
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:25.131 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.77
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:25.148 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.22
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.148 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.7
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.157 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.175 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.178 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.2
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:25.190 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.15
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:25.210 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.65
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:25.211 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.1
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:25.241 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.45
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.242 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.45
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.242 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.260 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.260 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.37
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:25.274 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.89
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:25.274 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.66
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:25.341 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.69
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:25.341 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.74
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:25.342 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.39
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.223 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.226 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.226 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.06
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:26.227 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.04
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:26.227 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.89
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:26.228 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.52
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:26.228 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.18
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.228 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.89
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.229 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.229 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.229 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.75
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:26.267 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.23
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:26.278 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.86
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:26.312 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.07
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:26.312 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.96
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.313 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.91
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.315 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.343 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:26.344 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.43
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:26.344 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.24
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:27.122 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.92
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:27.133 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.83
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:27.142 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 1.0
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.152 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.37
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.161 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.210 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.211 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.18
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:27.211 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.09
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:27.211 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.23
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:27.212 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.34
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:27.224 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.9
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.224 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.79
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.245 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.245 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.274 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.2
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:27.275 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.53
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:27.275 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.43
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:27.275 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.9
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:27.309 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.52
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:27.310 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.72
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.123 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.132 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.142 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.73
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:28.149 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.03
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:28.160 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.49
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:28.177 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.77
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:28.190 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 1.0
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.190 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.49
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.212 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.212 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.224 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.31
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:28.273 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.82
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:28.282 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.63
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:28.338 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.45
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:28.339 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.84
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.339 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.05
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.339 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.340 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:28.340 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.58
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:28.377 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.46
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:29.156 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.99
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:29.159 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.76
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:29.159 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.16
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.159 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.46
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.165 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.176 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.178 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.54
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:29.224 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.41
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:29.224 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.03
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:29.224 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.72
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:29.225 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.48
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.262 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.08
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.262 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.263 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.263 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.18
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:29.263 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.24
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:29.291 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.26
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:29.291 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.37
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:29.291 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.82
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:29.408 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.24
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.124 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.134 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.142 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.59
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:30.150 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.35
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:30.157 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 1.0
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:30.258 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.26
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:30.258 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.17
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.258 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.43
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.259 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.259 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.260 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.62
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:30.275 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.73
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:30.276 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.16
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:30.284 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.59
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:30.391 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.05
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.392 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.3
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.392 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.392 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:30.393 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.76
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:30.393 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.48
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:31.337 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.72
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:31.340 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.59
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:31.350 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.38
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.383 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.49
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.383 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.383 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.388 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.9
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:31.400 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.6
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:31.422 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.82
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:31.423 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.14
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:31.561 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.3
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.564 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.51
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.565 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.570 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.570 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.85
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:31.570 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.15
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:31.570 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.52
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:31.571 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.17
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:31.583 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.01
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:31.583 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.53
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.580 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.582 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.583 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.07
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:32.588 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.74
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:32.589 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.12
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:32.602 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.15
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:32.602 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.36
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.603 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.64
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.724 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:32.851 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.229 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.65
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:33.231 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.22
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:33.231 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.98
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:33.232 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.74
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:33.232 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 1.0
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.233 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.1
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.233 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.233 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.234 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.39
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:33.234 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.51
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:33.774 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.29
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:33.913 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 1.0
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:33.917 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.17
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.917 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.81
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.917 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.922 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.923 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.92
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:33.923 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.19
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:33.944 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.05
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:33.944 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.62
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:33.945 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.79
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.945 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.29
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:33.945 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:34.278 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:34.280 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.96
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:34.284 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.43
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:34.488 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.38
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:35.407 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.77
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:35.409 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.84
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.409 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.29
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.567 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.569 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.571 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.78
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:35.575 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.75
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:35.581 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.3
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:35.581 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.78
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:35.620 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.68
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.621 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.62
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.621 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.787 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.788 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.93
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:35.793 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.97
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:35.800 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.91
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:35.800 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.88
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:35.801 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.55
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:35.806 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.94
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.817 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.819 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.820 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.08
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:36.820 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.02
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:36.821 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.46
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:36.821 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.4
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:36.822 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.47
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.822 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.15
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.823 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.823 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.824 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.98
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:36.824 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.24
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:36.824 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.82
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:36.825 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.58
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:36.825 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.17
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.826 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.07
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.826 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.826 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.827 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.19
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:36.827 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.87
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:36.827 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.39
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:36.828 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.33
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:36.828 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.83
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:36.828 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.4
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.014 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.051 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.052 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.59
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:37.156 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.88
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:37.187 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.1
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:37.188 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.7
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:37.188 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.12
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.189 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.66
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.189 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.189 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.190 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.13
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:37.202 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.53
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:37.202 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.77
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:37.203 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.52
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:37.346 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.73
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.353 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.03
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.527 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.531 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:37.532 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.31
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:37.532 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.75
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:38.538 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.03
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:38.542 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.04
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:38.548 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.86
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.549 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.3
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.549 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.562 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.563 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.29
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:38.564 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.8
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:38.691 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.66
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:38.818 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.2
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:38.818 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.66
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.821 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.92
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.822 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.835 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.836 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.92
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:38.836 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.04
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:38.836 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.03
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:38.837 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.89
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:38.837 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.3
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:38.837 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.53
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.031 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.033 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.034 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.9
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:40.034 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.39
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:40.035 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.73
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:40.035 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.9
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:40.036 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.06
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.036 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.73
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.057 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.057 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.058 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.31
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:40.058 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.22
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-27 00:21:40.059 [Debug] [main] [ViewController.swift:182] updateBattVolt > 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.45
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-27 00:21:40.128 [Debug] [main] [ViewController.swift:176] updateOptEn > 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.32
+Data Type: RPM
+Sibling: nil
+
+2016-01-27 00:21:40.129 [Debug] [main] [ViewController.swift:188] updateTherm > 
+Sensor: ECM
+Subtitle: Therm. 1
+Data Value: 0.76
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.129 [Debug] [main] [ViewController.swift:192] updateTherm2 > 
+Sensor: ECM2
+Subtitle: Therm. 2
+Data Value: 0.81
+Data Type: THERM
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.130 [Debug] [main] [ViewController.swift:198] updateAccel > 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: []
+Data Type: ACCEL
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.130 [Debug] [main] [ViewController.swift:202] updateGyro > 
+Sensor: VCMG
+Subtitle: Gyro: Roll, Pitch, Yaw
+Data Values: []
+Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-27 00:21:40.130 [Debug] [main] [ViewController.swift:208] updateProx > 
+Sensor: MCM
+Subtitle: Prox.
+Data Value: 0.78
+Data Type: PROX
+Sibling: nil
+
+2016-01-27 00:21:40.141 [Debug] [main] [ViewController.swift:214] updateLatency > 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.64
+Data Type: LATENCY
+Sibling: nil
+

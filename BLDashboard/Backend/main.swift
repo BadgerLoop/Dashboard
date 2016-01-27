@@ -14,7 +14,7 @@ print("Starting up the backend...")
 
 //This is your apps backend
 
-//Riffle.setFabric("ws://localhost:8000/ws")
+Riffle.setFabric("ws://192.168.2.3:8000/ws")
 
 let app = RiffleDomain(domain: Config().domain)
 
@@ -40,8 +40,8 @@ class ContainerAgent: RiffleDomain {
         transmitting = true
 
         print("User called transmit")
-        for x in 1...100{
-            sleep(1)
+        for x in 1...1000{
+//            sleep(1)
             if(transmitting){
                 //send data to each endpoint
                 for endpoint in listOfEndPoints{
