@@ -1,26 +1,18 @@
-2016-01-26 20:28:51.724 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 1320
-2016-01-26 20:28:51.724 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-26 20:28:51.725 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-26 20:28:51.743 [Debug] [main] [ViewController.swift:143] viewDidLoad() > All sensors initialized
-2016-01-26 20:28:52.360 [Info] [main] [ViewController.swift:148] onJoin() > Dashboard is now connected
-2016-01-26 20:28:52.361 [Info] [main] [ViewController.swift:161] onJoin() > All endpoints subscribed to
-2016-01-26 20:28:56.195 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM
-Subtitle: Therm. 1
-Data Value: 0.0
-Data Type: THERM
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-26 20:28:56.849 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
+2016-01-26 20:30:00.742 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 1777
+2016-01-26 20:30:00.742 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-26 20:30:00.742 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-26 20:30:00.761 [Debug] [main] [ViewController.swift:143] viewDidLoad() > All sensors initialized
+2016-01-26 20:30:01.458 [Info] [main] [ViewController.swift:148] onJoin() > Dashboard is now connected
+2016-01-26 20:30:01.458 [Info] [main] [ViewController.swift:161] onJoin() > All endpoints subscribed to
+2016-01-26 20:30:02.935 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: VCMA
-Subtitle: Accel
+Subtitle: Accel: X, Y, Z
 Data Values: [0.0, 0.0, 0.0]
 Data Type: ACCEL
 Sibling: Optional(BLDashboard.Sensor)
 
-2016-01-26 20:28:57.449 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
+2016-01-26 20:30:03.800 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: VCMG
 Subtitle: Gyro: Roll, Pitch, Yaw
@@ -28,19 +20,27 @@ Data Values: [0.0, 0.0, 0.0]
 Data Type: GYRO
 Sibling: Optional(BLDashboard.Sensor)
 
-2016-01-26 20:28:58.299 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
+2016-01-26 20:30:04.418 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: VCMA
-Subtitle: Accel
+Subtitle: Accel: X, Y, Z
 Data Values: [0.0, 0.0, 0.0]
 Data Type: ACCEL
 Sibling: Optional(BLDashboard.Sensor)
 
-2016-01-26 20:28:58.828 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
+2016-01-26 20:30:05.116 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: VCMG
 Subtitle: Gyro: Roll, Pitch, Yaw
 Data Values: [0.0, 0.0, 0.0]
 Data Type: GYRO
+Sibling: Optional(BLDashboard.Sensor)
+
+2016-01-26 20:30:05.660 [Debug] [main] [ViewController.swift:238] SetRightGauge > 
+RIGHT GAUGE: 
+Sensor: VCMA
+Subtitle: Accel: X, Y, Z
+Data Values: [0.0, 0.0, 0.0]
+Data Type: ACCEL
 Sibling: Optional(BLDashboard.Sensor)
 

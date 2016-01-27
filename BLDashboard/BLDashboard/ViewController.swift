@@ -123,7 +123,7 @@ class ViewController: UIViewController, RiffleDelegate {
         mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX)
         RightTopInfo.setSensor(mcm)
 
-        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmA = Sensor(title: "VCMA", subtitle: "Accel: X, Y, Z", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
         vcmG = Sensor(title: "VCMG", subtitle: "Gyro: Roll, Pitch, Yaw", dataArrayValues: [0.0, 0.0, 0.0], dataType: .GYRO)
         vcmA.setSiblings(vcmG)
         vcmG.setSiblings(vcmA)
