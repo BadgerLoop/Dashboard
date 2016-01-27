@@ -14,24 +14,22 @@ class Sensor {
     var dataValue: Double?
     var dataArrayValues: [Double]?
     var dataType: DataType
-    var sibling: Sensor?
+    var sibling: Sensor? = nil
 
     //Init for all sensors excluding Gyro and Accel
-    init(title: String, subtitle: String, dataValue: Double, dataType: DataType, sibling: Sensor?){
+    init(title: String, subtitle: String, dataValue: Double, dataType: DataType){
         self.title = title
         self.subtitle = subtitle
         self.dataValue = dataValue
         self.dataType = dataType
-        self.sibling = sibling
     }
 
     //Init for Gyro and Accell
-    init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType, sibling: Sensor?){
+    init(title: String, subtitle: String, dataArrayValues: [Double], dataType: DataType){
         self.title = title
         self.subtitle = subtitle
         self.dataArrayValues = dataArrayValues
         self.dataType = dataType
-        self.sibling = sibling
     }
 
     enum DataType: String{
@@ -44,6 +42,10 @@ class Sensor {
         case VOLTS = "volts"
     }
 
+    //To set siblings
+    func setSiblings(sensor: Sensor){
+        self.sibling = sensor
+    }
     //For all sensors excluding Gyro and Accel
     func setValue(value: Double){
         self.dataValue = value

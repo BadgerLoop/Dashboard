@@ -111,24 +111,28 @@ class ViewController: UIViewController, RiffleDelegate {
         RightGauge.labelTextColor = UIColor.whiteColor()
 
         //Config Sensors and Linking to View
-        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM, sibling: nil)
+        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM)
         LeftTopInfo.setSensor(bpm)
 
-        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS, sibling: nil)
+        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS)
         LeftMiddleInfo.setSensor(bpm2)
 
-        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY, sibling: nil)
+        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
         LeftBottomInfo.setSensor(wcm)
 
-        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX, sibling: nil)
+        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX)
         RightTopInfo.setSensor(mcm)
 
-        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL, sibling: vcmG)
-        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL, sibling: vcmA)
+        vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmA.setSiblings(vcmG)
+        vcmG.setSiblings(vcmA)
         RightMiddleInfo.setSensor(vcmA)
 
-        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM, sibling: ecm2)
-        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM, sibling: ecm)
+        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM)
+        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
+        ecm.setSiblings(ecm2)
+        ecm2.setSiblings(ecm)
         RightBottomInfo.setSensor(ecm)
 
         //Initial sensors for 2 center gauges
@@ -241,7 +245,13 @@ extension ViewController : InfoViewDelegate{
     func InfoViewTapped(infoView: InfoView){
         //Tapped sensor belongs in right sensor
         if(rightGaugeTypes.contains(infoView.sensor.dataType)){
-            SetRightGauge(infoView.sensor)
+            print(infoView.sensor.sibling)
+            //Check to see if you can access other siblings and then input them
+            if((RightSelectedSensor === infoView.sensor) && infoView.sensor.sibling != nil){
+                SetRightGauge(infoView.sensor.sibling!)
+            }else{
+                SetRightGauge(infoView.sensor)
+            }
         }else{
             SetLeftGauge(infoView.sensor)
         }
