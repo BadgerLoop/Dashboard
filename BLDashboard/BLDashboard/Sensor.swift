@@ -15,13 +15,15 @@ class Sensor {
     var dataArrayValues: [Double]?
     var dataType: DataType
     var sibling: Sensor? = nil
+    var threshold: Double? = nil
 
     //Init for all sensors excluding Gyro and Accel
-    init(title: String, subtitle: String, dataValue: Double, dataType: DataType){
+    init(title: String, subtitle: String, dataValue: Double, threshold: Double, dataType: DataType){
         self.title = title
         self.subtitle = subtitle
         self.dataValue = dataValue
         self.dataType = dataType
+        self.threshold = threshold
     }
 
     //Init for Gyro and Accell

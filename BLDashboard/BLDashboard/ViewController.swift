@@ -111,16 +111,16 @@ class ViewController: UIViewController, RiffleDelegate {
         RightGauge.labelTextColor = UIColor.whiteColor()
 
         //Config Sensors and Linking to View
-        bpm = Sensor(title: "BPM", subtitle: "Opt. Energy", dataValue: 0.0, dataType: .RPM)
+        bpm = Sensor(title: "BPM", subtitle: "Encoder", dataValue: 0.0, threshold: 2000.00, dataType: .RPM)
         LeftTopInfo.setSensor(bpm)
 
-        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, dataType: .VOLTS)
+        bpm2 = Sensor(title: "BPM2", subtitle: "Batt. Voltage", dataValue: 0.0, threshold: 20.0, dataType: .VOLTS)
         LeftMiddleInfo.setSensor(bpm2)
 
-        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, dataType: .LATENCY)
+        wcm = Sensor(title: "WCM", subtitle: "Latency", dataValue: 0.0, threshold: 1000.00, dataType: .LATENCY)
         LeftBottomInfo.setSensor(wcm)
 
-        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, dataType: .PROX)
+        mcm = Sensor(title: "MCM", subtitle: "Prox.", dataValue: 0.0, threshold: 100.00, dataType: .PROX)
         RightTopInfo.setSensor(mcm)
 
         vcmA = Sensor(title: "VCMA", subtitle: "Accel: X, Y, Z", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
@@ -129,8 +129,8 @@ class ViewController: UIViewController, RiffleDelegate {
         vcmG.setSiblings(vcmA)
         RightMiddleInfo.setSensor(vcmA)
 
-        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, dataType: .THERM)
-        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, dataType: .THERM)
+        ecm = Sensor(title: "ECM", subtitle: "Therm. 1", dataValue: 0.0, threshold: 100.00, dataType: .THERM)
+        ecm2 = Sensor(title: "ECM2", subtitle: "Therm. 2", dataValue: 0.0, threshold: 100.00, dataType: .THERM)
         ecm.setSiblings(ecm2)
         ecm2.setSiblings(ecm)
         RightBottomInfo.setSensor(ecm)
@@ -216,7 +216,7 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Set up Left and Right Gauges
     func SetLeftGauge(sensor: Sensor){
-        LeftGauge.progress = CGFloat(sensor.dataValue!)
+        LeftGauge.progress = CGFloat(sensor.dataValue!/sensor.threshold!)
         LeftGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
         LeftGauge.setGaugeLabel(sensor.subtitle)
         LeftSelectedSensor = sensor
@@ -228,10 +228,10 @@ class ViewController: UIViewController, RiffleDelegate {
             RightGauge.progress = 0
             RightGauge.setLabel("\(sensor.dataArrayValues!) \(sensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(sensor.subtitle)
-            RightGauge.setProgressColor(ohShit(sensor))
+            RightGauge.setProgressColor(ohShit(sensor)) //Check what color to make gauge - depending on upside down or too fast accell
             RightSelectedSensor = sensor
         }else{
-            RightGauge.progress = CGFloat(sensor.dataValue!)
+            RightGauge.progress = CGFloat(sensor.dataValue!/sensor.threshold!)
             RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(sensor.subtitle)
             RightSelectedSensor = sensor
