@@ -124,7 +124,7 @@ class ViewController: UIViewController, RiffleDelegate {
         RightTopInfo.setSensor(mcm)
 
         vcmA = Sensor(title: "VCMA", subtitle: "Accel", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
-        vcmG = Sensor(title: "VCMG", subtitle: "Gyro", dataArrayValues: [0.0, 0.0, 0.0], dataType: .ACCEL)
+        vcmG = Sensor(title: "VCMG", subtitle: "Gyro: Roll, Pitch, Yaw", dataArrayValues: [0.0, 0.0, 0.0], dataType: .GYRO)
         vcmA.setSiblings(vcmG)
         vcmG.setSiblings(vcmA)
         RightMiddleInfo.setSensor(vcmA)
@@ -223,10 +223,18 @@ class ViewController: UIViewController, RiffleDelegate {
         log.debug("\nLEFT GAUGE: \(LeftSelectedSensor.debug())")
     }
     func SetRightGauge(sensor: Sensor){
-        RightGauge.progress = CGFloat(sensor.dataValue!)
-        RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
-        RightGauge.setGaugeLabel(sensor.subtitle)
-        RightSelectedSensor = sensor
+        //Array of Data instead
+        if(sensor.dataType == .ACCEL || sensor.dataType == .GYRO){
+            RightGauge.progress = 0
+            RightGauge.setLabel("\(sensor.dataArrayValues!) \(sensor.dataType.rawValue)")
+            RightGauge.setGaugeLabel(sensor.subtitle)
+            RightSelectedSensor = sensor
+        }else{
+            RightGauge.progress = CGFloat(sensor.dataValue!)
+            RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
+            RightGauge.setGaugeLabel(sensor.subtitle)
+            RightSelectedSensor = sensor
+        }
         log.debug("\nRIGHT GAUGE: \(RightSelectedSensor.debug())")
     }
 
@@ -245,7 +253,6 @@ extension ViewController : InfoViewDelegate{
     func InfoViewTapped(infoView: InfoView){
         //Tapped sensor belongs in right sensor
         if(rightGaugeTypes.contains(infoView.sensor.dataType)){
-            print(infoView.sensor.sibling)
             //Check to see if you can access other siblings and then input them
             if((RightSelectedSensor === infoView.sensor) && infoView.sensor.sibling != nil){
                 SetRightGauge(infoView.sensor.sibling!)

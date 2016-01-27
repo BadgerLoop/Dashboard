@@ -36,6 +36,7 @@ class Sensor {
         case RPM = "RPM"
         case THERM = "\u{00B0} F" //degrees Fahrenheit
         case ACCEL = "X, Y, Z"
+        case GYRO = ""
         case PROX = "mm"
         case BFIELD = "Teslas"
         case LATENCY = "ms"
@@ -60,6 +61,8 @@ class Sensor {
     func debug() -> String{
         switch(dataType){
         case .ACCEL:
+            return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues!)\nData Type: \(dataType)\nSibling: \(sibling)\n"
+        case .GYRO:
             return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Values: \(dataArrayValues!)\nData Type: \(dataType)\nSibling: \(sibling)\n"
         default:
             return "\nSensor: \(title)\nSubtitle: \(subtitle)\nData Value: \(dataValue!)\nData Type: \(dataType)\nSibling: \(sibling)\n"
