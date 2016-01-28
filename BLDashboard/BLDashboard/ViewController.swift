@@ -13,8 +13,6 @@ import SVProgressHUD
 import SCLAlertView
 import XCGLogger
 
-
-
 class ViewController: UIViewController, RiffleDelegate {
 
     var app: RiffleDomain?
@@ -91,12 +89,11 @@ class ViewController: UIViewController, RiffleDelegate {
         app = RiffleDomain(domain: Config().domain)
 
         //For local node - will need to remove local host and set to static IP
-        Riffle.setFabric("ws://192.168.2.3:8000/ws")
+        Riffle.setFabric("ws://192.168.1.4:8000/ws")
 
         //Set up your domain
         me = RiffleDomain(name: "localagent", superdomain: app!)
         me!.delegate = self
-
 
         //Joining container with your token
         //Copy from: Auth() -> Authorized Key Management -> 'localagent' key
@@ -191,14 +188,17 @@ class ViewController: UIViewController, RiffleDelegate {
         ecm2.setValue(therm)
         log.debug(ecm2.debug())
     }
-    func updateAccel(accel: [Double]){
-        vcmA.setValue(accel)
+    func updateAccel(accel1: Double, accel2: Double, accel3: Double){
+        let listOfAccel: [Double] = [accel1, accel2, accel3]
+        vcmA.setValue(listOfAccel)
         RightMiddleInfo.update()
         updateGaugeUI()
         log.debug(vcmA.debug())
     }
-    func updateGyro(gyro: [Double]){
-        vcmG.setValue(gyro)
+    func updateGyro(gyro1: Double, gyro2: Double, gyro3: Double){
+        let listOfGyro: [Double] = [gyro1, gyro2, gyro3]
+        vcmG.setValue(listOfGyro)
+        updateGaugeUI()
         log.debug(vcmG.debug())
     }
     func updateProx(prox: Double){
@@ -244,9 +244,16 @@ class ViewController: UIViewController, RiffleDelegate {
         LeftGauge.progress = CGFloat(LeftSelectedSensor.dataValue!)
         LeftGauge.setLabel("\(LeftSelectedSensor.dataValue!) \(LeftSelectedSensor.dataType.rawValue)")
         LeftGauge.setGaugeLabel(LeftSelectedSensor.subtitle)
-        RightGauge.progress = CGFloat(RightSelectedSensor.dataValue!)
-        RightGauge.setLabel("\(RightSelectedSensor.dataValue!) \(RightSelectedSensor.dataType.rawValue)")
-        RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
+        if(RightSelectedSensor.dataType == .ACCEL || RightSelectedSensor.dataType == .GYRO){
+            RightGauge.progress = 0
+            RightGauge.setLabel("\(RightSelectedSensor.dataArrayValues!) \(RightSelectedSensor.dataType.rawValue)")
+            RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
+            RightGauge.setProgressColor(ohShit(RightSelectedSensor)) //Check what color to make gauge - depending on upside down or too fast accell
+        }else{
+            RightGauge.progress = CGFloat(RightSelectedSensor.dataValue!)
+            RightGauge.setLabel("\(RightSelectedSensor.dataValue!) \(RightSelectedSensor.dataType.rawValue)")
+            RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
+        }
     }
 
     //Check if pod is upside down or accel too fast
