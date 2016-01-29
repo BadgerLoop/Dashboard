@@ -189,14 +189,14 @@ class ViewController: UIViewController, RiffleDelegate {
         log.debug(ecm2.debug())
     }
     func updateAccel(accel1: Double, accel2: Double, accel3: Double){
-        let listOfAccel: [Double] = [Double(round(1000*accel1)/1000), Double(round(1000*accel2)/1000), Double(round(1000*accel3)/1000)]
+        let listOfAccel: [Double] = [Double(accel1).roundToPlaces(2), Double(accel2).roundToPlaces(2), Double(accel3).roundToPlaces(2)] //3 decimal places
         vcmA.setValue(listOfAccel)
         RightMiddleInfo.update()
         updateGaugeUI()
         log.debug(vcmA.debug())
     }
     func updateGyro(gyro1: Double, gyro2: Double, gyro3: Double){
-        let listOfGyro: [Double] = [Double(round(1000*gyro1)/1000), Double(round(1000*gyro2)/1000), Double(round(1000*gyro3)/1000)]
+        let listOfGyro: [Double] = [Double(gyro1).roundToPlaces(2), Double(gyro2).roundToPlaces(2), Double(gyro3).roundToPlaces(2)] //3 decimal places
         vcmG.setValue(listOfGyro)
         updateGaugeUI()
         log.debug(vcmG.debug())
@@ -287,6 +287,14 @@ extension ViewController : InfoViewDelegate{
         }else{
             SetLeftGauge(infoView.sensor)
         }
+    }
+}
+
+extension Double {
+    /// Rounds the double to decimal places value
+    func roundToPlaces(places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return round(self * divisor) / divisor
     }
 }
 
