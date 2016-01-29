@@ -219,6 +219,10 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     self.gaugeSubtitle.text = label;
 }
 
+-(void)setLabelFontSize:(CGFloat)fontsize{
+    self.timerLabel.font = [UIFont fontWithName:@"DS-Digital" size:fontsize];
+}
+
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated {
     
     progress = [self sanitizeProgressValue:progress];
@@ -400,7 +404,6 @@ static NSString *jsk_progressAnimationKey = @"progressAnimationKey";
     self.timerLabel.textColor = color;
     [self.timerLabel setNeedsDisplay];
 }
-
 
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();

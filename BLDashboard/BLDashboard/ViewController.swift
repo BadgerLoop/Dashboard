@@ -167,25 +167,25 @@ class ViewController: UIViewController, RiffleDelegate {
 
     //Update gauges with returned data
     func updateOptEn(energy: Double){
-        bpm.setValue(energy)
+        bpm.setValue(energy.roundToPlaces(2))
         LeftTopInfo.update()
         updateGaugeUI()
         log.debug(bpm.debug())
     }
     func updateBattVolt(voltage: Double){
-        bpm2.setValue(voltage)
+        bpm2.setValue(voltage.roundToPlaces(2))
         LeftMiddleInfo.update()
         updateGaugeUI()
         log.debug(bpm2.debug())
     }
     func updateTherm(therm: Double){
-        ecm.setValue(therm)
+        ecm.setValue(therm.roundToPlaces(2))
         RightBottomInfo.update()
         updateGaugeUI()
         log.debug(ecm.debug())
     }
     func updateTherm2(therm: Double){
-        ecm2.setValue(therm)
+        ecm2.setValue(therm.roundToPlaces(2))
         log.debug(ecm2.debug())
     }
     func updateAccel(accel1: Double, accel2: Double, accel3: Double){
@@ -202,13 +202,13 @@ class ViewController: UIViewController, RiffleDelegate {
         log.debug(vcmG.debug())
     }
     func updateProx(prox: Double){
-        mcm.setValue(prox)
+        mcm.setValue(prox.roundToPlaces(2))
         RightTopInfo.update()
         updateGaugeUI()
         log.debug(mcm.debug())
     }
     func updateLatency(latency: Double){
-        wcm.setValue(latency)
+        wcm.setValue(latency.roundToPlaces(2))
         LeftBottomInfo.update()
         updateGaugeUI()
         log.debug(wcm.debug())
@@ -229,11 +229,13 @@ class ViewController: UIViewController, RiffleDelegate {
             RightGauge.setLabel("\(sensor.dataArrayValues!) \(sensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(sensor.subtitle)
             RightGauge.setProgressColor(ohShit(sensor)) //Check what color to make gauge - depending on upside down or too fast accell
+            RightGauge.setLabelFontSize(20.0)
             RightSelectedSensor = sensor
         }else{
             RightGauge.progress = CGFloat(sensor.dataValue!/sensor.threshold!)
             RightGauge.setLabel("\(sensor.dataValue!) \(sensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(sensor.subtitle)
+            RightGauge.setLabelFontSize(30.0)
             RightSelectedSensor = sensor
         }
         log.debug("\nRIGHT GAUGE: \(RightSelectedSensor.debug())")

@@ -90,6 +90,8 @@
 
 - (void)setProgressColor:(UIColor *)desiredColor;
 
+- (void)setLabelFontSize:(CGFloat)fontsize;
+
 /**
  Starts the timer.
  */
