@@ -31,7 +31,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="beginTransmission:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3a-0S-tfx"/>
+                                    <action selector="transmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSm-e3-p4G"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08f-jU-xCi" customClass="JSKTimerView">

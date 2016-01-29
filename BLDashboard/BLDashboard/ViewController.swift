@@ -25,6 +25,21 @@ class ViewController: UIViewController, RiffleDelegate {
     @IBOutlet weak var LeftGauge: JSKTimerView!
     @IBOutlet weak var RightGauge: JSKTimerView!
 
+    @IBAction func transmit(sender: AnyObject) {
+        if(!transmitButton.selected){
+            log.info("Calling backend")
+            transmitButton.selected = true
+
+            //User wants to begin receiving data from backend
+            container!.call("transmit") { ( response: String) -> () in
+                self.log.info(response)
+                SCLAlertView().showWarning("Backend:", subTitle: response)
+                self.transmitButton.selected = false
+            }
+        }else{
+            SVProgressHUD.showInfoWithStatus("Already Transmitting")
+        }
+    }
     //Info Views
     @IBOutlet weak var LeftTopInfo: InfoView!{
         didSet{
@@ -66,21 +81,7 @@ class ViewController: UIViewController, RiffleDelegate {
     //Gauges
     let rightGaugeTypes : [Sensor.DataType] = [.ACCEL, .PROX, .THERM]
 
-    @IBAction func beginTransmission(sender: AnyObject) {
-        if(!transmitButton.selected){
-            log.info("Calling backend")
-            transmitButton.selected = true
 
-            //User wants to begin receiving data from backend
-            container!.call("transmit") { ( response: String) -> () in
-                self.log.info(response)
-                SCLAlertView().showWarning("Backend:", subTitle: response)
-                self.transmitButton.selected = false
-            }
-        }else{
-            SVProgressHUD.showInfoWithStatus("Already Transmitting")
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +103,7 @@ class ViewController: UIViewController, RiffleDelegate {
         //Set up transmit button state
         transmitButton.setTitle("Begin Transmission", forState: .Normal)
         transmitButton.setTitle("Transmitting", forState: .Selected)
+        transmitButton.selected = true
 
         //Config Gauges
         LeftGauge.labelTextColor = UIColor.whiteColor()
