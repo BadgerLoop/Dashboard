@@ -1,68 +1,92 @@
-2016-01-28 22:31:14.173 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 425
-2016-01-28 22:31:14.173 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-28 22:31:14.173 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-28 22:31:14.192 [Debug] [main] [ViewController.swift:140] viewDidLoad() > All sensors initialized
-2016-01-28 22:31:15.664 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: MCM
-Subtitle: Prox.
+2016-01-28 22:43:33.974 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 2117
+2016-01-28 22:43:33.974 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-28 22:43:33.974 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-28 22:43:34.002 [Debug] [main] [ViewController.swift:140] viewDidLoad() > All sensors initialized
+2016-01-28 22:43:39.741 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: WCM
+Subtitle: Latency
 Data Value: 0.0
-Data Type: PROX
+Data Type: LATENCY
 Sibling: nil
 
-2016-01-28 22:31:16.377 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM
-Subtitle: Therm. 1
+2016-01-28 22:43:40.515 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM2
+Subtitle: Batt. Voltage
 Data Value: 0.0
-Data Type: THERM
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 22:31:16.923 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMA
-Subtitle: Accel: X, Y, Z
-Data Values: [0.0, 0.0, 0.0]
-Data Type: ACCEL
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 22:31:17.587 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMG
-Subtitle: Gyro: Roll, Pitch, Yaw
-Data Values: [0.0, 0.0, 0.0]
-Data Type: GYRO
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 22:31:18.085 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMA
-Subtitle: Accel: X, Y, Z
-Data Values: [0.0, 0.0, 0.0]
-Data Type: ACCEL
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 22:31:19.271 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: MCM
-Subtitle: Prox.
-Data Value: 0.0
-Data Type: PROX
+Data Type: VOLTS
 Sibling: nil
 
-2016-01-28 22:31:19.863 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM
-Subtitle: Therm. 1
+2016-01-28 22:43:42.163 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM
+Subtitle: Encoder
 Data Value: 0.0
-Data Type: THERM
-Sibling: Optional(BLDashboard.Sensor)
+Data Type: RPM
+Sibling: nil
 
-2016-01-28 22:31:20.284 [Debug] [main] [ViewController.swift:241] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMA
-Subtitle: Accel: X, Y, Z
-Data Values: [0.0, 0.0, 0.0]
-Data Type: ACCEL
-Sibling: Optional(BLDashboard.Sensor)
+2016-01-28 22:43:43.105 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.0
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-28 22:43:43.979 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.0
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-28 22:43:56.322 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.0
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-28 22:43:57.032 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.0
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-28 22:43:58.034 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.0
+Data Type: RPM
+Sibling: nil
+
+2016-01-28 22:44:07.156 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: WCM
+Subtitle: Latency
+Data Value: 0.0
+Data Type: LATENCY
+Sibling: nil
+
+2016-01-28 22:44:07.785 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM2
+Subtitle: Batt. Voltage
+Data Value: 0.0
+Data Type: VOLTS
+Sibling: nil
+
+2016-01-28 22:44:09.191 [Debug] [main] [ViewController.swift:223] SetLeftGauge > 
+LEFT GAUGE: 
+Sensor: BPM
+Subtitle: Encoder
+Data Value: 0.0
+Data Type: RPM
+Sibling: nil
 

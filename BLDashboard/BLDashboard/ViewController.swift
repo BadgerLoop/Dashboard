@@ -238,7 +238,6 @@ class ViewController: UIViewController, RiffleDelegate {
             RightGauge.setLabelFontSize(30.0)
             RightSelectedSensor = sensor
         }
-        log.debug("\nRIGHT GAUGE: \(RightSelectedSensor.debug())")
     }
 
     //Update gauge with newly passed in data
@@ -247,7 +246,7 @@ class ViewController: UIViewController, RiffleDelegate {
         LeftGauge.setLabel("\(LeftSelectedSensor.dataValue!) \(LeftSelectedSensor.dataType.rawValue)")
         LeftGauge.setGaugeLabel(LeftSelectedSensor.subtitle)
         if(RightSelectedSensor.dataType == .ACCEL || RightSelectedSensor.dataType == .GYRO){
-            RightGauge.progress = 0
+            RightGauge.progress = 0.0
             RightGauge.setLabel("\(RightSelectedSensor.dataArrayValues!) \(RightSelectedSensor.dataType.rawValue)")
             RightGauge.setGaugeLabel(RightSelectedSensor.subtitle)
             RightGauge.setProgressColor(ohShit(RightSelectedSensor)) //Check what color to make gauge - depending on upside down or too fast accell
