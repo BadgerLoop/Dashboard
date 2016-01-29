@@ -1,56 +1,16 @@
-2016-01-28 12:41:04.911 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 89244
-2016-01-28 12:41:04.911 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
-2016-01-28 12:41:04.911 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
-2016-01-28 12:41:04.929 [Debug] [main] [ViewController.swift:140] viewDidLoad() > All sensors initialized
-2016-01-28 12:41:05.890 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
+2016-01-28 22:11:20.611 [Info] > BLDashboard Version: 1.0 Build: 1 PID: 96641
+2016-01-28 22:11:20.611 [Info] > XCGLogger Version: 3.2 - LogLevel: Debug
+2016-01-28 22:11:20.612 [Info] > XCGLogger writing to log to: file:///Users/chaseroossin/Desktop/Git/BadgerLoop/Dashboard/BLDashboard/BLDashboard/blackbox.txt
+2016-01-28 22:11:20.637 [Debug] [main] [ViewController.swift:140] viewDidLoad() > All sensors initialized
+2016-01-28 22:11:22.809 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: VCMA
 Subtitle: Accel: X, Y, Z
-Data Values: [0.0, 0.0, 0.0]
+Data Values: [5.345, 0.0, 0.0]
 Data Type: ACCEL
 Sibling: Optional(BLDashboard.Sensor)
 
-2016-01-28 12:41:06.294 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMG
-Subtitle: Gyro: Roll, Pitch, Yaw
-Data Values: [0.0, 0.0, 0.0]
-Data Type: GYRO
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 12:41:06.702 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMA
-Subtitle: Accel: X, Y, Z
-Data Values: [0.0, 0.0, 0.0]
-Data Type: ACCEL
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 12:41:07.000 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: VCMG
-Subtitle: Gyro: Roll, Pitch, Yaw
-Data Values: [0.0, 0.0, 0.0]
-Data Type: GYRO
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 12:41:07.601 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM
-Subtitle: Therm. 1
-Data Value: 0.0
-Data Type: THERM
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 12:41:08.059 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
-RIGHT GAUGE: 
-Sensor: ECM2
-Subtitle: Therm. 2
-Data Value: 0.0
-Data Type: THERM
-Sibling: Optional(BLDashboard.Sensor)
-
-2016-01-28 12:41:08.353 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
+2016-01-28 22:11:27.845 [Debug] [main] [ViewController.swift:239] SetRightGauge > 
 RIGHT GAUGE: 
 Sensor: ECM
 Subtitle: Therm. 1

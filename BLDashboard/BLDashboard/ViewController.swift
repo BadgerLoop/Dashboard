@@ -189,14 +189,14 @@ class ViewController: UIViewController, RiffleDelegate {
         log.debug(ecm2.debug())
     }
     func updateAccel(accel1: Double, accel2: Double, accel3: Double){
-        let listOfAccel: [Double] = [accel1, accel2, accel3]
+        let listOfAccel: [Double] = [Double(round(1000*accel1)/1000), Double(round(1000*accel2)/1000), Double(round(1000*accel3)/1000)]
         vcmA.setValue(listOfAccel)
         RightMiddleInfo.update()
         updateGaugeUI()
         log.debug(vcmA.debug())
     }
     func updateGyro(gyro1: Double, gyro2: Double, gyro3: Double){
-        let listOfGyro: [Double] = [gyro1, gyro2, gyro3]
+        let listOfGyro: [Double] = [Double(round(1000*gyro1)/1000), Double(round(1000*gyro2)/1000), Double(round(1000*gyro3)/1000)]
         vcmG.setValue(listOfGyro)
         updateGaugeUI()
         log.debug(vcmG.debug())
