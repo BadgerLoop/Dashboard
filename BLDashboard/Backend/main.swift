@@ -14,11 +14,13 @@ print("Starting up the backend...")
 
 //This is your apps backend
 
-Riffle.setFabric("ws://192.168.1.3:8000/ws")
+Riffle.setFabric("ws://localhost:8000/ws")
 
 let app = RiffleDomain(domain: Config().domain)
 
 let log = XCGLogger.defaultInstance()
+
+let x = 1
 
 var transmitting = true
 
@@ -40,15 +42,20 @@ class ContainerAgent: RiffleDomain {
         transmitting = true
 
         print("User called transmit")
-        for x in 1...1000{
-//            sleep(1)
+        while(x != 0){
+            sleep(1)
             if(transmitting){
                 //send data to each endpoint
                 for endpoint in listOfEndPoints{
                     var rando = Double(arc4random_uniform(100) + 1)
                     rando = rando/100
-                    print("\(endpoint): \(rando)")
-                    self.publish(endpoint, rando)
+                    if(endpoint == "vcm_gyro" || endpoint == "vcm_accel"){
+                        let randoArray : [Double] = [rando,rando,rando]
+                        self.publish(endpoint, randoArray)
+                    }
+                    else{
+                        self.publish(endpoint, rando)
+                    }
                 }
                 print("\n")
             }
