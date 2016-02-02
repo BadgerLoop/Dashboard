@@ -14,7 +14,7 @@ print("Starting up the backend...")
 
 //This is your apps backend
 
-Riffle.setFabric("ws://localhost:8000/ws")
+Riffle.setFabric("ws://192.168.1.4:8000/ws")
 
 let app = RiffleDomain(domain: Config().domain)
 

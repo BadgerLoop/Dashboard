@@ -90,7 +90,7 @@ class ViewController: UIViewController, RiffleDelegate {
         app = RiffleDomain(domain: Config().domain)
 
         //For local node - will need to remove local host and set to static IP
-        Riffle.setFabric("ws://localhost:8000/ws")
+        Riffle.setFabric("ws://192.168.1.4:8001/ws")
 
         //Set up your domain
         me = RiffleDomain(name: "localagent", superdomain: app!)
@@ -198,32 +198,32 @@ class ViewController: UIViewController, RiffleDelegate {
         ecm2.setValue(therm.roundToPlaces(2))
         log.debug(ecm2.debug())
     }
-//    func updateAccel(accel1: Double, accel2: Double, accel3: Double){
-//        let listOfAccel: [Double] = [Double(accel1).roundToPlaces(2), Double(accel2).roundToPlaces(2), Double(accel3).roundToPlaces(2)] //3 decimal places
-//        vcmA.setValue(listOfAccel)
-//        RightMiddleInfo.update()
-//        updateGaugeUI()
-//        log.debug(vcmA.debug())
-//    }
-//    func updateGyro(gyro1: Double, gyro2: Double, gyro3: Double){
-//        let listOfGyro: [Double] = [Double(gyro1).roundToPlaces(2), Double(gyro2).roundToPlaces(2), Double(gyro3).roundToPlaces(2)] //3 decimal places
-//        vcmG.setValue(listOfGyro)
-//        updateGaugeUI()
-//        log.debug(vcmG.debug())
-//    }
-    func updateAccel(accel: [Double]){
-//        let listOfAccel: [Double] = [Double(accel1).roundToPlaces(2), Double(accel2).roundToPlaces(2), Double(accel3).roundToPlaces(2)] //3 decimal places
-        vcmA.setValue(accel)
+    func updateAccel(accel1: Double, accel2: Double, accel3: Double){
+        let listOfAccel: [Double] = [Double(accel1).roundToPlaces(2), Double(accel2).roundToPlaces(2), Double(accel3).roundToPlaces(2)] //3 decimal places
+        vcmA.setValue(listOfAccel)
         RightMiddleInfo.update()
         updateGaugeUI()
         log.debug(vcmA.debug())
     }
-    func updateGyro(gyro: [Double]){
-//        let listOfGyro: [Double] = [Double(gyro1).roundToPlaces(2), Double(gyro2).roundToPlaces(2), Double(gyro3).roundToPlaces(2)] //3 decimal places
-        vcmG.setValue(gyro)
+    func updateGyro(gyro1: Double, gyro2: Double, gyro3: Double){
+        let listOfGyro: [Double] = [Double(gyro1).roundToPlaces(2), Double(gyro2).roundToPlaces(2), Double(gyro3).roundToPlaces(2)] //3 decimal places
+        vcmG.setValue(listOfGyro)
         updateGaugeUI()
         log.debug(vcmG.debug())
     }
+//    func updateAccel(accel: [Double]){
+////        let listOfAccel: [Double] = [Double(accel1).roundToPlaces(2), Double(accel2).roundToPlaces(2), Double(accel3).roundToPlaces(2)] //3 decimal places
+//        vcmA.setValue(accel)
+//        RightMiddleInfo.update()
+//        updateGaugeUI()
+//        log.debug(vcmA.debug())
+//    }
+//    func updateGyro(gyro: [Double]){
+////        let listOfGyro: [Double] = [Double(gyro1).roundToPlaces(2), Double(gyro2).roundToPlaces(2), Double(gyro3).roundToPlaces(2)] //3 decimal places
+//        vcmG.setValue(gyro)
+//        updateGaugeUI()
+//        log.debug(vcmG.debug())
+//    }
     func updateProx(prox: Double){
         mcm.setValue(prox.roundToPlaces(2))
         RightTopInfo.update()
