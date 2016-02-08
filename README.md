@@ -19,5 +19,6 @@ We will be using an Angular based dashboard for competition weekend.
 ## Running from here on out
 + You will only need to run the `npm start` and the `http-server . -a 127.0.0.1 -p 8080` when ever you want to work on the project locally.
   + I created an alias in my bash for the `http-server` so that I don't need to enter it everytime.  Feel free to contact me if you don't know how to create an alias
+  
 ## Troubleshooting
 Slack any problems to #software.  More likely than none, other people are having your same issue.
