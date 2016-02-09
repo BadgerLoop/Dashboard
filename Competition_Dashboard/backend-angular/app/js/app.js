@@ -7996,8 +7996,8 @@
       // Global Settings
       // -----------------------------------
       $rootScope.app = {
-        name: 'Angle',
-        description: 'Angular Bootstrap Admin Template',
+        name: 'BadgerLoop',
+        description: 'Dashboard',
         year: ((new Date()).getFullYear()),
         layout: {
           isFixed: true,
