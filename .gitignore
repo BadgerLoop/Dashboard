@@ -1,3 +1,6 @@
 Competition_Dashboard/backend-angular/app/npm-debug.log
 Competition_Dashboard/backend-angular/master/bower_components/jquery-classyloader
 Competition_Dashboard/backend-angular/master/js/modules/core/core.run.js
+
+/Competition_Dashboard/backend-angular/master/bower_components/
+/Competition_Dashboard/backend-angular/master/node_modules/
