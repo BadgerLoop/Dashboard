@@ -14,6 +14,8 @@
 
 [Table of contents]
 
+0.0: Custom CSS
+
 1. Bootstrap reset
   1.1 bootstrap
   1.2 bootstrap-reset
@@ -96,8 +98,21 @@
 
 12. Documentation
   12.1 docs
-
  ========================================================================== */
+
+ /* ========================================================================
+   Custom CSS: BadgerLoop Custom
+ ========================================================================== */
+.bg-node-status{
+  background-color: #03C9A9;
+  color: #ffffff !important;
+}
+.bg-node{
+  background-color: #fff;
+  color: #000 !important;
+}
+
+
 /* ========================================================================
    Component: bootstrap-reset.less
  ========================================================================== */
