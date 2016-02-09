@@ -2578,7 +2578,7 @@
       // Load a title dynamically
       $rootScope.currTitle = $state.current.title;
       $rootScope.pageTitle = function() {
-        var title = $rootScope.app.name + ' - ' + ($rootScope.currTitle || $rootScope.app.description);
+        var title = $rootScope.app.name + ' | ' + ($rootScope.currTitle || $rootScope.app.description);
         document.title = title;
         return title;
       };      
