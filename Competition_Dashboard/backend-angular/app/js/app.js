@@ -8014,7 +8014,10 @@
         hiddenFooter: false,
         offsidebarOpen: false,
         asideToggled: false,
-        viewAnimation: 'ng-fadeInUp'
+        viewAnimation: 'ng-fadeInUp',
+        nodeStatus: {
+          isHealthy: true
+        }
       };
 
       // Setup the layout mode
