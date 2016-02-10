@@ -8,9 +8,11 @@
 
   function sensorListService(){
     var allSensors = [
-      {name: 'Sensor1', owner: 'AF', status: 'Healthy'},
-      {name: 'Sensor2', owner: 'AX', status: 'Healthy'},
-      {name: 'Sensor3', owner: 'AL', status: 'Healthy'}
+      {name: 'Proximity', owner: 'Electrical', status: 'Healthy'},
+      {name: 'Thermistor 1', owner: 'Electrical', status: 'Healthy'},
+      {name: 'Thermistor 2', owner: 'Electrical', status: 'Healthy'},
+      {name: 'Voltage', owner: 'Electrical', status: 'Healthy'},
+      {name: 'Encoder', owner: 'Duncan LOL', status: 'Healthy'}
     ];
 
     return {
