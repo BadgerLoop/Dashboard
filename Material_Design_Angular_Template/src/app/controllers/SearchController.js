@@ -3,14 +3,14 @@
   angular
     .module('app')
     .controller('SearchController', [
-      '$timeout', '$q', 'countriesService',
+      '$timeout', '$q', 'sensorListService',
       SearchController
     ]);
 
-  function SearchController($timeout, $q, countriesService) {
+  function SearchController($timeout, $q, sensorListService) {
     var vm = this;
 
-    vm.countries = countriesService.loadAll();
+    vm.countries = sensorListService.loadAll();
     vm.selectedCountry = null;
     vm.searchText = null;
     vm.querySearch = querySearch;

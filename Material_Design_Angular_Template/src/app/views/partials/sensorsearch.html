@@ -1,0 +1,29 @@
+<div  ng-controller="SearchController as vm">
+  <md-content ng-show="$showOptions" class="options">
+    <md-radio-group ng-model="vm.disableCaching" >
+      <md-radio-button  ng-value="true">Disable caching</md-radio-button>
+      <md-radio-button  ng-value="false">Enable caching</md-radio-button>
+    </md-radio-group>
+  </md-content>
+
+  <md-content class="md-padding">
+    <md-autocomplete placeholder="Search Sensor List"
+                     md-selected-item="vm.selectedCountry"
+                     md-search-text="vm.searchText"
+                     md-no-cache="vm.disableCaching"
+                     md-items="item in vm.querySearch(vm.searchText)"
+                     md-item-text="item.display">
+      <span md-highlight-text="vm.searchText">{{item.display}}</span>
+    </md-autocomplete>
+
+    <p>Selected Sensor:
+      <b>{{vm.selectedCountry.display || 'No sensor selected'}}</b>
+    </p>
+    <p>Sensor Owner:
+      <b>{{vm.selectedCountry.code || 'No sensor selected'}}</b>
+    </p>
+    <p>Sensor Status:
+      <b>{{vm.selectedCountry.code || 'No sensor selected'}}</b>
+    </p>
+  </md-content>
+</div>
