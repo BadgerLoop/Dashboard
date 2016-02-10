@@ -8,7 +8,7 @@
 
   <md-content class="md-padding">
     <md-autocomplete placeholder="Search Sensor List"
-                     md-selected-item="vm.selectedCountry"
+                     md-selected-item="vm.selectedSensor"
                      md-search-text="vm.searchText"
                      md-no-cache="vm.disableCaching"
                      md-items="item in vm.querySearch(vm.searchText)"
@@ -17,13 +17,13 @@
     </md-autocomplete>
 
     <p>Selected Sensor:
-      <b>{{vm.selectedCountry.display || 'No sensor selected'}}</b>
+      <b>{{vm.selectedSensor.display || 'No sensor selected'}}</b>
     </p>
     <p>Sensor Owner:
-      <b>{{vm.selectedCountry.code || 'No sensor selected'}}</b>
+      <b>{{vm.selectedSensor.owner || 'No sensor selected'}}</b>
     </p>
     <p>Sensor Status:
-      <b>{{vm.selectedCountry.code || 'No sensor selected'}}</b>
+      <b>{{vm.selectedSensor.status || 'No sensor selected'}}</b>
     </p>
   </md-content>
 </div>

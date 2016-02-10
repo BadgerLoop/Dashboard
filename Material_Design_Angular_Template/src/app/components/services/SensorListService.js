@@ -8,9 +8,9 @@
 
   function sensorListService(){
     var allSensors = [
-      {name: 'Sensor1', code: 'AF'},
-      {name: 'Sensor2', code: 'AX'},
-      {name: 'Sensor3', code: 'AL'}
+      {name: 'Sensor1', owner: 'AF', status: 'Healthy'},
+      {name: 'Sensor2', owner: 'AX', status: 'Healthy'},
+      {name: 'Sensor3', owner: 'AL', status: 'Healthy'}
     ];
 
     return {
@@ -19,7 +19,8 @@
           return {
             value: sensor.name.toLowerCase(),
             display: sensor.name,
-            code: sensor.code
+            owner: sensor.owner,
+            status: sensor.status
           };
         });
       }
