@@ -7427,6 +7427,7 @@
           .state('app.dashboard', {
               url: '/dashboard',
               title: 'Dashboard',
+              controller: 'DashboardController',
               templateUrl: helper.basepath('dashboard.html'),
               resolve: helper.resolveFor('flot-chart','flot-chart-plugins', 'weather-icons')
           })

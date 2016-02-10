@@ -4,7 +4,7 @@
     angular
         .module('app.dashboard')
         .controller('DashboardController', DashboardController);
-
+        
     DashboardController.$inject = ['$scope', 'ChartData', '$timeout'];
     function DashboardController($scope, ChartData, $timeout) {
         var vm = this;
