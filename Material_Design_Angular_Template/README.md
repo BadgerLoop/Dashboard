@@ -17,13 +17,12 @@ Clone project:
 
 Install dependencies:
 
-    $ cd angular-material-dashboard
     $ npm install
 
 Install gem 'sass'
 
     $ gem install sass
-    
+
 Run development web-server:
 
     $ gulp serve
@@ -48,7 +47,7 @@ UI components built with [Angular Material](https://material.angularjs.org/).
 Design by [flatlogic.com](http://flatlogic.com/)
 
 ## Deploy to Github pages  
-  
+
     $ gulp build
     $ gulp deploy
 
