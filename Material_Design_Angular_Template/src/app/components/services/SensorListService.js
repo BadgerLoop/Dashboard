@@ -18,7 +18,8 @@
     return {
       loadAll : function() {
         return allSensors.map(function(sensor) {
-          var sensorStatus = "Healthy"
+          var sensorStatus = "Healthy";
+          sensor.timeStamp = new Date().getTime();
           if(!sensor.isHealthy){
             sensorStatus = "Down"
           }
