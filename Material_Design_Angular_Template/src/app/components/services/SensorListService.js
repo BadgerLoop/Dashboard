@@ -19,9 +19,10 @@
       loadAll : function() {
         return allSensors.map(function(sensor) {
           var sensorStatus = "Healthy";
-          sensor.timeStamp = new Date().getTime();
           if(!sensor.isHealthy){
             sensorStatus = "Down"
+          }else{
+            sensor.timeStamp = new Date().getTime();
           }
           return {
             value: sensor.name.toLowerCase(),
