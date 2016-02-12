@@ -8,11 +8,11 @@
 
   function sensorListService(){
     var allSensors = [
-      {name: 'Proximity', owner: 'Electrical', isHealthy: true},
-      {name: 'Thermistor 1', owner: 'Electrical', isHealthy: false},
-      {name: 'Thermistor 2', owner: 'Electrical', isHealthy: true},
-      {name: 'Voltage', owner: 'Electrical', isHealthy: false},
-      {name: 'Encoder', owner: 'Duncan LOL', isHealthy: true}
+      {name: 'Proximity', owner: 'Electrical', isHealthy: true, timeStamp: null},
+      {name: 'Thermistor 1', owner: 'Electrical', isHealthy: false, timeStamp: null},
+      {name: 'Thermistor 2', owner: 'Electrical', isHealthy: true, timeStamp: null},
+      {name: 'Voltage', owner: 'Electrical', isHealthy: false, timeStamp: null},
+      {name: 'Encoder', owner: 'Duncan LOL', isHealthy: true, timeStamp: null}
     ];
 
     return {
@@ -26,7 +26,8 @@
             value: sensor.name.toLowerCase(),
             display: sensor.name,
             owner: sensor.owner,
-            status: sensorStatus
+            status: sensorStatus,
+            timeStamp: sensor.timeStamp
           };
         });
       }

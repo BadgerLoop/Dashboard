@@ -26,8 +26,8 @@
 
     function createFilterFor(query) {
       var lowercaseQuery = angular.lowercase(query);
-      return function filterFn(state) {
-        return (state.value.indexOf(lowercaseQuery) === 0);
+      return function filterFn(sensor) {
+        return (sensor.value.indexOf(lowercaseQuery) === 0);
       };
     }
   }
