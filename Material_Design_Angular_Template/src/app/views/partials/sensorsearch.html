@@ -25,5 +25,10 @@
     <p>Sensor Status:
       <b>{{vm.selectedSensor.status || 'No sensor selected'}} {{ vm.selectedSensor.timeStamp | date:'HH:mm:ss MM-dd-yyyy'}}</b>
     </p>
+    <md-radio-group ng-model="vm.selectedSensor" layout="row">
+        Override Sensor Status:
+        <md-radio-button class="md-accent" value="0" ng-click='vm.updateSensorStatus(value)'>Healthy</md-radio-button>
+        <md-radio-button class="md-accent" value="1" ng-click='vm.updateSensorStatus(value)'>Down</md-radio-button>
+    </md-radio-group>
   </md-content>
 </div>

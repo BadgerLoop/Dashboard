@@ -30,5 +30,9 @@
         return (sensor.value.indexOf(lowercaseQuery) === 0);
       };
     }
+
+    function updateSensorStatus(isHealthy){
+      console.log(isHealthy);
+    }
   }
 })();
