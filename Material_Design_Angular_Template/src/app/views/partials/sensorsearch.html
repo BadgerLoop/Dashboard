@@ -23,7 +23,7 @@
       <b>{{vm.selectedSensor.owner || 'No sensor selected'}}</b>
     </p>
     <p>Sensor Status:
-      <b>{{vm.selectedSensor.status || 'No sensor selected'}} {{ vm.selectedSensor.timeStamp | date:'HH:mm:ss MM-dd-yyyy'}}</b>
+      <b>{{vm.selectedSensor.status || 'No sensor selected'}} {{vm.selectedSensor.timeStamp | date:'HH:mm:ss MM-dd-yyyy'}}</b>
     </p>
     <md-radio-group ng-model="vm.selectedSensor" layout="row">
         Override Sensor Status:
