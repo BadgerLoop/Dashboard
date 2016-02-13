@@ -19,7 +19,7 @@
                 x: function (d) { return d.key; },
                 y: function (d) { return d.y; },
                 valueFormat: (d3.format(".0f")),
-                color: ['rgb(0, 150, 136)', '#E75753'],
+               color: ['rgb(0, 0, 0)','rgb(0, 180, 180)', 'rgb(235, 235, 235'],
                 showLabels: false,
                 showLegend: false,
                 title: 'Over 9K',

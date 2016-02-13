@@ -16,7 +16,7 @@
             for (var i = 0; i < 200; i++) {
                 sin.push({x: i, y: Math.abs(Math.cos(i/10) *0.25*i + 0.9 - 0.4*i)});
             }
-            return [ { values: sin, color: 'rgb(0, 150, 136)', area: true } ];
+            return [ { values: sin, color: 'rgb(0, 180, 180)', area: true } ];
         }
 
         vm.chartOptions = {

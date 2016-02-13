@@ -21,7 +21,7 @@
                 title: 'Over 9K',
                 showYAxis: false,
                 showXAxis: false,
-                color: ['rgb(0, 150, 136)', 'rgb(204, 203, 203)', 'rgb(149, 149, 149)', 'rgb(44, 44, 44)'],
+                color: ['rgb(0, 180, 180)', 'rgb(204, 203, 203)', 'rgb(149, 149, 149)', 'rgb(5, 5, 5)'],
                 tooltip: { contentGenerator: function (d) { return '<div class="custom-tooltip">' + d.point.y + '%</div>' + '<div class="custom-tooltip">' + d.series[0].key + '</div>' } },
                 showControls: false
             }
