@@ -12,6 +12,14 @@ $font-weight-bold: 600;
 $font-size-large: 22px;
 
 
+// CUSTOM CSS FOR BL
+.test-container {
+    width: 800px;
+}
+.test-container table th {
+    min-width: 80px;
+}
+
 // LAYOUT
 body {
   color: $text-color;
