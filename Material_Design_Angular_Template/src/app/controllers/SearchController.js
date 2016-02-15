@@ -17,6 +17,7 @@
     vm.disableCaching = true;
 
     function querySearch (query) {
+      vm.sensors = sensorListService.loadAll();
       var results = query ? vm.sensors.filter( createFilterFor(query) ) : [],
         deferred;
       deferred = $q.defer();
