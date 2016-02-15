@@ -2,7 +2,7 @@
 
   angular
     .module('app')
-    .controller('MessagesLogController', [
+    .controller('MessageLogController', [
       'messageLogService',
       MessageLogController
     ]);

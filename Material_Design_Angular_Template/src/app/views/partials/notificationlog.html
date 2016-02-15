@@ -12,7 +12,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="message in vm.loadAllItems()" row-id="{{ message.facility }}" 
+          <tr ng-repeat="message in vm.messages" row-id="{{ message.facility }}" 
               ng-class="{info: selected == message.facility}" >
             <td>{{ message.facility }}</td>
             <td>{{ message.code }}</td>
