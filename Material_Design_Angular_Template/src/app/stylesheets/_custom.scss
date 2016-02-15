@@ -42,9 +42,9 @@ $font-size-large: 22px;
 .scrollableContainer th .orderWrapper .active {
     color: #464646;
 }
-
+// Changed height from 100% to 210px
 .scrollArea {
-    height: 200px;
+    height: 210px;
     overflow-x: auto;
     overflow-y: auto;
     border: 1px solid #d5d5d5;
