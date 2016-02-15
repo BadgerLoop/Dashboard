@@ -10,68 +10,68 @@
   function messageLogService($q){
     var messages =  [
         {
-          facility: "Atlanta",
+          facility: "Pressure",
           code: "C-RD34",
           cost: 540000,
-          conditionRating: 52,
+          conditionRating: 1,
           extent: 100,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Seattle",
+          facility: "Thermistor",
           code: "CRDm-4",
           cost: 23000,
-          conditionRating: 40,
+          conditionRating: 3,
           extent: 88,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Austin",
+          facility: "Proximity",
           code: "GR-5",
           cost: 1200000,
-          conditionRating: 92,
+          conditionRating: 1,
           extent: 90,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Dayton",
+          facility: "Gyro",
           code: "LY-7",
           cost: 123000,
-          conditionRating: 71,
+          conditionRating: 2,
           extent: 98,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Portland",
+          facility: "Battery",
           code: "Dm-4",
           cost: 149000,
-          conditionRating: 89,
+          conditionRating: 3,
           extent: 77,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Dallas",
+          facility: "Thermistor 2",
           code: "AW-3",
           cost: 14000,
-          conditionRating: 89,
+          conditionRating: 3,
           extent: 79,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Houston",
+          facility: "Proximity 2",
           code: "Dm-4",
           cost: 1100000,
-          conditionRating: 93,
+          conditionRating: 1,
           extent: 79,
-          planYear: 2014
+          planYear: "HEALTHY"
         }, {
-          facility: "Boston",
+          facility: "Retroreflective",
           code: "DD3",
           cost: 1940000,
-          conditionRating: 86,
+          conditionRating: 3,
           extent: 80,
-          planYear: 2015
+          planYear: "HEALTHY"
         }, {
-          facility: "New York",
+          facility: "Pressure 2",
           code: "ER1",
           cost: 910000,
-          conditionRating: 87,
+          conditionRating: 2,
           extent: 82,
-          planYear: 2015
+          planYear: "HEALTHY"
         }
       ];
 
