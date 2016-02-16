@@ -8,6 +8,7 @@ $warning-color: #E75753;
 // VARIABLES
 $left-sidenav-width: 110px;
 $widget-height: 310px;
+$widget-datastream-height: 710px;
 $font-weight-bold: 600;
 $font-size-large: 22px;
 
@@ -224,6 +225,9 @@ body {
 
 .fixed-height-widget {
   height: $widget-height;
+}
+.fixed-height-datastream {
+  height: $widget-datastream-height;
 }
 
 // charts
