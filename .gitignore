@@ -5,4 +5,4 @@ Competition_Dashboard/backend-angular/master/js/modules/core/core.run.js
 /Competition_Dashboard/backend-angular/master/bower_components/
 /Competition_Dashboard/backend-angular/master/node_modules/
 
-.DS_Store
+*/.DS_Store
