@@ -1,0 +1,34 @@
+<div  ng-controller="SearchController as vm">
+  <md-content ng-show="$showOptions" class="options">
+    <md-radio-group ng-model="vm.disableCaching" >
+      <md-radio-button  ng-value="true">Disable caching</md-radio-button>
+      <md-radio-button  ng-value="false">Enable caching</md-radio-button>
+    </md-radio-group>
+  </md-content>
+
+  <md-content class="md-padding">
+    <md-autocomplete placeholder="Search Sensor List"
+                     md-selected-item="vm.selectedSensor"
+                     md-search-text="vm.searchText"
+                     md-no-cache="vm.disableCaching"
+                     md-items="item in vm.querySearch(vm.searchText)"
+                     md-item-text="item.display">
+      <span md-highlight-text="vm.searchText">{{item.display}}</span>
+    </md-autocomplete>
+
+    <p>Selected Sensor:
+      <b>{{vm.selectedSensor.display || 'No sensor selected'}}</b>
+    </p>
+    <p>Sensor Owner:
+      <b>{{vm.selectedSensor.owner || 'No controller selected'}}</b>
+    </p>
+    <p>Sensor Status:
+      <b>{{vm.selectedSensor.status || 'No sensor selected'}} {{vm.selectedSensor.timeStamp | date:'HH:mm:ss MM-dd-yyyy'}}</b>
+    </p>
+    <md-radio-group ng-model="vm.selectedSensor" layout="row">
+        Override Sensor Status:
+        <md-radio-button class="md-accent" value="0" ng-click='vm.updateSensorStatus(value)'>Healthy</md-radio-button>
+        <md-radio-button class="md-accent" value="1" ng-click='vm.updateSensorStatus(value)'>Down</md-radio-button>
+    </md-radio-group>
+  </md-content>
+</div>
