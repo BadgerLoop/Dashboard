@@ -8,6 +8,7 @@ $warning-color: #E75753;
 // VARIABLES
 $left-sidenav-width: 110px;
 $widget-height: 310px;
+$widget-datastream-height: 710px;
 $font-weight-bold: 600;
 $font-size-large: 22px;
 
@@ -15,7 +16,7 @@ $font-size-large: 22px;
 // CUSTOM CSS FOR BL
 
 .scrollableContainer {
-    height: 310px;
+    height: 710px;
     position: relative;
     padding-top: 35px;
     overflow: hidden;
@@ -44,7 +45,7 @@ $font-size-large: 22px;
 }
 // Changed height from 100% to 210px
 .scrollArea {
-    height: 210px;
+    height: 610px;
     overflow-x: auto;
     overflow-y: auto;
     border: 1px solid #d5d5d5;
@@ -224,6 +225,9 @@ body {
 
 .fixed-height-widget {
   height: $widget-height;
+}
+.fixed-height-datastream {
+  height: $widget-datastream-height;
 }
 
 // charts
