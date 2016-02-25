@@ -3,31 +3,18 @@ angular
   .controller('NavigationController', ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
     'use strict';
     $scope.menu = [{
-      label: 'Explore',
+      label: 'OUR TEAM',
       iconClasses: '',
       separator: true
     }, {
       label: 'Dashboard',
       iconClasses: 'ti ti-home',
-      html: '<span class="badge badge-info">2</span>',
+      html: '<span class="badge badge-info"></span>',
       url: '#/',
     }, {
       label: 'HTML Version',
       iconClasses: 'ti ti-cup',
       url: '../../',
-    }, {
-      label: 'Layouts',
-      iconClasses: 'ti ti-layout',
-      children: [{
-        label: 'Grid Scaffolding',
-        url: '#/layout-grid',
-      }, {
-        label: 'Horizontal Nav',
-        url: '#/layout-horizontal'
-      }, {
-        label: 'Boxed',
-        url: '#/layout-boxed'
-      }]
     }, {
       label: 'UI Kit',
       iconClasses: 'ti ti-view-list-alt',
@@ -71,157 +58,6 @@ angular
         label: 'Images & Carousel',
         url: '#/ui-imagecarousel'
       }]
-    }, {
-      label: 'Components',
-      iconClasses: 'ti ti-control-shuffle',
-      children: [{
-        label: 'Tiles',
-        url: '#/ui-tiles'
-      }, {
-        label: 'Bootbox',
-        url: '#/components-bootbox'
-      }, {
-        label: 'Pines Notifications',
-        url: '#/components-notifications'
-      }, {
-        label: 'Sliders & Ranges',
-        url: '#/ui-sliders',
-      }, {
-        label: 'Pulsating Elements',
-        url: '#/components-pulsate'
-      }, {
-        label: 'jQuery Knob',
-        url: '#/components-knob'
-      }]
-    }, {
-      label: 'Forms',
-      iconClasses: 'ti ti-pencil',
-      children: [{
-        label: 'Form Layout',
-        url: '#/form-layout',
-      }, {
-        label: 'Components',
-        url: '#/form-components',
-      }, {
-        label: 'Pickers',
-        url: '#/form-pickers'
-      }, {
-        label: 'Form Wizard',
-        url: '#/form-wizard'
-      }, {
-        label: 'Validation',
-        url: '#/form-validation',
-      }, {
-        label: 'Form Masks',
-        url: '#/form-masks'
-      }, {
-        label: 'Advanced Uploaders',
-        url: '#/form-fileupload',
-      }, {
-        label: 'WYSIWYG Editor',
-        url: '#/form-wysiwyg',
-      }, {
-        label: 'Inline Editor',
-        url: '#/form-xeditable',
-      }]
-    }, {
-      label: 'Panels',
-      iconClasses: 'ti ti-settings',
-      hideOnHorizontal: true,
-      children: [{
-        label: 'Panels',
-        url: '#/ui-panels',
-      }, {
-        label: 'Draggable Panels',
-        url: '#/ui-advancedpanels'
-      }]
-    }, {
-      label: 'Tables',
-      iconClasses: 'ti ti-layout-grid3',
-      children: [{
-        label: 'Tables',
-        url: '#/tables-basic'
-      }, {
-        label: 'ngGrid',
-        url: '#/tables-data',
-      }, {
-        label: 'Responsive Tables',
-        url: '#/tables-responsive'
-      }, {
-        label: 'Editable Tables',
-        url: '#/tables-editable',
-      }]
-    }, {
-      label: 'Analytics',
-      iconClasses: 'ti ti-stats-up',
-      hideOnHorizontal: true,
-      children: [{
-        label: 'Flot',
-        url: '#/charts-flot',
-      }, {
-        label: 'Morris.js',
-        url: '#/charts-morrisjs'
-      }, {
-        label: 'Easy Pie Chart',
-        url: '#/charts-easypiechart'
-      }, {
-        label: 'Sparklines',
-        url: '#/charts-sparklines',
-      }]
-    }, {
-      label: 'Maps',
-      iconClasses: 'ti ti-map-alt',
-      hideOnHorizontal: true,
-      children: [{
-        label: 'Google Maps',
-        url: '#/maps-google'
-      }, {
-        label: 'Vector Maps',
-        url: '#/maps-vector',
-      }]
-    }, {
-      label: 'Pages',
-      iconClasses: 'ti ti-file',
-      hideOnHorizontal: true,
-      children: [{
-        label: 'Profile',
-        url: '#/extras-profile'
-      }, {
-        label: 'FAQ',
-        url: '#/extras-faq',
-      }, {
-        label: 'Invoice',
-        url: '#/extras-invoice'
-      }, {
-        label: 'Registration',
-        url: '#/extras-registration'
-      }, {
-        label: 'Password Reset',
-        url: '#/extras-forgotpassword'
-      }, {
-        label: 'Login',
-        url: '#/extras-login'
-      }, {
-        label: '404 Page',
-        url: '#/extras-404'
-      }, {
-        label: '500 Page',
-        url: '#/extras-500'
-      }]
-    }, {
-      label: 'Functional Apps',
-      hideOnHorizontal: true,
-      separator: true
-    }, {
-      label: 'Inbox',
-      iconClasses: 'ti ti-email',
-      url: '#/inbox',
-      html: '<span class="badge badge-danger">3</span>'
-    }, {
-      label: 'Calendar',
-      iconClasses: 'ti ti-calendar',
-      url: '#/calendar',
-      html: '<span class="badge badge-warning">1</span>'
     }];
 
     var setParent = function(children, parent) {
