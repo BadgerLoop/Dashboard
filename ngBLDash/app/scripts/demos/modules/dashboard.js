@@ -3,9 +3,8 @@ angular.module('theme.demos.dashboard', [
     'theme.demos.forms',
     'theme.demos.tasks'
   ])
-  .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window', function($scope, $theme, $timeout, $window) {
+  .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window','pinesNotifications', function($scope, $theme, $timeout, $window, pinesNotifications) {
     'use strict';
-
 
     //
     //
@@ -289,81 +288,6 @@ angular.module('theme.demos.dashboard', [
         }
     };
 
-    // // realtime
-    // var dxta = [],
-    //   totalPoints = 20;
-    // var updateInterval = 1000;
-
-    // function getRandomData() {
-    //   if (dxta.length > 0) {
-    //     dxta = dxta.slice(1);
-    //   }
-
-    //   while (dxta.length < totalPoints) {
-    //     var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-    //         y = 10 + Math.random() * 40 - 10;
-
-    //     if (y < 0) {
-    //         y = 0;
-    //     } else if (y > 50) {
-    //         y = 50;
-    //     }
-
-    //     dxta.push(y);
-    //   }
-    //   var res = [];
-    //   for (var i = 0; i < dxta.length; ++i) {
-    //     res.push([i, dxta[i]]);
-    //   }
-    //   return res;
-    // }
-
-    // // Real Time Data
-
-    // $scope.realtimeData = [getRandomData()];
-    // $scope.realtimeOptions = {
-    //     series: {
-    //         bars: {
-    //             show: true,
-    //             lineWidth: 0,
-    //             barWidth: 0.75,
-    //             fill: 0.4
-    //         },
-    //         shadowSize: 0
-    //     },
-    //     grid: {
-    //         labelMargin: 8,
-    //         hoverable: true,
-    //         clickable: true,
-    //         borderWidth: 0,
-    //         borderColor: '#f5f5f5'
-    //     },
-    //     yaxis: {
-    //         min: 0,
-    //         max: 50,
-    //         ticks: [0, 25, 50],
-    //         tickColor: '#f5f5f5', 
-    //         font: {color: '#bdbdbd', size: 12}
-    //     },
-    //     xaxis: {
-    //         show: false
-    //     },
-    //     colors: ['#00bcd4'],
-    //     tooltip: true,
-    //     tooltipOpts: {
-    //         content: "Active User: %y"
-    //     }
-    // };
-
-    // var promise;
-    // var updateRealtimeData = function() {
-    //   $scope.realtimeData = [getRandomData()];
-    //   $timeout.cancel(promise);
-    //   promise = $timeout(updateRealtimeData, updateInterval);
-    // };
-
-    // updateRealtimeData();
-
     //World Map
 
     var randomNumbers = function (min, max, length) {
@@ -436,4 +360,13 @@ angular.module('theme.demos.dashboard', [
         },
     };
 
-  }]);
+  }])
+
+//Welcome Alert
+.run(['pinesNotifications', function(pinesNotifications){
+    pinesNotifications.notify({
+        title: 'Dashboard Setup',
+        text: 'The dashboard is fully setup and running.',
+        type: 'success'
+      });
+}]);
