@@ -365,7 +365,7 @@ angular.module('theme.demos.dashboard', [
 //Welcome Alert
 .run(['pinesNotifications', function(pinesNotifications){
     pinesNotifications.notify({
-        title: 'Dashboard Setup',
+        title: 'BadgerLoop Dashboard Setup',
         text: 'The dashboard is fully setup and running.',
         type: 'success'
       });
