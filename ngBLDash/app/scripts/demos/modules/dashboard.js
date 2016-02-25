@@ -67,7 +67,7 @@ angular.module('theme.demos.dashboard', [
         yaxis: {
             min: 0,
             max: 15,
-            ticks: [0, 6, 15],
+            ticks: [0, 7, 15],
             tickColor: '#f5f5f5', 
             font: {color: '#bdbdbd', size: 12}
         },
