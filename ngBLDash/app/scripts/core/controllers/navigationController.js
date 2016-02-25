@@ -11,52 +11,33 @@ angular
       iconClasses: 'ti ti-home',
       html: '<span class="badge badge-info"></span>',
       url: '#/',
-    }, {
-      label: 'HTML Version',
-      iconClasses: 'ti ti-cup',
-      url: '../../',
-    }, {
-      label: 'UI Kit',
+    },  {
+      label: 'Sub-Teams',
       iconClasses: 'ti ti-view-list-alt',
       children: [{
-        label: 'Typography',
+        label: 'Braking',
+        url: '#/braking'
+       } ,{
+        label: 'Electrical',
         url: '#/ui-typography'
       }, {
-        label: 'Buttons',
+        label: 'Controls',
         url: '#/ui-buttons'
       }, {
-        label: 'Modals',
+        label: 'Levitation',
         url: '#/ui-modals'
       }, {
-        label: 'Progress',
+        label: 'Operations',
         url: '#/ui-progressbars'
       }, {
-        label: 'Pagination',
-        url: '#/ui-paginations'
+        label: 'Safety',
+        url: '#/ui-progressbars'
+      },{
+        label: 'Software',
+        url: '#/ui-progressbars'
       }, {
-        label: 'Breadcrumbs',
-        url: '#/ui-breadcrumbs'
-      }, {
-        label: 'Labels & Badges',
-        url: '#/ui-labelsbadges',
-      }, {
-        label: 'Alerts',
-        url: '#/ui-alerts',
-      }, {
-        label: 'Tabs',
-        url: '#/ui-tabs',
-      }, {
-        label: 'FontAwesome Icons',
-        url: '#/ui-icons-fontawesome',
-      }, {
-        label: 'Themify Icons',
-        url: '#/ui-icons-themify',
-      }, {
-        label: 'Wells',
-        url: '#/ui-wells'
-      }, {
-        label: 'Images & Carousel',
-        url: '#/ui-imagecarousel'
+        label: 'Structural',
+        url: '#/ui-progressbars'
       }]
     }];
 
