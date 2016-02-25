@@ -5,6 +5,21 @@ angular.module('theme.demos.dashboard', [
   ])
   .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window','pinesNotifications', function($scope, $theme, $timeout, $window, pinesNotifications) {
     'use strict';
+    
+    //
+    //
+    // ALERTS
+    //
+    //
+    $scope.severeAlert = function(message, text){
+        pinesNotifications.notify({
+        title: message,
+        text: text,
+        type: 'error',
+        hide: false
+        });
+    }
+
 
     //
     //
@@ -28,6 +43,7 @@ angular.module('theme.demos.dashboard', [
 
         if (y < 0) {
             y = 0;
+            // $scope.severeAlert('BATTERY LEVEL ZERO', 'This needs electrical team attention immediately.');
         } else if (y > 12) {
             y = 12;
         }
