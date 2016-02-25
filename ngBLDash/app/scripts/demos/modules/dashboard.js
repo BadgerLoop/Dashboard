@@ -6,6 +6,91 @@ angular.module('theme.demos.dashboard', [
   .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window', function($scope, $theme, $timeout, $window) {
     'use strict';
 
+
+    //
+    //
+    // BATTERY VOLTAGE MONITOR
+    //
+    //
+    $scope.currentBatVoltage;
+
+    var dxta = [],
+      totalPoints = 20;
+    var updateInterval = 1000;
+
+    function getRandomData() {
+      if (dxta.length > 0) {
+        dxta = dxta.slice(1);
+      }
+
+      while (dxta.length < totalPoints) {
+        var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
+            y =  Math.random() * 12;
+
+        if (y < 0) {
+            y = 0;
+        } else if (y > 12) {
+            y = 12;
+        }
+
+        $scope.currentBatVoltage = Math.round(y);
+
+        dxta.push(y);
+      }
+      var res = [];
+      for (var i = 0; i < dxta.length; ++i) {
+        res.push([i, dxta[i]]);
+      }
+      return res;
+    }
+
+    // Real Time Data
+
+    $scope.realtimeData = [getRandomData()];
+    $scope.realtimeOptions = {
+        series: {
+            bars: {
+                show: true,
+                lineWidth: 0,
+                barWidth: 0.75,
+                fill: 0.4
+            },
+            shadowSize: 0
+        },
+        grid: {
+            labelMargin: 8,
+            hoverable: true,
+            clickable: true,
+            borderWidth: 0,
+            borderColor: '#f5f5f5'
+        },
+        yaxis: {
+            min: 0,
+            max: 15,
+            ticks: [0, 6, 15],
+            tickColor: '#f5f5f5', 
+            font: {color: '#bdbdbd', size: 12}
+        },
+        xaxis: {
+            show: false
+        },
+        colors: ['#00bcd4'],
+        tooltip: true,
+        tooltipOpts: {
+            content: "Voltage: %yV"
+        }
+    };
+
+    var promise;
+    var updateRealtimeData = function() {
+      $scope.realtimeData = [getRandomData()];
+      $timeout.cancel(promise);
+      promise = $timeout(updateRealtimeData, updateInterval);
+    };
+
+    updateRealtimeData();
+
+
     var fans = [[1, 17], [2, 34], [3, 73], [4, 47], [5, 90], [6, 70], [7, 40]];
     var followers = [[1, 54], [2, 40], [3, 10], [4, 25], [5, 42], [6, 14], [7, 36]];
     $scope.plotSocialData = [{ data: fans, label: "Facebook" }, { data: followers, label: "Twitter" }];
@@ -204,80 +289,80 @@ angular.module('theme.demos.dashboard', [
         }
     };
 
-    // realtime
-    var dxta = [],
-      totalPoints = 60;
-    var updateInterval = 1000;
+    // // realtime
+    // var dxta = [],
+    //   totalPoints = 20;
+    // var updateInterval = 1000;
 
-    function getRandomData() {
-      if (dxta.length > 0) {
-        dxta = dxta.slice(1);
-      }
+    // function getRandomData() {
+    //   if (dxta.length > 0) {
+    //     dxta = dxta.slice(1);
+    //   }
 
-      while (dxta.length < totalPoints) {
-        var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-            y = 10 + Math.random() * 40 - 10;
+    //   while (dxta.length < totalPoints) {
+    //     var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
+    //         y = 10 + Math.random() * 40 - 10;
 
-        if (y < 0) {
-            y = 0;
-        } else if (y > 50) {
-            y = 50;
-        }
+    //     if (y < 0) {
+    //         y = 0;
+    //     } else if (y > 50) {
+    //         y = 50;
+    //     }
 
-        dxta.push(y);
-      }
-      var res = [];
-      for (var i = 0; i < dxta.length; ++i) {
-        res.push([i, dxta[i]]);
-      }
-      return res;
-    }
+    //     dxta.push(y);
+    //   }
+    //   var res = [];
+    //   for (var i = 0; i < dxta.length; ++i) {
+    //     res.push([i, dxta[i]]);
+    //   }
+    //   return res;
+    // }
 
-    // Real Time Data
+    // // Real Time Data
 
-    $scope.realtimeData = [getRandomData()];
-    $scope.realtimeOptions = {
-        series: {
-            bars: {
-                show: true,
-                lineWidth: 0,
-                barWidth: 0.75,
-                fill: 0.4
-            },
-            shadowSize: 0
-        },
-        grid: {
-            labelMargin: 8,
-            hoverable: true,
-            clickable: true,
-            borderWidth: 0,
-            borderColor: '#f5f5f5'
-        },
-        yaxis: {
-            min: 0,
-            max: 50,
-            ticks: [0, 25, 50],
-            tickColor: '#f5f5f5', 
-            font: {color: '#bdbdbd', size: 12}
-        },
-        xaxis: {
-            show: false
-        },
-        colors: ['#00bcd4'],
-        tooltip: true,
-        tooltipOpts: {
-            content: "Active User: %y"
-        }
-    };
+    // $scope.realtimeData = [getRandomData()];
+    // $scope.realtimeOptions = {
+    //     series: {
+    //         bars: {
+    //             show: true,
+    //             lineWidth: 0,
+    //             barWidth: 0.75,
+    //             fill: 0.4
+    //         },
+    //         shadowSize: 0
+    //     },
+    //     grid: {
+    //         labelMargin: 8,
+    //         hoverable: true,
+    //         clickable: true,
+    //         borderWidth: 0,
+    //         borderColor: '#f5f5f5'
+    //     },
+    //     yaxis: {
+    //         min: 0,
+    //         max: 50,
+    //         ticks: [0, 25, 50],
+    //         tickColor: '#f5f5f5', 
+    //         font: {color: '#bdbdbd', size: 12}
+    //     },
+    //     xaxis: {
+    //         show: false
+    //     },
+    //     colors: ['#00bcd4'],
+    //     tooltip: true,
+    //     tooltipOpts: {
+    //         content: "Active User: %y"
+    //     }
+    // };
 
-    var promise;
-    var updateRealtimeData = function() {
-      $scope.realtimeData = [getRandomData()];
-      $timeout.cancel(promise);
-      promise = $timeout(updateRealtimeData, updateInterval);
-    };
+    // var promise;
+    // var updateRealtimeData = function() {
+    //   $scope.realtimeData = [getRandomData()];
+    //   $timeout.cancel(promise);
+    //   promise = $timeout(updateRealtimeData, updateInterval);
+    // };
 
-    updateRealtimeData();
+    // updateRealtimeData();
 
     //World Map
 

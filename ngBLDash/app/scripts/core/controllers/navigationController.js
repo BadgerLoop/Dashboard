@@ -13,7 +13,7 @@ angular
       url: '#/',
     },  {
       label: 'Sub-Teams',
-      iconClasses: 'ti ti-view-list-alt',
+      iconClasses: 'ti ti-settings',
       children: [{
         label: 'Braking',
         url: '#/braking'
