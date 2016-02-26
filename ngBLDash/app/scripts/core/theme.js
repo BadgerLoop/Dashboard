@@ -1,5 +1,5 @@
 angular
-  .module('theme', [
+  .module('theme.core', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
@@ -17,6 +17,18 @@ angular
     'theme.core.navigation_controller',
     'theme.core.messages_controller',
     'theme.core.notifications_controller',
+//  'oc.lazyLoad',                                  //WE SHOULD BE EAGER LOADING IN MY OPINION
+    'theme.core.modules.calendar',
+    'theme.core.modules.nvd3_charts',
+    'theme.core.modules.flot_charts',
+    'theme.core.modules.ui_components',
+    'theme.core.modules.basic_tables',
+    'theme.core.modules.boxed_layout',
+    'theme.core.modules.horizontal_layout',
+    'theme.core.modules.dashboard',
+    'theme.core.modules.gallery',
+    'theme.core.modules.google_maps',
+    'theme.core.modules.ng_grid',
   ])
   .constant('nanoScrollerDefaults', {
     nanoClass: 'scroll-pane',
@@ -30,5 +42,8 @@ angular
         headerRowHeight: 40,
         rowHeight: 40
     };
+
+    
   }]);
+
 

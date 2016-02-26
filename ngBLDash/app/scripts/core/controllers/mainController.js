@@ -39,6 +39,7 @@ angular.module('theme.core.main_controller', ['theme.core.services'])
     ];
 
     $scope.layoutLoading = true;
+    
 
     $scope.getLayoutOption = function(key) {
       return $theme.get(key);

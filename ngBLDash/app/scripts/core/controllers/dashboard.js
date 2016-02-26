@@ -1,5 +1,7 @@
-angular.module('theme.core.dashboard', [
+angular.module('theme.demos.dashboard', [
     'angular-skycons',
+    'theme.demos.forms',
+    'theme.demos.tasks'
   ])
   .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window','pinesNotifications', function($scope, $theme, $timeout, $window, pinesNotifications) {
     'use strict';
