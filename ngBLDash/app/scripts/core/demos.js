@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos', [
+  .module('theme.demos', [  //REMOVED UNUSED MODULE INCLUDES
     'oc.lazyLoad',
     'theme.demos.calendar',
     'theme.demos.nvd3_charts',

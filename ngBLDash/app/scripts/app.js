@@ -1,7 +1,7 @@
 angular
   .module('themesApp', [
     'theme',
-    'theme.demos',
+    'theme.demos', //NEEDS TO BE CHANGED TO REFLECT CORE
   ])
   .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     'use strict';
