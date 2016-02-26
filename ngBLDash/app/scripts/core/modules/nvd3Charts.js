@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.nvd3_charts', [
+  .module('theme.core.nvd3_charts', [
     'nvd3ChartDirectives'
   ])
   .controller('Nvd3ChartsController', ['$scope', '$window', function($scope, $window) {

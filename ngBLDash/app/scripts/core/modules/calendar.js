@@ -1,4 +1,4 @@
-angular.module('theme.demos.calendar', [
+angular.module('theme.core.calendar', [
     'theme.core.services',
     'theme.calendar'
   ])

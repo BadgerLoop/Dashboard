@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.flot_charts', [
+  .module('theme.core.flot_charts', [
     'theme.core.services',
     'theme.chart.flot'
   ])

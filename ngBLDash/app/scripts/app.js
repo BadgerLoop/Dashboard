@@ -1,20 +1,12 @@
 angular
   .module('themesApp', [
-    'theme',
-    'theme.core',
+    'theme'
   ])
   .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     'use strict';
     $routeProvider
       .when('/', {
         templateUrl: 'views/index.html',
-        resolve: {
-          loadCalendar: ['$ocLazyLoad', function($ocLazyLoad) {
-            return $ocLazyLoad.load([
-              'bower_components/fullcalendar/dist/fullcalendar.js',
-            ]);
-          }]
-        }
       })
       .when('/:templateFile', {
         templateUrl: function(param) {

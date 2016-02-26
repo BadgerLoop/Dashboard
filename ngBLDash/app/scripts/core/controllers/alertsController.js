@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.ui_components', ['theme.core.services'])
+  .module('theme.core.alerts_controller', ['theme.core.services'])
   .controller('AlertsController', ['$scope', 'pinesNotifications', '$window', function($scope, pinesNotifications, $window) {
     'use strict';
     var _ = $window._;

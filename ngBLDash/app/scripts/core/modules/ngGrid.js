@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.ng_grid', [
+  .module('theme.core.ng_grid', [
     'ngGrid'
   ])
   .controller('TablesAdvancedController', ['$scope', '$filter', '$http', function($scope, $filter, $http) {

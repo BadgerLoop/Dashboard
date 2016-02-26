@@ -1,5 +1,5 @@
 angular
-  .module('theme.core.modals_controller')
+  angular.module('theme.core.modals_controller', [])
   .controller('ModalsDemoController', ['$scope', '$modal', '$bootbox', '$log', '$window', function($scope, $modal, $bootbox, $log, $window) {
     'use strict';
     var alert = $window.alert;

@@ -1,5 +1,5 @@
 angular
-  .module('theme.core', [
+  .module('theme', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
@@ -14,21 +14,20 @@ angular
     'theme.core.template_overrides',
     'theme.core.directives',
     'theme.core.main_controller',
+    'theme.core.dashboard',
+    'theme.core.alerts_controller',
+    'theme.core.modals_controller',
+    'theme.core.progress_bars_controller',
+    'theme.core.tabs_controller',
     'theme.core.navigation_controller',
     'theme.core.messages_controller',
-    'theme.core.notifications_controller',
-//  'oc.lazyLoad',                                  //WE SHOULD BE EAGER LOADING IN MY OPINION
-    'theme.core.modules.calendar',
-    'theme.core.modules.nvd3_charts',
-    'theme.core.modules.flot_charts',
-    'theme.core.modules.ui_components',
-    'theme.core.modules.basic_tables',
-    'theme.core.modules.boxed_layout',
-    'theme.core.modules.horizontal_layout',
-    'theme.core.modules.dashboard',
-    'theme.core.modules.gallery',
-    'theme.core.modules.google_maps',
-    'theme.core.modules.ng_grid',
+    'theme.core.notifications_controller',                                  
+    //'theme.core.calendar',
+    'theme.core.nvd3_charts',
+    'theme.core.flot_charts',
+    'theme.core.boxed_layout',
+    //'theme.core.google_maps',
+    'theme.core.ng_grid',
   ])
   .constant('nanoScrollerDefaults', {
     nanoClass: 'scroll-pane',

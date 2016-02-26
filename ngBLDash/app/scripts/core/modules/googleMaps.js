@@ -1,4 +1,4 @@
-angular.module('theme.demos.google_maps', [
+angular.module('theme.core.google_maps', [
     'theme.google_maps'
   ])
   .controller('GMapsController', ['$scope', '$window', function($scope, $window) {

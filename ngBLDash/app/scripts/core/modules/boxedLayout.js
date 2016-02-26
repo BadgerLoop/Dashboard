@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.boxed_layout', [
+  .module('theme.core.boxed_layout', [
     'theme.core.services'
   ])
   .controller('BoxedPageController', ['$scope', '$theme', function($scope, $theme) {

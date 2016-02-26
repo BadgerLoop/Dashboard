@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.ui_components')
+  angular.module('theme.core.progress_bars_controller', ['theme.core.services'])
   .controller('ProgressbarController', ['$scope', function($scope) {
     'use strict';
     $scope.rootPanels = [{
