@@ -1,5 +1,5 @@
 angular
-  .module('theme.demos.ui_components')
+  .module('theme.core.tabs_controller')
   .controller('TabsAndAccordionsDemoController', ['$scope', function($scope) {
     'use strict';
     $scope.oneAtATime = true;

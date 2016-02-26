@@ -1,7 +1,7 @@
 angular
   .module('themesApp', [
     'theme',
-    'theme.demos', //NEEDS TO BE CHANGED TO REFLECT CORE
+    'theme.core',
   ])
   .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
     'use strict';
@@ -27,8 +27,9 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  }])
-  .directive('demoOptions', function () {
+  }]); //ADDED SEMI COLON DUE TO COMMENTING OUT BELOW
+
+  /*.directive('demoOptions', function () {
     return {
       restrict: 'C',
       link: function (scope, element, attr) {
@@ -37,4 +38,4 @@ angular
         });
       }
     };
-  })
+  }); */
