@@ -15,12 +15,12 @@
         </div>
         <div class="col-md-3">
             <div class="info-tile tile-success">
-                <div class="tile-heading"><span>Battery Voltage: {{currentBatVoltage}}V</span></div>
+                <div class="tile-heading"><span>Battery Voltage: {{batt.currentBatVoltage}}V</span></div>
                 <div class="tile-body">
                     <span>
                     <div flot-chart style="width: 100%;height: 74px" class="centered"
-                            data-flot-data="realtimeData"
-                            data-flot-options="realtimeOptions">
+                            data-flot-data="batt.realtimeData"
+                            data-flot-options="batt.realtimeOptions">
                     </div>
                     </span>
                 </div>
