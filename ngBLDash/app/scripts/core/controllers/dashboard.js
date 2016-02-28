@@ -25,7 +25,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
     
     BatteryService.updateRealtimeData();
     $scope.batt = BatteryService;
-
     //
     //          END
     // BATTERY VOLTAGE MONITOR
