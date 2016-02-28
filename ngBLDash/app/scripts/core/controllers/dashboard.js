@@ -24,6 +24,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
     //
     BatteryService.updateRealtimeData();
     $scope.batt = BatteryService;
+    
     // $scope.batt.updateRealtimeData();
 
     // var dxta = [],

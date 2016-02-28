@@ -1,9 +1,10 @@
 angular
   .module('theme.core.services')
-  .factory('BatteryService',['$timeout', function($timeout) {
+  .service('BatteryService',['$timeout', function($timeout) {
     'use strict';
 
     this.currentBatVoltage = 0;
+    var self = this;
     var dxta = [],
       totalPoints = 20;
     var updateInterval = 1000;
@@ -24,7 +25,7 @@ angular
             y = 12;
         }
 
-        this.currentBatVoltage = Math.round(y);
+        self.currentBatVoltage = Math.round(y);
 
         dxta.push(y);
       }
@@ -74,13 +75,10 @@ angular
 
     var promise;
     this.updateRealtimeData = function() {
-      realtimeData = [getRandomData()];
+      self.realtimeData = [getRandomData()];
       $timeout.cancel(promise);
-      promise = $timeout(updateRealtimeData, updateInterval);
+      promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
-    return{
-      updateRealtimeData: function updateRealtimeData(){}
-    };
 
   }]);
