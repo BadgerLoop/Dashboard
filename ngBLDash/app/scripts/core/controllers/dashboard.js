@@ -38,6 +38,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
     //
     //
     
+    TelemetryService.updateRealtimeData();
     $scope.telem = TelemetryService;
 
     //
