@@ -5,7 +5,7 @@ angular
 
     var self = this;
 
-     this.currentVelocity = 0;
+    this.currentVelocity = 0;
     var dxta = [],
       totalPoints = 10;
     var updateInterval = 1000;
@@ -96,5 +96,10 @@ angular
       $timeout.cancel(promise);
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
+
+    this.getVelPercentage = function() {
+      var perc = self.currentVelocity/200;
+      return Math.round(perc*100);
+    }
 
   }]);
