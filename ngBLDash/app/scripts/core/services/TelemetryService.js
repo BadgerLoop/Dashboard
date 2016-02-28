@@ -97,4 +97,9 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    this.getVelPercentage = function() {
+      var perc = self.currentVelocity/200;
+      return Math.round(perc*100);
+    }
+
   }]);

@@ -152,12 +152,12 @@
 					            </div>
 					            <div class="mini-progressbar">
 					                <div class="clearfix mb-sm">
-					                    <div class="pull-left">Storage</div>
-					                    <div class="pull-right">25%</div>
+					                    <div class="pull-left">Velocity</div>
+					                    <div class="pull-right">{{telem.currentVelocity}} MPH</div>
 					                </div>
 					                
 					                <div class="progress">    
-					                    <div class="progress-bar progress-bar-info" style="width: 25%"></div>
+					                    <div class="progress-bar progress-bar-info" style="width: {{telem.getVelPercentage()}}%"></div>
 					                </div>
 					            </div>
 
