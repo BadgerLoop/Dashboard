@@ -3,8 +3,9 @@ angular
   .service('BatteryService',['$timeout', function($timeout) {
     'use strict';
 
-    this.currentBatVoltage = 0;
     var self = this;
+
+    this.currentBatVoltage = 0;
     var dxta = [],
       totalPoints = 20;
     var updateInterval = 1000;
@@ -59,7 +60,7 @@ angular
         yaxis: {
             min: 0,
             max: 15,
-            ticks: [0, 7, 15],
+            ticks: [0, 8, 15],
             tickColor: '#f5f5f5', 
             font: {color: '#bdbdbd', size: 12}
         },
@@ -80,5 +81,9 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    this.getBattPercentage = function() {
+      var perc = self.currentBatVoltage/15;
+      return Math.round(perc*100);
+    }
 
   }]);

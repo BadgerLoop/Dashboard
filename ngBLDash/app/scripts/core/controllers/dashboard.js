@@ -24,44 +24,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
     //
     BatteryService.updateRealtimeData();
     $scope.batt = BatteryService;
-    
-    // $scope.batt.updateRealtimeData();
-
-    // var dxta = [],
-    //   totalPoints = 20;
-    // var updateInterval = 1000;
-
-    // function getRandomData() {
-    //   if (dxta.length > 0) {
-    //     dxta = dxta.slice(1);
-    //   }
-
-    //   while (dxta.length < totalPoints) {
-    //     var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-    //         y =  Math.random() * 12;
-
-    //     if (y < 0) {
-    //         y = 0;
-    //         // $scope.severeAlert('BATTERY LEVEL ZERO', 'This needs electrical team attention immediately.');
-    //     } else if (y > 12) {
-    //         y = 12;
-    //     }
-
-    //     $scope.currentBatVoltage = Math.round(y);
-
-    //     dxta.push(y);
-    //   }
-    //   var res = [];
-    //   for (var i = 0; i < dxta.length; ++i) {
-    //     res.push([i, dxta[i]]);
-    //   }
-    //   return res;
-    // }
-
-    // // Real Time Data
-
-    
-
 
     var fans = [[1, 17], [2, 34], [3, 73], [4, 47], [5, 90], [6, 70], [7, 40]];
     var followers = [[1, 54], [2, 40], [3, 10], [4, 25], [5, 42], [6, 14], [7, 36]];

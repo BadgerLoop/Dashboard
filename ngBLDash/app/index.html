@@ -134,7 +134,7 @@
 							</nav>
 						</div>
 
-						<div class="widget" id="widget-progress" ng-cloak>
+						<div class="widget" id="widget-progress" ng-controller="DashboardController" ng-cloak>
 					        <div class="widget-heading">
 					            Pod Info
 					        </div>
@@ -142,12 +142,12 @@
 
 					            <div class="mini-progressbar">
 					                <div class="clearfix mb-sm">
-					                    <div class="pull-left">Bandwidth</div>
-					                    <div class="pull-right">50%</div>
+					                    <div class="pull-left">Voltage</div>
+					                    <div class="pull-right">{{batt.currentBatVoltage}}V</div>
 					                </div>
 					                
 					                <div class="progress">    
-					                    <div class="progress-bar progress-bar-lime" style="width: 50%"></div>
+					                    <div class="progress-bar progress-bar-lime" style="width: {{batt.getBattPercentage()}}%"></div>
 					                </div>
 					            </div>
 					            <div class="mini-progressbar">
@@ -305,9 +305,7 @@
 	<script src="scripts/core/services/theme.js"></script>
 	<script src="scripts/core/theme.js"></script>
 	
-	<!-- BADGERLOOP -->
-	<script src="scripts/core/services/BatteryService.js"></script>
-
+	
 	<!-- IMPLEMENT CHART/MAP/GALLERY/CALENDAR IF DESIRED -->
 	<script src="scripts/calendar/calendar.js"></script>
 	<script src="scripts/chart/canvas.js"></script>
@@ -326,6 +324,10 @@
 
 	<script src="scripts/core/theme.js"></script>
 	<script src="scripts/app.js"></script>
+
+
+	<!-- BADGERLOOP -->
+	<script src="scripts/core/services/BatteryService.js"></script>
 	  <!-- endbuild -->
 </body>
 </html>
