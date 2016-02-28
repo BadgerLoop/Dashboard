@@ -33,8 +33,11 @@ angular
         dxta.push(y);
       }
       var res = [];
+
+      time++;
+      
       for (var i = 0; i < dxta.length; ++i) {
-        res.push([time++, dxta[i]]);
+        res.push([time+i, dxta[i]]);
       }
       
       return res;
