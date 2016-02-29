@@ -2,8 +2,9 @@ angular
   .module('theme.core.ng_grid', [
     'ngGrid'
   ])
-  .controller('TablesAdvancedController', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
+  .controller('SensorSearchController', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
     'use strict';
+
     $scope.filterOptions = {
       filterText: '',
       useExternalFilter: true
