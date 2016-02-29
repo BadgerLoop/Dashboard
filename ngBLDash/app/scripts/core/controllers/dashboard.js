@@ -1,5 +1,6 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
-  .controller('DashboardController', ['$scope', '$theme', '$timeout', '$window','pinesNotifications', 'BatteryService', 'TelemetryService', function($scope, $theme, $timeout, $window, pinesNotifications, BatteryService, TelemetryService) {
+  .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window','pinesNotifications', 'BatteryService', 'TelemetryService', 
+    'SensorService', function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, TelemetryService, SensorService) {
     'use strict';
     
     //
@@ -16,6 +17,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
         });
     }
 
+    $scope.trustAsHtml = $sce.trustAsHtml
 
     //
     //
@@ -43,6 +45,20 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
     //
     //          END
     //      TELEM MONITOR
+    //
+
+    //
+    //
+    //      SENSOR MONITOR
+    //
+    //
+    
+    SensorService.updateRealtimeData();
+    $scope.sensor = SensorService;
+
+    //
+    //          END
+    //      SENSOR MONITOR
     //
 
     var d1 = [
