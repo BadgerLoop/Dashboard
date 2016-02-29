@@ -129,7 +129,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="message in sensor.selectedSensorMessageList() track by $index">
+                            <tr ng-repeat="message in sensor.selectedSensorMessageList() | orderBy: 'timeStamp' : true">
                                 <td>{{message.id}}</td>
                                 <td><strong>{{message.data}}</strong></td>
                                 <td>{{sensor.timeSince(message.timeStamp)}} ago</td>
