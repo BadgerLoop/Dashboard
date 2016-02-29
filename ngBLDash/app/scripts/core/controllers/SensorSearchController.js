@@ -2,16 +2,18 @@ angular
   .module('theme.core.ng_grid', [
     'ngGrid'
   ])
-  .controller('SensorSearchController', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
+  .controller('SensorSearchController', ['$scope', '$filter', '$http', 'SensorService', function($scope, $filter, $http, SensorService) {
     'use strict';
+
+    $scope.sensors = SensorService;
 
     var columnDefs = 
     [
-    {field: 'SSID', displayName: 'ID', width: 50}, 
-    {field: 'Module', displayName: 'Module', width: 100},
-    {field: 'Type', displayName: 'Type', width: 100},
-    {field: 'Name', displayName: 'Name', width: 200},
-    {field: 'Location', displayName: 'Location', width: 280},
+      {field: 'SSID', displayName: 'ID', width: 50}, 
+      {field: 'Module', displayName: 'Module', width: 100},
+      {field: 'Type', displayName: 'Type', width: 100},
+      {field: 'Name', displayName: 'Name', width: 200},
+      {field: 'Location', displayName: 'Location', width: 280},
     ];
 
     $scope.filterOptions = {
@@ -71,6 +73,10 @@ angular
       totalServerItems: 'totalServerItems',
       pagingOptions: $scope.pagingOptions,
       filterOptions: $scope.filterOptions,
-      columnDefs: columnDefs
+      columnDefs: columnDefs,
+      selectedItems: $scope.sensors.selectedSensors,
+      afterSelectionChange: function(data) {
+        console.log("Sensor Selected:", $scope.sensors.selectedSensors);
+      }
     };
   }]);

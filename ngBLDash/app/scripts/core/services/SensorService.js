@@ -5,6 +5,8 @@ angular
 
     var self = this;
 
+    this.selectedSensors = [];
+
     var currentMessageList = [];
     var updateInterval = 5000;
 
