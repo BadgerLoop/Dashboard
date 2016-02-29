@@ -57,7 +57,7 @@ angular
 
     $scope.gridOptions = {
       data: 'myData',
-      enablePaging: true,
+      enablePaging: false,
       showFooter: true,
       totalServerItems: 'totalServerItems',
       pagingOptions: $scope.pagingOptions,
