@@ -138,6 +138,15 @@
                                 <td>{{message.sensor}}</td>
                                 <td>{{message.location}}</td>
                             </tr>
+                            <tr ng-if="sensor.selectedSensorMessageList().length === 0">
+                                <td></td>
+                                <td><strong>NO MESSAGES FROM SELECTED SENSORS</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
                         </tbody>
                         <caption>List of messages from selected sensors</caption>
                     </table>
