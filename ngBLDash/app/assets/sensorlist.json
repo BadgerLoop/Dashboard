@@ -1,0 +1,1150 @@
+[
+    {
+        "SSID": "1",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Shaft Encoder 1",
+        "Location": "Brake axle"
+    },
+    {
+        "SSID": "2",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Accelerometer/Gyro 1",
+        "Location": "Module"
+    },
+    {
+        "SSID": "3",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 1",
+        "Location": "Bogie - front left"
+    },
+    {
+        "SSID": "4",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 2",
+        "Location": "Bogie - front right"
+    },
+    {
+        "SSID": "5",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 3",
+        "Location": "Bogie - back left"
+    },
+    {
+        "SSID": "6",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 4",
+        "Location": "Bogie - back right"
+    },
+    {
+        "SSID": "7",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 5",
+        "Location": "Drum brake - left wheel - front"
+    },
+    {
+        "SSID": "8",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 6",
+        "Location": "Drum brake - left wheel - back"
+    },
+    {
+        "SSID": "9",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 7",
+        "Location": "Drum brake - right wheel - front"
+    },
+    {
+        "SSID": "10",
+        "Module": "BPM1",
+        "Type": "Sensor",
+        "Name": "Limit Switch 8",
+        "Location": "Drum brake - right wheel - back"
+    },
+    {
+        "SSID": "11",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 1",
+        "Location": "Linear actuator - Mode 1 Switch 1"
+    },
+    {
+        "SSID": "12",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 2",
+        "Location": "Linear actuator - Mode 1 Switch 2"
+    },
+    {
+        "SSID": "13",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 3",
+        "Location": "Linear actuator - Mode 2 Switch 1"
+    },
+    {
+        "SSID": "14",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 4",
+        "Location": "Linear actuator - Mode 2 Switch 2"
+    },
+    {
+        "SSID": "15",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 5",
+        "Location": "Bogie electromagnets"
+    },
+    {
+        "SSID": "16",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 6",
+        "Location": "Drum brakes electromagnet"
+    },
+    {
+        "SSID": "17",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Linear Actuator 1",
+        "Location": "Linear actuator - front"
+    },
+    {
+        "SSID": "18",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Bogie Electromagnet 1",
+        "Location": "Bogie electromagnet - front"
+    },
+    {
+        "SSID": "19",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Bogie Electromagnet 2",
+        "Location": "Bogie electromagnet - back"
+    },
+    {
+        "SSID": "20",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 1",
+        "Location": "Drum brake - left wheel - front"
+    },
+    {
+        "SSID": "21",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 2",
+        "Location": "Drum brake - left wheel - back"
+    },
+    {
+        "SSID": "22",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 3",
+        "Location": "Drum brake - right wheel - front"
+    },
+    {
+        "SSID": "23",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 4",
+        "Location": "Drum brake - right wheel - back"
+    },
+    {
+        "SSID": "24",
+        "Module": "BPM1",
+        "Type": "Actuator",
+        "Name": "Small Motor Controller 1",
+        "Location": "Small motor - front"
+    },
+    {
+        "SSID": "25",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Shaft Encoder 1",
+        "Location": "Brake axle"
+    },
+    {
+        "SSID": "26",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Accelerometer/Gyro 1",
+        "Location": "Module"
+    },
+    {
+        "SSID": "27",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 1",
+        "Location": "Bogie - front left"
+    },
+    {
+        "SSID": "28",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 2",
+        "Location": "Bogie - front right"
+    },
+    {
+        "SSID": "29",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 3",
+        "Location": "Bogie - back left"
+    },
+    {
+        "SSID": "30",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 4",
+        "Location": "Bogie - back right"
+    },
+    {
+        "SSID": "31",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 5",
+        "Location": "Drum brake - left wheel - front"
+    },
+    {
+        "SSID": "32",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 6",
+        "Location": "Drum brake - left wheel - back"
+    },
+    {
+        "SSID": "33",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 7",
+        "Location": "Drum brake - right wheel - front"
+    },
+    {
+        "SSID": "34",
+        "Module": "BPM2",
+        "Type": "Sensor",
+        "Name": "Limit Switch 8",
+        "Location": "Drum brake - right wheel - back"
+    },
+    {
+        "SSID": "35",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 1",
+        "Location": "Linear actuator - Mode 1 Switch 1"
+    },
+    {
+        "SSID": "36",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 2",
+        "Location": "Linear actuator - Mode 1 Switch 2"
+    },
+    {
+        "SSID": "37",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 3",
+        "Location": "Linear actuator - Mode 2 Switch 1"
+    },
+    {
+        "SSID": "38",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 4",
+        "Location": "Linear actuator - Mode 2 Switch 2"
+    },
+    {
+        "SSID": "39",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 5",
+        "Location": "Bogie electromagnets"
+    },
+    {
+        "SSID": "40",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 6",
+        "Location": "Drum brakes electromagnet"
+    },
+    {
+        "SSID": "41",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Linear Actuator 1",
+        "Location": "Linear actuator - back"
+    },
+    {
+        "SSID": "42",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Bogie Electromagnet 1",
+        "Location": "Bogie electromagnet - front"
+    },
+    {
+        "SSID": "43",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Bogie Electromagnet 2",
+        "Location": "Bogie electromagnet - back"
+    },
+    {
+        "SSID": "44",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 1",
+        "Location": "Drum brake - left wheel - front"
+    },
+    {
+        "SSID": "45",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 2",
+        "Location": "Drum brake - left wheel - back"
+    },
+    {
+        "SSID": "46",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 3",
+        "Location": "Drum brake - right wheel - front"
+    },
+    {
+        "SSID": "47",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Drum Brake Electromagnet 4",
+        "Location": "Drum brake - right wheel - back"
+    },
+    {
+        "SSID": "48",
+        "Module": "BPM2",
+        "Type": "Actuator",
+        "Name": "Small Motor Controller 1",
+        "Location": "Motor - back"
+    },
+    {
+        "SSID": "49",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Pressure Transducer 1",
+        "Location": "Anywhere under the pod"
+    },
+    {
+        "SSID": "50",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 1",
+        "Location": "Facing rail - front right"
+    },
+    {
+        "SSID": "51",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 2",
+        "Location": "Facing rail - front right"
+    },
+    {
+        "SSID": "52",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 3",
+        "Location": "Facing rail - back right"
+    },
+    {
+        "SSID": "53",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 4",
+        "Location": "Facing rail - back right"
+    },
+    {
+        "SSID": "54",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 5",
+        "Location": "Facing track - front right"
+    },
+    {
+        "SSID": "55",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 6",
+        "Location": "Facing track - front right"
+    },
+    {
+        "SSID": "56",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 7",
+        "Location": "Facing track - back left"
+    },
+    {
+        "SSID": "57",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 8",
+        "Location": "Facing track - back left"
+    },
+    {
+        "SSID": "58",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 9",
+        "Location": "Facing track - back right"
+    },
+    {
+        "SSID": "59",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Proximity Sensor 10",
+        "Location": "Facing track - back right"
+    },
+    {
+        "SSID": "60",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Eddy Brake Current Sensor 1",
+        "Location": "Eddy brake - 1/5th down pod length"
+    },
+    {
+        "SSID": "61",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Eddy Brake Current Sensor 2",
+        "Location": "Eddy brake - 2/5th down pod length"
+    },
+    {
+        "SSID": "62",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Eddy Brake Current Sensor 3",
+        "Location": "Eddy brake - 3/5th down pod length"
+    },
+    {
+        "SSID": "63",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Eddy Brake Current Sensor 4",
+        "Location": "Eddy brake - 4/5th down pod length"
+    },
+    {
+        "SSID": "64",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Eddy Brake Current Sensor 5",
+        "Location": "Eddy brake - 5/5th down pod length"
+    },
+    {
+        "SSID": "65",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 1",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "66",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 2",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "67",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 3",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "68",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 4",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "69",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 5",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "70",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 6",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "71",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 7",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "72",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 8",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "73",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 9",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "74",
+        "Module": "MCM",
+        "Type": "Sensor",
+        "Name": "Encoder 10",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "75",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 1",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "76",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 2",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "77",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 3",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "78",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 4",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "79",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 5",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "80",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 6",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "81",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 7",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "82",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 8",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "83",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 9",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "84",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor Controller 10",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "85",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 1",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "86",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 2",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "87",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 3",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "88",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 4",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "89",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 5",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "90",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 6",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "91",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 7",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "92",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 8",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "93",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 9",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "94",
+        "Module": "MCM",
+        "Type": "Actuator",
+        "Name": "Motor 10",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "95",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Accelerometer/Gyro 1",
+        "Location": "Module"
+    },
+    {
+        "SSID": "96",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Accelerometer/Gyro 2",
+        "Location": "Module"
+    },
+    {
+        "SSID": "97",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Accelerometer/Gyro 3",
+        "Location": "Module"
+    },
+    {
+        "SSID": "98",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Limit Switch 1",
+        "Location": "Door - front"
+    },
+    {
+        "SSID": "99",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Limit Switch 2",
+        "Location": "Door - back"
+    },
+    {
+        "SSID": "100",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Tape Strip Detector 1",
+        "Location": "Shell - middle right - 10 deg from vertical"
+    },
+    {
+        "SSID": "101",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Tape Strip Detector 2",
+        "Location": "Shell - middle right - 25 deg from vertical"
+    },
+    {
+        "SSID": "102",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Tape Strip Detector 3",
+        "Location": "Shell - middle right - 40 deg from vertical"
+    },
+    {
+        "SSID": "103",
+        "Module": "VCM",
+        "Type": "Sensor",
+        "Name": "Compression Load Cell 1",
+        "Location": "Accelerator interface"
+    },
+    {
+        "SSID": "104",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Pressure Transducer 1",
+        "Location": "Cabin - anywhere"
+    },
+    {
+        "SSID": "105",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 1",
+        "Location": "Cabin - front "
+    },
+    {
+        "SSID": "106",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 2",
+        "Location": "Cabin - front "
+    },
+    {
+        "SSID": "107",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 3",
+        "Location": "Cabin - back"
+    },
+    {
+        "SSID": "108",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 4",
+        "Location": "Cabin - back"
+    },
+    {
+        "SSID": "109",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 5",
+        "Location": "Emergency terminals - front"
+    },
+    {
+        "SSID": "110",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 6",
+        "Location": "Emergency Terminals - back"
+    },
+    {
+        "SSID": "111",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 7",
+        "Location": "BPM1 - solid state relay 1"
+    },
+    {
+        "SSID": "112",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 8",
+        "Location": "BPM1 - solid state relay 5"
+    },
+    {
+        "SSID": "113",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 9",
+        "Location": "BPM1 - solid state relay 6"
+    },
+    {
+        "SSID": "114",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 10",
+        "Location": "BPM2 - solid state relay 1"
+    },
+    {
+        "SSID": "115",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 11",
+        "Location": "BPM2 - solid state relay 5"
+    },
+    {
+        "SSID": "116",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 12",
+        "Location": "BPM2 - solid state relay 6"
+    },
+    {
+        "SSID": "117",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 13",
+        "Location": "BPM1 - small motor"
+    },
+    {
+        "SSID": "118",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 14",
+        "Location": "BPM1 - small motor controller"
+    },
+    {
+        "SSID": "119",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 15",
+        "Location": "BPM2 - small motor"
+    },
+    {
+        "SSID": "120",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 16",
+        "Location": "BPM2 - small motor controller"
+    },
+    {
+        "SSID": "121",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 17",
+        "Location": "Pack 1 - motor controller 1 harness"
+    },
+    {
+        "SSID": "122",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 18",
+        "Location": "Pack 1 - motor controller 1 harness"
+    },
+    {
+        "SSID": "123",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 19",
+        "Location": "Pack 1 - motor controller 2 harness"
+    },
+    {
+        "SSID": "124",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 20",
+        "Location": "Pack 1 - motor controller 2 harness"
+    },
+    {
+        "SSID": "125",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 21",
+        "Location": "Pack 1 - motor controller 3 harness"
+    },
+    {
+        "SSID": "126",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 22",
+        "Location": "Pack 1 - motor controller 3 harness"
+    },
+    {
+        "SSID": "127",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 23",
+        "Location": "Pack 2 - motor controller 4 harness"
+    },
+    {
+        "SSID": "128",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 24",
+        "Location": "Pack 2 - motor controller 4 harness"
+    },
+    {
+        "SSID": "129",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 25",
+        "Location": "Pack 2 - motor controller 5 harness"
+    },
+    {
+        "SSID": "130",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 26",
+        "Location": "Pack 2 - motor controller 5 harness"
+    },
+    {
+        "SSID": "131",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 27",
+        "Location": "Pack 2 - motor controller 6 harness"
+    },
+    {
+        "SSID": "132",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 28",
+        "Location": "Pack 2 - motor controller 6 harness"
+    },
+    {
+        "SSID": "133",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 29",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "134",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 30",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "135",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 31",
+        "Location": "Motor 1 - front left"
+    },
+    {
+        "SSID": "136",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 32",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "137",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 33",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "138",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 34",
+        "Location": "Motor 2 - front left"
+    },
+    {
+        "SSID": "139",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 35",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "140",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 36",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "141",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 37",
+        "Location": "Motor 3 - middle left"
+    },
+    {
+        "SSID": "142",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 38",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "143",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 39",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "144",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 40",
+        "Location": "Motor 4 - back left"
+    },
+    {
+        "SSID": "145",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 41",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "146",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 42",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "147",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 43",
+        "Location": "Motor 5 - back left"
+    },
+    {
+        "SSID": "148",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 44",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "149",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 45",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "150",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 46",
+        "Location": "Motor 6 - front right"
+    },
+    {
+        "SSID": "151",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 47",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "152",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 48",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "153",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 49",
+        "Location": "Motor 7 - front right"
+    },
+    {
+        "SSID": "154",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 50",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "155",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 51",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "156",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 52",
+        "Location": "Motor 8 - middle right"
+    },
+    {
+        "SSID": "157",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 53",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "158",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 54",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "159",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 55",
+        "Location": "Motor 9 - back right"
+    },
+    {
+        "SSID": "160",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 56",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "161",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 57",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "162",
+        "Module": "ECM",
+        "Type": "Sensor",
+        "Name": "Thermistor 58",
+        "Location": "Motor 10 - back right"
+    },
+    {
+        "SSID": "163",
+        "Module": "ECM",
+        "Type": "Actuator",
+        "Name": "Siren",
+        "Location": "Cabin - anywhere"
+    },
+    {
+        "SSID": "164",
+        "Module": "ECM",
+        "Type": "Actuator",
+        "Name": "Solid State Relay 1",
+        "Location": "Siren"
+    }
+]
