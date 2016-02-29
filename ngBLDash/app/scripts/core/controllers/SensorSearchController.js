@@ -5,6 +5,14 @@ angular
   .controller('SensorSearchController', ['$scope', '$filter', '$http', function($scope, $filter, $http) {
     'use strict';
 
+    var columnDefs = 
+    [
+    {field: 'SSID', displayName: 'ID', width: 50}, 
+    {field: 'Module', displayName: 'Module', width: 100},
+    {field: 'Type', displayName: 'Type', width: 100},
+    {field: 'Name', displayName: 'Name', width: 200},
+    {field: 'Location', displayName: 'Location', width: 280},
+    ];
 
     $scope.filterOptions = {
       filterText: '',
@@ -62,6 +70,7 @@ angular
       showFooter: true,
       totalServerItems: 'totalServerItems',
       pagingOptions: $scope.pagingOptions,
-      filterOptions: $scope.filterOptions
+      filterOptions: $scope.filterOptions,
+      columnDefs: columnDefs
     };
   }]);
