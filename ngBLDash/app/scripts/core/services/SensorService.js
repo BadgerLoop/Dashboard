@@ -8,7 +8,7 @@ angular
     this.selectedSensors = [];
 
     var currentMessageList = [];
-    var updateInterval = 5000;
+    var updateInterval = 1000;
 
     var fakeMessages = [
         {
