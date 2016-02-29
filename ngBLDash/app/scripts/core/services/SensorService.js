@@ -7,7 +7,7 @@ angular
 
     var currentMessageList = [];
     var updateInterval = 2000;
-
+    
     var fakeMessages = [
         {
           sensor: "BPM Opt. En.",
@@ -42,7 +42,7 @@ angular
     var getMessageList = function() {
       var tempMessage = fakeMessages[Math.floor(Math.random() * fakeMessages.length)];
       tempMessage.timeStamp = new Date();
-      currentMessageList.push(tempMessage);
+      currentMessageList.unshift(tempMessage);
       return currentMessageList;
     }
 
