@@ -12,7 +12,7 @@ angular
     $scope.totalServerItems = 0;
     $scope.pagingOptions = {
       pageSizes: [25, 50, 100],
-      pageSize: 25,
+      pageSize: 1000,
       currentPage: 1
     };
     $scope.setPagingData = function(data, page, pageSize) {

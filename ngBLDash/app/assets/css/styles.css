@@ -1,3 +1,12 @@
 #topnav .navbar-brand{
 	width: 200px !important;
 }
+
+.ngGrid .ngRow.selected{
+	background-color: #378fbf;
+	opacity: .4;
+}
+
+.ngGrid .ngRow.selected .ngCellText{
+	color: white;
+}
