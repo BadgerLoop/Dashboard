@@ -12,32 +12,53 @@ angular
 
     var fakeMessages = [
         {
-          sensor: "BPM Opt. En.",
-          data: "12"
+          sensor: "Shaft Encoder 1",
+          data: "12 rpm",
+          id: 1,
+          type: "Sensor",
+          module: "BPM1"
         },
         {
-          sensor: "Ecm Therm.",
-          data: "120 F"
+          sensor: "Limit Switch 1",
+          data: "120 F",
+          id: 3,
+          type: "Sensor",
+          module: "BPM1"
         },
         {
-          sensor: "Ecm Therm. 2",
-          data: "98 F"
+          sensor: "Pressure Transducer 1",
+          data: "98lb",
+          id: 104,
+          type: "Sensor",
+          module: "ECM"
         },
         {
-          sensor: "VCM Accel.",
-          data: "15 m/s"
+          sensor: "Thermistor 11",
+          data: "128 F",
+          id: 115,
+          type: "Sensor",
+          module: "ECM"
         },
         {
-          sensor: "WCM Latency",
-          data: "32 mb/s"
+          sensor: "Motor Controller 8",
+          data: "24mph",
+          id: 82,
+          type: "Actuator",
+          module: "MCM"
         },
         {
-          sensor: "MCM Prox.",
-          data: "4 mm"
+          sensor: "Solid State Relay 3",
+          data: "1345",
+          id: 37,
+          type: "Actuator",
+          module: "BPM2"
         },
         {
-          sensor: "VCM Gyro.",
-          data: "X: 23 Y: 32 Z: 43"
+          sensor: "Drum Brake Electromagnet 1",
+          data: "2.34",
+          id: 44,
+          type: "Actuator",
+          module: "BPM2"
         }
     ];
 
