@@ -81,10 +81,10 @@
                                 <li class="mini-timeline-lime" ng-repeat="message in sensor.messageList track by $index">
                                    <div class="timeline-icon"></div>
                                    <div class="timeline-body">
-                                          <div class="timeline-content">
-                                                    <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
-                                                    <span class="time">4 mins ago</span>
-                                          </div>
+                                      <div class="timeline-content">
+                                        <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
+                                        <span class="time">{{sensor.timeSince(message.timeStamp)}}</span>
+                                      </div>
                                     </div>
                                 </li>
                             </ul>
