@@ -6,7 +6,7 @@ angular
     var self = this;
 
     var currentMessageList = [];
-    var updateInterval = 2000;
+    var updateInterval = 5000;
 
     var fakeMessages = [
         {
