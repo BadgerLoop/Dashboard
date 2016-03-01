@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="panel panel-teal" data-widget='{"draggable": "false"}'>
+                <div class="panel panel-teal" data-widget='{"draggable": "false"}' style="height: 370px;">
                     <div class="panel-heading">
                         <h2>Module Message Distribution</h2>
                         <div class="panel-ctrls button-icon-bg" 
@@ -105,7 +105,7 @@
                     <div class="panel-body no-padding">
                         <table class="table browsers m-n">
                             <tbody>
-                                <tr ng-repeat="(key, value) in sensor.getModuleDistribution() | orderBy: 'value' : true">
+                                <tr ng-repeat="(key, value) in sensor.getModuleDistribution() | orderBy: 'value' : true" style="height: 63px;">
                                     <td>{{key}}</td>
                                     <td class="text-right">{{sensor.getModulePercentage(value)}}%</td>
                                     <td class="vam" style="width: 56px;">
