@@ -150,12 +150,8 @@
                         </tbody>
                         <caption>List of messages from selected sensors</caption>
                         <ul class="demo-btns">
-                            <!-- <li><a class="btn btn-xs btn-danger btn-label" href="#"><i class="ti ti-close"></i>BPM THERM 1</a></li>
-                            <li><a class="btn btn-xs btn-danger btn-label" href="#"><i class="ti ti-close"></i>MPM PROX 2</a></li>
-                            <li><a class="btn btn-xs btn-danger btn-label" href="#"><i class="ti ti-close"></i>ECM ENCODER 2</a></li>  -->
-                            <li ng-repeat="sensor in sensor.selectedSensors">
-                                <button type="button" class="btn btn-xs btn-danger btn-label" ng-click="removeSensorFromList(sensor)"><i class="ti ti-close"></i>{{sensor.Name}}</button>
-                                <!-- <button ng-click="sensor.removeSensorFromList()">{{sensor.Name}}</button> -->
+                            <li ng-repeat="sensor in sensor.selectedSensors" class="selectedSensorButtons">
+                                <button type="button" class="btn btn-xs btn-danger btn-label" ng-click="removeSensorFromList(sensor)"><i class="ti ti-close"></i>{{sensor.Module}} - {{sensor.Name}}</button>
                             </li>            
                         </ul>
                     </table>

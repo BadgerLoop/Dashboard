@@ -10,3 +10,8 @@
 .ngGrid .ngRow.selected .ngCellText{
 	color: white;
 }
+
+.selectedSensorButtons{
+	display:inline;
+    padding: 10px 15px;
+}
