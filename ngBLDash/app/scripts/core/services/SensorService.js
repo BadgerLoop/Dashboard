@@ -100,6 +100,12 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    this.removeSensorFromList = function(sensor){
+      console.log("Removing Sensor: " + sensor);
+      var index = self.selectedSensors.indexOf(sensor);
+      self.selectedSensors.splice(index, 1);
+    }
+
     this.timeSince = function(date){
 
       var seconds = Math.floor((new Date() - date) / 1000);
