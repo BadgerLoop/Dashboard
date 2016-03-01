@@ -78,7 +78,7 @@
                     <div class="panel-body scroll-pane" style="height: 320px;">
                         <div class="scroll-content">
                             <ul class="mini-timeline">
-                                <li class="mini-timeline-lime" ng-repeat="message in sensor.messageList track by $index">
+                                <li class="mini-timeline-lime" ng-repeat="message in sensor.messageList track by $index | limitTo:50 ">
                                    <div class="timeline-icon"></div>
                                    <div class="timeline-body">
                                       <div class="timeline-content">
