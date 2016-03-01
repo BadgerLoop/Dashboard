@@ -1,5 +1,6 @@
 #topnav .navbar-brand{
 	width: 200px !important;
+
 }
 
 .ngGrid .ngRow.selected{
@@ -40,4 +41,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', end
 
 .panel .panel-heading{
 	background-color: #263238;
+}
+
+#topnav.navbar-default{
+	background: #C70000;
+}
+
+.page-content > .breadcrumb{
+	background: rgb(69, 90, 100) !important;
 }
