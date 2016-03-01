@@ -27,3 +27,20 @@ table.browsers > tbody > tr > td{
 table.browsers > tbody > tr > td:last-child{
 	padding-bottom: 20px;
 }
+
+.static-content-wrapper{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b5bdc8+0,828c95+24,28343b+100 */
+background: rgb(181,189,200); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 24%, rgba(40,52,59,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 24%,rgba(40,52,59,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 24%,rgba(40,52,59,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.panel .panel-heading{
+	background-color: #263238;
+}
+// .panel.panel-gray .panel-heading{
+// 	background-color: #263238;	
+// }
