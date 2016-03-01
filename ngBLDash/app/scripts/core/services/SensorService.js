@@ -10,6 +10,8 @@ angular
     var currentMessageList = [];
     var updateInterval = 1000;
 
+    var modulesMessageCount = {"BPM1": 0, "BPM2": 0, "MCM": 0, "VCM": 0, "ECM": 0};
+
     var fakeMessages = [
         {
           sensor: "Shaft Encoder 1",
@@ -25,6 +27,22 @@ angular
           id: "3",
           type: "Sensor",
           module: "BPM1",
+          location: "Boggie - Front left"
+        },
+        {
+          sensor: "Limit Switch 1",
+          data: "120 F",
+          id: "27",
+          type: "Sensor",
+          module: "BPM2",
+          location: "Boggie - Front left"
+        },
+        {
+          sensor: "Tape Strip Detector",
+          data: "True",
+          id: "100",
+          type: "Sensor",
+          module: "VCM",
           location: "Boggie - Front left"
         },
         {
@@ -71,6 +89,9 @@ angular
 
     var getMessageList = function() {
       var tempMessage = jQuery.extend({}, fakeMessages[Math.floor(Math.random() * fakeMessages.length)]);
+      modulesMessageCount[tempMessage.module] ? 
+        modulesMessageCount[tempMessage.module].value += 1 : 
+        modulesMessageCount[tempMessage.module] = {value: 1};
       tempMessage.timeStamp = new Date();
       currentMessageList.unshift(tempMessage);
       return currentMessageList;
@@ -89,6 +110,17 @@ angular
       }
 
       return selectedMessages; 
+    }
+
+    this.getModuleDistribution = function(){
+      return modulesMessageCount;
+    }
+
+    this.getModulePercentage = function(obj){
+      if(obj.value === undefined){
+        return 0;
+      }
+      return Math.round((obj.value / currentMessageList.length) * 100);
     }
 
     this.messageList = getMessageList();
