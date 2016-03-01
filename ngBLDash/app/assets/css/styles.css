@@ -42,15 +42,17 @@ background-image: url("FlameArtwork.jpg");
 
 .panel .panel-heading{
 	background-color: #263238;
+	//background-image: url("metallic.jpg");
 }
 
 #topnav.navbar-default{
-	background: #263238;
-	
+	//background: #263238;
+	background-image: url("metallic.jpg");
 }
 
 .page-content > .breadcrumb{
-	background: rgb(69, 90, 100) !important;
+	//background: rgb(69, 90, 100) !important;
+	background-color: #263238 !important;
 }
 
 .sidebar-midnightblue.static-sidebar-wrapper {
