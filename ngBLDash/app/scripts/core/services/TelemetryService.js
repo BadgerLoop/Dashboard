@@ -12,6 +12,10 @@ angular
 
     var time = 0;
 
+    /**
+     * Create random data point for velocity. voltage
+     * @return {[Int]} list of last totalPoints of velocity 
+     */
     var getRandomData = function() {
       if (dxta.length > 0) {
         dxta = dxta.slice(1);
@@ -44,10 +48,9 @@ angular
 
     }
 
-
-    // var velocity = [[1, 17], [2, 34], [3, 73], [4, 47], [5, 90], [6, 70], [7, 40]];
-    // var accel = [[1, 54], [2, 40], [3, 10], [4, 25], [5, 42], [6, 14], [7, 36]];
-
+    /**
+     * Graph info. for Accel
+     */
     this.plotVelAccelData = [{ data: getRandomData(), label: "Velocity" }];
     this.plotVelAccelOptions = {
         series: {
@@ -93,6 +96,9 @@ angular
         }
     };
 
+    /**
+     * Starts the constant update of fake data for velocity data
+     */
     var promise;
     this.updateRealtimeData = function() {
       self.plotVelAccelData = [getRandomData()];
@@ -100,6 +106,9 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    /**
+     * @return {Int} current vel./200 -> into percentage
+     */
     this.getVelPercentage = function() {
       var perc = self.currentVelocity/200;
       return Math.round(perc*100);

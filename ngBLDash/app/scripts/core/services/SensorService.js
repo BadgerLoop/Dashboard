@@ -87,6 +87,10 @@ angular
         }
     ];
 
+    /**
+     * Create random message, increment module count, timestamp, add to list
+     * @return {[Messages]} List of all messages 
+     */
     var getMessageList = function() {
       var tempMessage = jQuery.extend({}, fakeMessages[Math.floor(Math.random() * fakeMessages.length)]);
       modulesMessageCount[tempMessage.module] ? 
@@ -97,7 +101,9 @@ angular
       return currentMessageList;
     }
 
-    //Check all the selected sensors and add return all the messages from that sensor
+    /**
+     * @return {[Messages]} List of messages only sent from those who are selected 
+     */
     this.selectedSensorMessageList = function(){
       var selectedMessages = [];
 
@@ -112,10 +118,18 @@ angular
       return selectedMessages; 
     }
 
+    /**
+     * @return {[Modules]} Key and Value of module list and number 
+     * of messages they have personally sent 
+     */
     this.getModuleDistribution = function(){
       return modulesMessageCount;
     }
 
+    /**
+     * @param {Module} obj
+     * @return {Int} percentage that given module has sent of total messages 
+     */
     this.getModulePercentage = function(obj){
       if(obj.value === undefined){
         return 0;
@@ -125,6 +139,9 @@ angular
 
     this.messageList = getMessageList();
 
+    /**
+     * Starts the constant update of fake data for message list
+     */
     var promise;
     this.updateRealtimeData = function() {
       self.messageList = getMessageList();
@@ -132,12 +149,20 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    /**
+     * Removes parameter sensor from our selected sensor list
+     * @param {Sensor} sensor
+     */
     this.removeSensorFromList = function(sensor){
       console.log("Removing Sensor: " + sensor);
       var index = self.selectedSensors.indexOf(sensor);
       self.selectedSensors.splice(index, 1);
     }
 
+    /**
+     * @param {Date} data
+     * @return {String} 'timesince' + 'seconds/minutes/hours/months/years'
+     */
     this.timeSince = function(date){
 
       var seconds = Math.floor((new Date() - date) / 1000);

@@ -10,6 +10,10 @@ angular
       totalPoints = 20;
     var updateInterval = 1000;
 
+    /**
+     * Create random data point for batt. voltage
+     * @return {[Int]} list of last totalPoints of voltage 
+     */
     var getRandomData = function() {
       if (dxta.length > 0) {
         dxta = dxta.slice(1);
@@ -39,6 +43,9 @@ angular
 
     }
 
+    /**
+     * Graph info. for Batt.
+     */
     this.realtimeData = [getRandomData()];
     this.realtimeOptions = {
         series: {
@@ -74,6 +81,9 @@ angular
         }
     };
 
+    /**
+     * Starts the constant update of fake data for batt. voltage
+     */
     var promise;
     this.updateRealtimeData = function() {
       self.realtimeData = [getRandomData()];
@@ -81,6 +91,9 @@ angular
       promise = $timeout(self.updateRealtimeData, updateInterval);
     };
 
+    /**
+     * @return {Int} current batt. voltage/15 -> into percentage
+     */
     this.getBattPercentage = function() {
       var perc = self.currentBatVoltage/15;
       return Math.round(perc*100);
