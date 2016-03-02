@@ -1,78 +1,71 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
-  .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window','pinesNotifications', 'BatteryService', 'TelemetryService', 
-    'SensorService', function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, TelemetryService, SensorService) {
-    'use strict';
-    
-    //
-    //
-    // ALERTS
-    //
-    //
-    $scope.severeAlert = function(message, text){
-        pinesNotifications.notify({
-        title: message,
-        text: text,
-        type: 'error',
-        hide: false
-        });
-    }
+    .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'TelemetryService',
+        'SensorService',
+        function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, TelemetryService, SensorService) {
+            'use strict';
 
-    $scope.trustAsHtml = $sce.trustAsHtml
+            //
+            //
+            // ALERTS
+            //
+            //
+            $scope.severeAlert = function(message, text) {
+                pinesNotifications.notify({
+                    title: message,
+                    text: text,
+                    type: 'error',
+                    hide: false
+                });
+            }
 
-    //
-    //
-    // BATTERY VOLTAGE MONITOR
-    //
-    //
-    
-    BatteryService.updateRealtimeData();
-    $scope.batt = BatteryService;
-    //
-    //          END
-    // BATTERY VOLTAGE MONITOR
-    //
-    
+            $scope.trustAsHtml = $sce.trustAsHtml
 
-    //
-    //
-    //      TELEM MONITOR
-    //
-    //
-    
-    TelemetryService.updateRealtimeData();
-    $scope.telem = TelemetryService;
+            //
+            //
+            // BATTERY VOLTAGE MONITOR
+            //
+            //
 
-    //
-    //          END
-    //      TELEM MONITOR
-    //
+            BatteryService.updateRealtimeData();
+            $scope.batt = BatteryService;
+            //
+            //          END
+            // BATTERY VOLTAGE MONITOR
+            //
 
-    //
-    //
-    //      SENSOR MONITOR
-    //
-    //
-    
-    SensorService.updateRealtimeData();
-    $scope.sensor = SensorService;
 
-    //For removing from selected sensor list
-    $scope.removeSensorFromList = function(sensor){
-        $scope.sensor.removeSensorFromList(sensor);
-    }
+            //
+            //
+            //      TELEM MONITOR
+            //
+            //
 
-    //
-    //          END
-    //      SENSOR MONITOR
-    //
+            TelemetryService.updateRealtimeData();
+            $scope.telem = TelemetryService;
 
-  }])
+            //
+            //          END
+            //      TELEM MONITOR
+            //
 
-//Welcome Alert
-.run(['pinesNotifications', function(pinesNotifications){
-    pinesNotifications.notify({
-        title: 'BadgerLoop Dashboard Setup',
-        text: 'The dashboard is fully setup and running.',
-        type: 'success'
-      });
-}]);
+            //
+            //
+            //      SENSOR MONITOR
+            //
+            //
+
+            SensorService.updateRealtimeData();
+            $scope.sensor = SensorService;
+
+            //For removing from selected sensor list
+            $scope.removeSensorFromList = function(sensor) {
+                $scope.sensor.removeSensorFromList(sensor);
+            }
+
+            //
+            //          END
+            //      SENSOR MONITOR
+            //
+
+        }
+    ]);
