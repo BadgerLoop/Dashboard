@@ -24,8 +24,8 @@ angular
 
 // Config for Exis
 .config(function($riffleProvider) {
-    $riffleProvider.setDomain("xs.demo.badgerloop.blapp");
-    $riffleProvider.setFabricLocal();
+    $riffleProvider.setDomain("xs.demo.badgerloop.blapp.Container.spammer");
+    // $riffleProvider.setFabricLocal(); FOR LOCAL NODE USE
 })
 
 //Welcome Alert
@@ -39,6 +39,7 @@ angular
 
 //Connect to Exis
 .run(function($riffle, $rootScope) {
+    $riffle.setToken("zXMXlKCSoPpQatu9opgKYodSuHdrAzRsTUU9yzr4J4cN.sYp9a3pAO4M.LgCsdt2uF.1TCRq0gDcqkFvi5CTDQMo92MmSxGFRWyi0eGOF3OIbiNNNtc5bNL5FAPsqvzVTYsEMbBQqOGQKuFGuSalQxaNykoCzKySlL8G3a.Xu2g_");
     $riffle.join();
     $rootScope.$broadcast('$riffle.open'); //Alert everyone that we have joined
 });
