@@ -1,6 +1,6 @@
 angular
     .module('themesApp', [
-        'theme'
+        'theme', 'ngRiffle'
     ])
     .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
         'use strict';
@@ -19,7 +19,14 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
+
     }])
+
+// Config for Exis
+.config(function($riffleProvider) {
+    $riffleProvider.setDomain("xs.demo.badgerloop.blapp");
+    $riffleProvider.setFabricLocal();
+})
 
 //Welcome Alert
 .run(['pinesNotifications', function(pinesNotifications) {
@@ -28,4 +35,10 @@ angular
         text: 'The dashboard is fully setup and running.',
         type: 'success'
     });
-}]);
+}])
+
+//Connect to Exis
+.run(function($riffle, $rootScope) {
+    $riffle.join();
+    $rootScope.$broadcast('$riffle.open'); //Alert everyone that we have joined
+});

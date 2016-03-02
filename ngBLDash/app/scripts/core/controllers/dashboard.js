@@ -1,7 +1,8 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
     .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'TelemetryService',
-        'SensorService',
-        function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, TelemetryService, SensorService) {
+        'SensorService', '$riffle', '$rootScope',
+        function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService,
+            TelemetryService, SensorService, $riffle, $rootScope) {
             'use strict';
 
             //
@@ -66,6 +67,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             //          END
             //      SENSOR MONITOR
             //
-
+           
         }
     ]);

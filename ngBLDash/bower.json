@@ -57,7 +57,8 @@
     "jquery.easy-pie-chart": "~2.1.6",
     "card": "1.0.0",
     "themify-icons": "~0.1.0",
-    "velocity": "~1.2.2"
+    "velocity": "~1.2.2",
+    "ngRiffle": "^0.4.4"
   },
   "resolutions": {
     "jquery": "~1.11.0",
