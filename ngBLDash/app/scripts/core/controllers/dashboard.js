@@ -1,8 +1,8 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
     .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'TelemetryService',
-        'SensorService', '$riffle', '$rootScope',
+        'SensorService', '$riffle', '$rootScope', 'RiffleService',
         function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService,
-            TelemetryService, SensorService, $riffle, $rootScope) {
+            TelemetryService, SensorService, $riffle, $rootScope, RiffleService) {
             'use strict';
 
             //
