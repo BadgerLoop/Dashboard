@@ -55,7 +55,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             //
             //
 
-            SensorService.updateRealtimeData();
+            // SensorService.updateRealtimeData();
             $scope.sensor = SensorService;
 
             //For removing from selected sensor list

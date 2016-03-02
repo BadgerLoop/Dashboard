@@ -7,7 +7,6 @@ angular
 
         //listen live for status updates
         $rootScope.$on('$riffle.open', function() {
-            console.log("hello!!");
             $riffle.subscribe("temp", update);
         });
 
