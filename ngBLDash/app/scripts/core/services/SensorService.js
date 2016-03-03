@@ -17,10 +17,9 @@ angular
          * @return {[Messages]} List of all messages 
          */
         this.getMessageList = function(message) {
-            var tempMessage = message;
-            modulesMessageCount[map[tempMessage.module]].value += 1;
-            tempMessage.timeStamp = new Date();
-            currentMessageList.unshift(tempMessage);
+            modulesMessageCount[map[message.module]].value += 1;
+            message.timeStamp = new Date();
+            currentMessageList.unshift(message);
         }
 
         /**
