@@ -91,12 +91,12 @@
                     <div class="panel-body no-padding">
                         <table class="table browsers m-n">
                             <tbody>
-                                <tr ng-repeat="(key, value) in sensor.getModuleDistribution() | orderBy: 'value' : true" style="height: 63px;">
-                                    <td>{{key}}</td>
-                                    <td class="text-right">{{sensor.getModulePercentage(value)}}%</td>
+                                <tr ng-repeat="module in sensor.getModuleDistribution() | orderBy: '-value'" style="height: 63px;">
+                                    <td ng-bind="module.name"></td>
+                                    <td class="text-right">{{sensor.getModulePercentage(module)}}%</td>
                                     <td class="vam" style="width: 56px;">
                                         <div class="progress m-n">
-                                            <div class="progress-bar progress-bar-teal" style="width: {{sensor.getModulePercentage(value)}}%"></div>
+                                            <div class="progress-bar progress-bar-teal" style="width: {{sensor.getModulePercentage(module)}}%"></div>
                                         </div>
                                     </td>
                                 </tr>

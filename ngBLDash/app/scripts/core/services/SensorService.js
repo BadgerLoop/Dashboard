@@ -9,8 +9,8 @@ angular
 
         var currentMessageList = [];
         var updateInterval = 1000;
-
-        var modulesMessageCount = { "BPM1": 0, "BPM2": 0, "MCM": 0, "VCM": 0, "ECM": 0 };
+        var map = {'BPM1': 0, 'BPM2': 1, 'MCM': 2, "VCM": 3, 'ECM': 4};
+        var modulesMessageCount = [ {name: "BPM1", value: 0}, {name: "BPM2", value: 0}, {name: "MCM", value: 0}, {name: "VCM", value: 0}, {name: "ECM", value: 0 }];
 
         /**
          * Create random message, increment module count, timestamp, add to list
@@ -18,12 +18,9 @@ angular
          */
         this.getMessageList = function(message) {
             var tempMessage = message;
-            modulesMessageCount[tempMessage.module] ?
-                modulesMessageCount[tempMessage.module].value += 1 :
-                modulesMessageCount[tempMessage.module] = { value: 1 };
+            modulesMessageCount[map[tempMessage.module]].value += 1;
             tempMessage.timeStamp = new Date();
             currentMessageList.unshift(tempMessage);
-            // return currentMessageList;
         }
 
         /**
@@ -56,7 +53,7 @@ angular
          * @return {Int} percentage that given module has sent of total messages 
          */
         this.getModulePercentage = function(obj) {
-            if (obj.value === undefined) {
+            if (obj.value === undefined || currentMessageList.length === 0) {
                 return 0;
             }
             return Math.round((obj.value / currentMessageList.length) * 100);
