@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         tasks: ['newer:copy:styles', 'autoprefixer']
       },
       less: {
-        files: ['app/assets/less/*.less'],
+        files: ['app/assets/less/{,*/}*.less'],
         tasks: ['less:server']
       },
       gruntfile: {
@@ -247,7 +247,7 @@ module.exports = function(grunt) {
             'assets/plugins/**',
             'assets/img/**',
             'assets/css/**',
-            'assets/exisdocs.json',
+            'assets/sensorlist.json',
             'scripts/splash/**',
             'views/docs/**',
             'scripts/includes/jsRiffle.min.js',
