@@ -10,10 +10,10 @@ angular
     var columnDefs = 
     [
       {field: 'SSID', displayName: 'ID', width: 50}, 
-      {field: 'Module', displayName: 'Module', width: 100},
-      {field: 'Type', displayName: 'Type', width: 100},
-      {field: 'Name', displayName: 'Name', width: 200},
-      {field: 'Location', displayName: 'Location', width: 280},
+      {field: 'Module', displayName: 'Module', width: 75},
+      {field: 'Type', displayName: 'Type', width: 150},
+      {field: 'Name', displayName: 'Name', width: 220},
+      {field: 'Location', displayName: 'Location', width: 375},
     ];
 
     $scope.filterOptions = {
