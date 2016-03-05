@@ -26,6 +26,7 @@ angular
       pageSize: 1000,
       currentPage: 1
     };
+    
     $scope.setPagingData = function(data, page, pageSize) {
       var pagedData = data.slice((page - 1) * pageSize, page * pageSize);
       $scope.myData = pagedData;

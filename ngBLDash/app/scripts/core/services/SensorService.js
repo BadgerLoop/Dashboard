@@ -7,6 +7,7 @@ angular
 
         this.selectedSensors = [];
 
+
         var currentMessageList = [];
         var updateInterval = 1000;
         var map = {'BPM1': 0, 'BPM2': 1, 'MCM': 2, "VCM": 3, 'ECM': 4};
@@ -21,6 +22,7 @@ angular
             message.timeStamp = new Date();
             currentMessageList.unshift(message);
         }
+
 
         /**
          * @return {[Messages]} List of messages only sent from those who are selected 
@@ -78,6 +80,11 @@ angular
             console.log("Removing Sensor: " + sensor);
             var index = self.selectedSensors.indexOf(sensor);
             self.selectedSensors.splice(index, 1);
+        }
+
+        this.removeAll = function() {
+            console.log("Removing all sensors");
+            self.selectedSensors.length = 0;  
         }
 
         /**
