@@ -159,6 +159,7 @@
                         </tbody>
                         <caption>List of messages from selected sensors</caption>
                         <ul class="demo-btns">
+                                <button type="button" class="btn btn-xs btn-danger-alt btn-label selectedSensorButtons" ng-click="sensor.removeAll()"><i class="ti ti-trash"></i>Remove All</button>
                             <li ng-repeat="sensor in sensor.selectedSensors" class="selectedSensorButtons">
                                 <button type="button" class="btn btn-xs btn-danger btn-label" ng-click="removeSensorFromList(sensor)"><i class="ti ti-close"></i>{{sensor.Module}} - {{sensor.Name}}</button>
                             </li>
