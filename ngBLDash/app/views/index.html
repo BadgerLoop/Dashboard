@@ -72,7 +72,7 @@
                                     <div class="timeline-body">
                                         <div class="timeline-content">
                                             <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
-                                            <span class="time">{{sensor.timeSince(message.timeStamp)}} ago</span>
+                                            <!-- <span class="time">{{sensor.timeSince(message.timeStamp)}} ago</span> -->
                                         </div>
                                     </div>
                                 </li>
@@ -141,7 +141,7 @@
                             <tr ng-repeat="message in sensor.selectedSensorMessageList() | orderBy: 'timeStamp' : true">
                                 <td>{{message.id}}</td>
                                 <td><strong>{{message.data}}</strong></td>
-                                <td>{{sensor.timeSince(message.timeStamp)}} ago</td>
+                                <!-- <td>{{sensor.timeSince(message.timeStamp)}} ago</td> -->
                                 <td>{{message.module}}</td>
                                 <td>{{message.type}}</td>
                                 <td>{{message.sensor}}</td>
