@@ -7,25 +7,10 @@ angular
 
     $scope.sensors = SensorService;
 
-    var columnDefs = 
-    [
-      {field: 'SSID', displayName: 'ID', width: 50}, 
-      {field: 'Module', displayName: 'Module', width: 75},
-      {field: 'Type', displayName: 'Type', width: 150},
-      {field: 'Name', displayName: 'Name', width: 220},
-      {field: 'Location', displayName: 'Location', width: 375},
-    ];
-
-    $scope.filterOptions = {
-      filterText: '',
-      useExternalFilter: true
-    };
+   
+    $scope.filterOptions = $scope.sensors.filterOptions;
     $scope.totalServerItems = 0;
-    $scope.pagingOptions = {
-      pageSizes: [25, 50, 100],
-      pageSize: 1000,
-      currentPage: 1
-    };
+    $scope.pagingOptions = $scope.sensors.pagingOptions;
     
     $scope.setPagingData = function(data, page, pageSize) {
       var pagedData = data.slice((page - 1) * pageSize, page * pageSize);
@@ -54,30 +39,18 @@ angular
       }, 100);
     };
 
-    $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage);
+    $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage);
 
-    $scope.$watch('pagingOptions', function(newVal, oldVal) {
+    $scope.$watch('$scope.sensors.pagingOptions', function(newVal, oldVal) {
       if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) {
-        $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
+        $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage, $scope.sensors.filterOptions.filterText);
       }
     }, true);
-    $scope.$watch('filterOptions', function(newVal, oldVal) {
+    $scope.$watch('$scope.sensors.filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
-        $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
+        $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage, $scope.sensors.filterOptions.filterText);
       }
     }, true);
 
-    $scope.gridOptions = {
-      data: 'myData',
-      enablePaging: false,
-      showFooter: true,
-      totalServerItems: 'totalServerItems',
-      pagingOptions: $scope.pagingOptions,
-      filterOptions: $scope.filterOptions,
-      columnDefs: columnDefs,
-      selectedItems: $scope.sensors.selectedSensors,
-      afterSelectionChange: function(data) {
-        console.log("Sensor Selected:", $scope.sensors.selectedSensors);
-      }
-    };
+    $scope.gridOptions = $scope.sensors.gridOptions;
   }]);

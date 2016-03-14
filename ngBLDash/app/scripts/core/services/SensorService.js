@@ -84,7 +84,10 @@ angular
 
         this.removeAll = function() {
             console.log("Removing all sensors");
-            self.selectedSensors.length = 0;  
+            self.selectedSensors.length = 0;
+            self.gridOptions.selectAll(false);
+
+
         }
 
         /**
@@ -118,5 +121,39 @@ angular
             }
             return Math.floor(seconds) + " seconds";
         };
+
+    this.gridOptions = {
+      data: 'myData',
+      enablePaging: false,
+      showFooter: true,
+      totalServerItems: 'totalServerItems',
+      pagingOptions: this.pagingOptions,
+      filterOptions: this.filterOptions,
+      columnDefs: this.columnDefs,
+      selectedItems: this.selectedSensors,
+      afterSelectionChange: function(data) {
+        console.log("Sensor Selected:", this.selectedSensors);
+      }
+    };
+
+    this.pagingOptions = {
+      pageSizes: [25, 50, 100],
+      pageSize: 1000,
+      currentPage: 1
+    };
+
+     this.filterOptions = {
+      filterText: '',
+      useExternalFilter: true
+    };
+
+     this.columnDefs = 
+    [
+      {field: 'SSID', displayName: 'ID', width: 50}, 
+      {field: 'Module', displayName: 'Module', width: 75},
+      {field: 'Type', displayName: 'Type', width: 150},
+      {field: 'Name', displayName: 'Name', width: 220},
+      {field: 'Location', displayName: 'Location', width: 375},
+    ];
 
     }]);
