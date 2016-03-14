@@ -79,7 +79,12 @@ angular
         this.removeSensorFromList = function(sensor) {
             console.log("Removing Sensor: " + sensor);
             var index = self.selectedSensors.indexOf(sensor);
+            var SSID = sensor.SSID - 1;
             self.selectedSensors.splice(index, 1);
+
+            self.gridOptions.selectRow(SSID, false);
+            
+          
         }
 
         this.removeAll = function() {
@@ -89,6 +94,7 @@ angular
 
 
         }
+
 
         /**
          * @param {Date} data

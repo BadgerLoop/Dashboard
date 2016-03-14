@@ -42,16 +42,25 @@ angular
     $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage);
 
     $scope.$watch('pagingOptions', function(newVal, oldVal) {
-      if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) {
+      if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) {    
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
       }
     }, true);
     $scope.$watch('filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
+        console.log("second"); 
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
+        
       }
     }, true);
 
+    // $scope.selectRow = function(){
+    //     angular.forEach($scope.myData, function(data, index){
+    //         if(data.name == 'Enos'){
+    //             $scope.gridOptions.selectItem(index, true);
+    //         }
+    //     });
+    // };
 
     $scope.gridOptions = $scope.sensors.gridOptions;
   }]);
