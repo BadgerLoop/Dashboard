@@ -5,7 +5,7 @@ angular
 
         var self = this;
 
-        this.selectedSensors = [];
+        self.selectedSensors = [];
 
 
         var currentMessageList = [];
@@ -127,12 +127,12 @@ angular
       enablePaging: false,
       showFooter: true,
       totalServerItems: 'totalServerItems',
-      pagingOptions: this.pagingOptions,
-      filterOptions: this.filterOptions,
-      columnDefs: this.columnDefs,
-      selectedItems: this.selectedSensors,
+      pagingOptions: self.pagingOptions,
+      filterOptions: self.filterOptions,
+      columnDefs: self.columnDefs,
+      selectedItems: self.selectedSensors,
       afterSelectionChange: function(data) {
-        console.log("Sensor Selected:", this.selectedSensors);
+        console.log("Sensor Selected:", self.selectedSensors);
       }
     };
 
