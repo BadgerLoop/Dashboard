@@ -39,18 +39,19 @@ angular
       }, 100);
     };
 
-    $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage);
+    $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage);
 
-    $scope.$watch('$scope.sensors.pagingOptions', function(newVal, oldVal) {
+    $scope.$watch('pagingOptions', function(newVal, oldVal) {
       if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) {
-        $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage, $scope.sensors.filterOptions.filterText);
+        $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
       }
     }, true);
-    $scope.$watch('$scope.sensors.filterOptions', function(newVal, oldVal) {
+    $scope.$watch('filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
-        $scope.getPagedDataAsync($scope.sensors.pagingOptions.pageSize, $scope.sensors.pagingOptions.currentPage, $scope.sensors.filterOptions.filterText);
+        $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
       }
     }, true);
+
 
     $scope.gridOptions = $scope.sensors.gridOptions;
   }]);

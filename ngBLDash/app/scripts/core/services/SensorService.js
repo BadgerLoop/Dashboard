@@ -1,6 +1,6 @@
 angular
     .module('theme.core.services')
-    .service('SensorService', ['$timeout', '$riffle', function($timeout, $riffle) {
+    .service('SensorService', ['$timeout', '$riffle', '$http', '$filter', function($timeout, $riffle, $scope, $filter, $http) {
         'use strict';
 
         var self = this;
@@ -155,5 +155,8 @@ angular
       {field: 'Name', displayName: 'Name', width: 220},
       {field: 'Location', displayName: 'Location', width: 375},
     ];
+
+
+
 
     }]);
