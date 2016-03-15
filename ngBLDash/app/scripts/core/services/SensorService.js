@@ -80,11 +80,17 @@ angular
             console.log("Removing Sensor: " + sensor);
             var index = self.selectedSensors.indexOf(sensor);
             var SSID = sensor.SSID - 1;
+            
             self.selectedSensors.splice(index, 1);
             self.gridOptions.selectRow(SSID, false);
             
+            
           
         }
+
+        // this.resetSelection = function(sensor) {
+        //     self.gridOptions.selectRow(sensor.SSID - 1, true);
+        // }
 
         this.removeAll = function() {
             console.log("Removing all sensors");

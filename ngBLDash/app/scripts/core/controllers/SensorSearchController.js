@@ -12,6 +12,8 @@ angular
     $scope.totalServerItems = 0;
     $scope.pagingOptions = $scope.sensors.pagingOptions;
     
+
+    
     $scope.setPagingData = function(data, page, pageSize) {
       var pagedData = data.slice((page - 1) * pageSize, page * pageSize);
       $scope.myData = pagedData;
@@ -24,6 +26,7 @@ angular
       setTimeout(function() {
         var data;
         if (searchText) {
+          console.log("if 1");
           var ft = searchText.toLowerCase();
           $http.get('assets/sensorlist.json').success(function(largeLoad) {
             data = largeLoad.filter(function(item) {
@@ -31,7 +34,9 @@ angular
             });
             $scope.setPagingData(data, page, pageSize);
           });
+          
         } else {
+          console.log("else 1");
           $http.get('assets/sensorlist.json').success(function(largeLoad) {
             $scope.setPagingData(largeLoad, page, pageSize);
           });
@@ -42,15 +47,17 @@ angular
     $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage);
 
     $scope.$watch('pagingOptions', function(newVal, oldVal) {
-      if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) {    
+      if (newVal !== oldVal && newVal.currentPage !== oldVal.currentPage) { 
+        console.log("if 2");   
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
       }
     }, true);
+
     $scope.$watch('filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
-        console.log("second"); 
+        console.log("if 3");
+        console.log($scope.sensors.selectedSensors.length);
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
-        
       }
     }, true);
 
