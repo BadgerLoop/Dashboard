@@ -69,7 +69,7 @@ angular
     $scope.$watch('filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
 
-        console.log("watch filterOptions");
+        
         console.log($scope.sensors.selectedSensors.length);
 
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);

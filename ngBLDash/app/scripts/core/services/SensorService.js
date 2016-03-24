@@ -116,7 +116,7 @@ angular
                 
             }
                 
-                console.log(data[0]);
+                
                 
 
             
