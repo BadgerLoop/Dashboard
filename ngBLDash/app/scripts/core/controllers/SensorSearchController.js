@@ -18,15 +18,11 @@ angular
 
     
     $scope.setPagingData = function(data, page, pageSize) {
-      console.log("setPagingData()");
-      console.log(data);
       var pagedData = data.slice((page - 1) * pageSize, page * pageSize);
       $scope.myData = pagedData;
       $scope.totalServerItems = data.length;
 
-      console.log("Before");
       $scope.sensors.compareSelect(data);
-      console.log("After");
 
       if (!$scope.$$phase) {
         console.log("if set");
@@ -68,10 +64,6 @@ angular
 
     $scope.$watch('filterOptions', function(newVal, oldVal) {
       if (newVal !== oldVal) {
-
-        
-        console.log($scope.sensors.selectedSensors.length);
-
         $scope.getPagedDataAsync($scope.pagingOptions.pageSize, $scope.pagingOptions.currentPage, $scope.filterOptions.filterText);
       }
     }, true);

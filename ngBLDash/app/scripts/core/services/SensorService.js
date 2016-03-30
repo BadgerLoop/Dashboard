@@ -104,13 +104,9 @@ angular
         }
 
         this.compareSelect = function(data) {
-            console.log("made it");
             for (var sensor in self.selectedSensors) {
                 var sensorID = self.selectedSensors[sensor]["SSID"];
                 var temp = data.filter(function(message) {
-                    console.log("Before Message");
-                    console.log(message);
-                    console.log("After Message");
                     return message.id === sensorID;
                 });
                 
