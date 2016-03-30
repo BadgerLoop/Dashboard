@@ -86,7 +86,7 @@ angular
       xaxis: {
         show: false
       },
-      colors: ['#95a5a6'],
+      colors: ['#E73137'],
       tooltip: true,
       tooltipOpts: {
         content: 'CPU Utilization: %y%'
