@@ -7,8 +7,8 @@ angular
 
     this.currentVelocity = 0;
     var dxta = [],
-      totalPoints = 10;
-    var updateInterval = 1000;
+      totalPoints = 150;
+    var updateInterval = 300;
 
     var time = 0;
 
@@ -22,8 +22,8 @@ angular
       }
 
       while (dxta.length < totalPoints) {
-        var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-            y =  Math.random() * 160;
+        var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 50,
+            y =  Math.random() * 30 + 130;
 
         if (y < 0) {
             y = 0;
@@ -53,47 +53,45 @@ angular
      */
     this.plotVelAccelData = [{ data: getRandomData(), label: "Velocity" }];
     this.plotVelAccelOptions = {
-        series: {
-            shadowSize: 0,
-            lines: { 
-                show: false,
-                lineWidth: 0
-            },
-            points: { show: true },
-            splines: {
-                show: true,
-                fill: 0.08,
-                tension: 0.3,
-                lineWidth: 2
-            },
+      series: {
+        lines: {
+          show: true,
+          lineWidth: 1.5,
+          fill: 0.15,
+          fillColor: {
+            colors: [{
+              opacity: 0.01
+            }, {
+              opacity: 0.3
+            }]
+          }
         },
-        grid: {
-            labelMargin: 8,
-            hoverable: true,
-            clickable: true,
-            borderWidth: 0,
-            borderColor: '#fafafa'
-        },
-        legend: {
-            backgroundColor: '#fff',
-            margin: 8
-        },
-        yaxis: { 
-            min: 0, 
-            max: 200, 
-            tickColor: '#fafafa', 
-            font: {color: '#bdbdbd', size: 12},
-        },
-        xaxis: { 
-            tickColor: 'transparent',
-            tickDecimals: 0, 
-            font: {color: '#bdbdbd', size: 12}
-        },
-        colors: ['#9fa8da', '#80deea'],
-        tooltip: true,
-        tooltipOpts: {
-            content: "Time: %x : MPH: %y"
+        shadowSize: 0 // Drawing is faster without shadows
+      },
+      grid: {
+        labelMargin: 10,
+        hoverable: true,
+        clickable: true,
+        borderWidth: 1,
+        borderColor: '#f5f5f5'
+      },
+      yaxis: {
+        min: 0,
+        max: 200,
+        tickColor: '#f5f5f5',
+        font: {
+          color: '#bdbdbd'
         }
+      },
+      xaxis: {
+        show: false
+      },
+      colors: ['#95a5a6'],
+      tooltip: true,
+      tooltipOpts: {
+        content: 'CPU Utilization: %y%'
+      }
+
     };
 
     /**
