@@ -89,7 +89,7 @@ angular
       colors: ['#E73137'],
       tooltip: true,
       tooltipOpts: {
-        content: 'CPU Utilization: %y%'
+        content: 'Pod Velocity: %ymph'
       }
 
     };
