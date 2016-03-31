@@ -1,14 +1,16 @@
 angular
   .module('theme.core.services')
-  .service('BatteryService',['$timeout', function($timeout) {
+  .service('WheelService',['$timeout', function($timeout) {
     'use strict';
 
     var self = this;
 
-    this.currentBatVoltage = 0;
+    this.currentRPMleft = 0;
+    this.currentRPMright = 0;
+
     var dxta = [],
       totalPoints = 20;
-    var updateInterval = 1000;
+    var updateInterval = 500;
 
     /**
      * Create random data point for batt. voltage
@@ -21,16 +23,17 @@ angular
 
       while (dxta.length < totalPoints) {
         var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-            y =  Math.random() * 12;
+            y =  Math.random() * 100 + 6200;
 
         if (y < 0) {
             y = 0;
             // $scope.severeAlert('BATTERY LEVEL ZERO', 'This needs electrical team attention immediately.');
-        } else if (y > 12) {
-            y = 12;
+        } else if (y > 7000) {
+            y = 7000;
         }
 
-        self.currentBatVoltage = Math.round(y);
+        self.currentRPMleft = Math.round(y);
+        self.currentRPMright = Math.round(y) + 84;
 
         dxta.push(y);
       }
@@ -94,7 +97,7 @@ angular
     /**
      * @return {Int} current batt. voltage/15 -> into percentage
      */
-    this.getBattPercentage = function() {
+    this.getWheelPercentage = function() {
       var perc = self.currentRPM/15;
       return Math.round(perc*100);
     }

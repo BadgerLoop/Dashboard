@@ -1,7 +1,7 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
-    .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'TelemetryService',
+    .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'WheelService', 'TelemetryService',
         'SensorService', '$riffle', '$rootScope', 'RiffleService',
-        function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService,
+        function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, WheelService,
             TelemetryService, SensorService, $riffle, $rootScope, RiffleService) {
             'use strict';
 
@@ -49,6 +49,19 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             //      TELEM MONITOR
             //
 
+            //
+            //
+            //      WHEEL MONITOR
+            //
+            //
+
+            WheelService.updateRealtimeData();
+            $scope.wheel = WheelService;
+
+            //
+            //          END
+            //      WHEEL MONITOR
+            //
             //
             //
             //      SENSOR MONITOR
