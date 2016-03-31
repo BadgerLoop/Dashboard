@@ -23,7 +23,7 @@ angular
 
       while (dxta.length < totalPoints) {
         var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-            y =  Math.random() * 100 + 6200;
+            y =  Math.random() * 100 + 5200;
 
         if (y < 0) {
             y = 0;
