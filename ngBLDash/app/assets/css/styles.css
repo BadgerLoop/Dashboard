@@ -56,3 +56,7 @@ table.browsers > tbody > tr > td:last-child{
 	//background: rgb(69, 90, 100) !important;
 	background-color: #263238 !important;
 }
+.center {
+	
+	text-align: center;
+}
