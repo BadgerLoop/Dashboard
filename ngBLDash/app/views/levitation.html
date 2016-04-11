@@ -1,0 +1,54 @@
+    <ol class="breadcrumb">
+        <li><a href="#/">Dashboard</a></li>
+        <li>Subteam</li>
+        <li class="active">Levitation Module</li>
+    </ol>
+
+<div class="container-fluid" ng-controller="ProgressbarController">
+    <div class="row">
+        <div class="col-md-12">
+            <panel panel-class="panel-heading" heading="Run Completion">
+                <div class="center">
+                    <span class="big label label-danger">{{dynamic}}%</span>    
+                </div>
+                <br>
+                <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
+                <small><em>Object (changes type based on value)</em></small>
+            </panel>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <panel panel-class="panel-heading" heading="Halbach Wheels">
+                <h1 align="center">FRONT</h1>
+                    <div class="col-md-6">
+
+                        <div class="list-group list-group-alternate"> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #1 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #2 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #3 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #4 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #5 </a> 
+                            
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="list-group list-group-alternate"> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #1 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #2 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #3 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #4 </a> 
+                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #5 </a> 
+                           
+                        </div>
+
+                    </div>
+                <h1 align="center">REAR</h1>
+            </panel>
+        </div>
+    </div>
+    
+
+</div> <!-- container-fluid -->

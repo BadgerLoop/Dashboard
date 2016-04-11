@@ -25,7 +25,7 @@ angular
         url: '#/ui-buttons'
       }, {
         label: 'Levitation',
-        url: '#/ui-modals'
+        url: '#/levitation'
       }, {
         label: 'Operations',
         url: '#/ui-progressbars'

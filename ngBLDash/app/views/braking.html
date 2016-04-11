@@ -1,7 +1,7 @@
     <ol class="breadcrumb">
         <li><a href="#/">Dashboard</a></li>
-        <li>Pages</li>
-        <li class="active">Blank Page</li>
+        <li>Subteam</li>
+        <li class="active">Braking Module</li>
     </ol>
 
 <div class="container-fluid" ng-controller="ProgressbarController">
@@ -12,12 +12,12 @@
                     <div class="col-md-6">
 
                         <div class="list-group list-group-alternate"> 
-                            <a href="#" class="list-group-item"><span class="badge">201</span> <i class="ti ti-envelope"></i> Braking Bogie Limit Switch Status </a> 
-                            <a href="#" class="list-group-item"><span class="badge badge-primary">5021</span> <i class="ti ti-eye"></i> Wheel RPM </a> 
-                            <a href="#" class="list-group-item"><span class="badge">14</span> <i class="ti ti-headphone-alt"></i> Braking System Mode </a> 
-                            <a href="#" class="list-group-item"><span class="badge">20</span> <i class="ti ti-comments"></i> Eddy Magnet Current </a> 
-                            <a href="#" class="list-group-item"><span class="badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a> 
-                            <a href="#" class="list-group-item"><span class="badge badge-danger">30</span> <i class="ti ti-bell"></i> Push Phase Deactivation Time </a> 
+                            <a href="#" class="list-group-item"><span class="big badge">201</span> <i class="ti ti-envelope"></i> Braking Bogie Limit Switch Status </a> 
+                            <a href="#" class="list-group-item"><span class="big badge badge-primary">5021</span> <i class="ti ti-eye"></i> Wheel RPM </a> 
+                            <a href="#" class="list-group-item"><span class="big badge">14</span> <i class="ti ti-headphone-alt"></i> Braking System Mode </a> 
+                            <a href="#" class="list-group-item"><span class="big badge">20</span> <i class="ti ti-comments"></i> Eddy Magnet Current </a> 
+                            <a href="#" class="list-group-item"><span class="big badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a> 
+                            <a href="#" class="list-group-item"><span class="big badge badge-danger">30</span> <i class="ti ti-bell"></i> Push Phase Deactivation Time </a> 
                         </div>
 
                     </div>
@@ -67,7 +67,7 @@
         <div class="col-md-6">
             <panel panel-class="panel-heading" heading="Run Completion">
                 <div class="center">
-                    <span class="label label-danger">50%</span>    
+                    <span class="big label label-danger">{{dynamic}}%</span>    
                 </div>
                 <br>
                 <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>

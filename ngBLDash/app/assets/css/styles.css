@@ -17,6 +17,16 @@
     padding: 10px 15px;
 }
 
+.big{
+	font-size: 22px !important;
+}
+
+.medium{
+	font-size: 14px !important;
+}
+
+
+
 table.browsers > tbody > tr > td:first-child{
 	padding-top: 20px;
 }
@@ -46,6 +56,11 @@ table.browsers > tbody > tr > td:last-child{
 	background-color: #263238;
 	//background-image: url("metallic.jpg");
 }
+
+.runcomp{
+	background-color: #364142 !important;
+}
+
 
 #topnav.navbar-default{
 	//background: #263238;
