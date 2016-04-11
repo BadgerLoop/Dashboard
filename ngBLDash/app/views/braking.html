@@ -9,71 +9,70 @@
     <div class="row">
         <div class="col-md-12">
             <panel panel-class="panel-heading" heading="Braking">
-                    <div class="col-md-6">
-
-                        <div class="list-group list-group-alternate"> 
-                            <a href="#" class="list-group-item"><span class="big badge">201</span> <i class="ti ti-envelope"></i> Braking Bogie Limit Switch Status </a> 
-                            <a href="#" class="list-group-item"><span class="big badge badge-primary">5021</span> <i class="ti ti-eye"></i> Wheel RPM </a> 
-                            <a href="#" class="list-group-item"><span class="big badge">14</span> <i class="ti ti-headphone-alt"></i> Braking System Mode </a> 
-                            <a href="#" class="list-group-item"><span class="big badge">20</span> <i class="ti ti-comments"></i> Eddy Magnet Current </a> 
-                            <a href="#" class="list-group-item"><span class="big badge badge-warning">14</span> <i class="ti ti-bookmark"></i> Bookmarks </a> 
-                            <a href="#" class="list-group-item"><span class="big badge badge-danger">30</span> <i class="ti ti-bell"></i> Push Phase Deactivation Time </a> 
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        
-
-
+                <div class="panel-body" style="background-color: #262727">
+                    <h1 align="center" style="color: white">FRONT</h1>
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th width="50%">Classes</th>
-                                    <th width="50%">Labels</th>
+                                    <th style="text-align:left; color: white" width="30%">Wheels</th>
+                                    <th style="text-align:left; color: white" width="20%">Readout</th>
+                                    <th style="text-align:right; color: white" width="20%">Readout</th>
+                                    <th style="text-align:right; color: white" width="30%">Wheels</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><code>.label-default</code></td>
-                                    <td><span class="label label-default">Default</span></td>
+                                    <td style="color: white">Left Wheel #1</td>
+                                    <td><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right"><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right" style="color: white">Right Wheel #1</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.label-primary</code></td>
-                                    <td><span class="label label-primary">Primary</span></td>
+                                    <td style="color: white">Left Wheel #2</td>
+                                    <td><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right"><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right" style="color: white">Right Wheel #2</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.label-success</code></td>
-                                    <td><span class="label label-success">Success</span></td>
+                                    <td style="color: white">Left Wheel #3</td>
+                                    <td><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right"><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right" style="color: white">Right Wheel #3</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.label-info</code></td>
-                                    <td><span class="label label-info">Info</span></td>
+                                    <td style="color: white">Left Wheel #4</td>
+                                    <td><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right"><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right" style="color: white">Right Wheel #4</td>
                                 </tr>
                                 <tr>
-                                    <td><code>.label-warning</code></td>
-                                    <td><span class="label label-warning">Warning</span></td>
+                                    <td style="color: white">Left Wheel #5</td>
+                                    <td><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right"><span class="label label-primary">20 C </span> <span class="big label label-success"> 4000 RPM </span> <span class="label label-info"> 2 mm</span></td>
+                                    <td align="right" style="color: white">Right Wheel #5</td>
                                 </tr>
-                                <tr>
-                                    <td><code>.label-danger</code></td>
-                                    <td><span class="label label-danger">Danger</span></td>
-                                </tr>
+                                
                             </tbody>
-                        </table>                    
-                    </div>
+                        </table>   
+                    <h1 align="center" style="color: white">REAR</h1>  
+                    </div>                   
             </panel>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
+     <div class="row">
+        <div class="col-md-12">
             <panel panel-class="panel-heading" heading="Run Completion">
+                <div class="panel-body" style="background-color: #262727">
                 <div class="center">
                     <span class="big label label-danger">{{dynamic}}%</span>    
                 </div>
                 <br>
                 <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
-                <small><em>Object (changes type based on value)</em></small>
+                <!-- <small><em>Object (changes type based on value)</em></small> -->
+                </div>
             </panel>
         </div>
     </div>
+    
 
 </div> <!-- container-fluid -->

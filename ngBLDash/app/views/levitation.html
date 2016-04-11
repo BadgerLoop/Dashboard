@@ -1,54 +1,134 @@
-    <ol class="breadcrumb">
+<ol class="breadcrumb">
         <li><a href="#/">Dashboard</a></li>
         <li>Subteam</li>
-        <li class="active">Levitation Module</li>
+        <li class="active">Braking Module</li>
     </ol>
 
-<div class="container-fluid" ng-controller="ProgressbarController">
+<div class="container-fluid" ng-controller="">
     <div class="row">
-        <div class="col-md-12">
-            <panel panel-class="panel-heading" heading="Run Completion">
-                <div class="center">
-                    <span class="big label label-danger">{{dynamic}}%</span>    
+     <div class="col-md-6">
+            <div class="panel panel-success" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Stable</h2>
+                    <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'></div>
                 </div>
-                <br>
-                <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
-                <small><em>Object (changes type based on value)</em></small>
-            </panel>
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="success">
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-            <panel panel-class="panel-heading" heading="Halbach Wheels">
-                <h1 align="center">FRONT</h1>
-                    <div class="col-md-6">
+        <div class="col-md-6">
+            <div class="panel panel-warning" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Warning Table</h2>
+                    <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'></div>
+                </div>
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="warning">
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-                        <div class="list-group list-group-alternate"> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #1 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #2 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #3 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #4 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Left Wheel #5 </a> 
-                            
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-
-                        <div class="list-group list-group-alternate"> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #1 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #2 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #3 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #4 </a> 
-                            <a href="#" class="list-group-item"><span class="medium badge badge-info">2mm</span><span class="big badge badge-success">4000 RPM</span><span class="medium badge badge-primary">20C</span> <i class="ti ti-control-record"></i> Right Wheel #5 </a> 
-                           
-                        </div>
-
-                    </div>
-                <h1 align="center">REAR</h1>
-            </panel>
+        <div class="col-md-6">
+            <div class="panel panel-danger" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Danger Table</h2>
+                    <div class="panel-ctrls" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'></div>
+                </div>
+                <div class="panel-body no-padding">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="danger">
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
-    
-
-</div> <!-- container-fluid -->
+</div>

@@ -18,12 +18,13 @@
 }
 
 .big{
-	font-size: 22px !important;
+	font-size: 24px !important;
 }
 
 .medium{
 	font-size: 14px !important;
 }
+
 
 
 
@@ -57,9 +58,6 @@ table.browsers > tbody > tr > td:last-child{
 	//background-image: url("metallic.jpg");
 }
 
-.runcomp{
-	background-color: #364142 !important;
-}
 
 
 #topnav.navbar-default{
