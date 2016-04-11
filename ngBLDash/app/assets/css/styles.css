@@ -18,13 +18,18 @@
 }
 
 .big{
-	font-size: 24px !important;
+	font-size: 26px !important;
 }
 
 .medium{
-	font-size: 14px !important;
+	font-size: 16px !important;
 }
 
+.status {
+	font-size: 18px !important;
+}
+
+.noborder, .noborder tr, .noborder th, .noborder td { border: none !important; }
 
 
 
