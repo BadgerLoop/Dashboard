@@ -1,8 +1,8 @@
 angular.module('theme.core.dashboard', ['theme.core.services'])
-    .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'BatteryService', 'WheelService', 'TelemetryService',
+    .controller('DashboardController', ['$scope', '$sce', '$theme', '$timeout', '$window', 'pinesNotifications', 'HalbachService', 'BatteryService', 'WheelService', 'TelemetryService',
         'SensorService', '$riffle', '$rootScope', 'RiffleService',
         function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, WheelService,
-            TelemetryService, SensorService, $riffle, $rootScope, RiffleService) {
+            TelemetryService, SensorService, $riffle, $rootScope, RiffleService, HalbachService) {
             'use strict';
 
             //
@@ -61,6 +61,25 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             //
             //          END
             //      WHEEL MONITOR
+            //
+            //
+            //
+            //      SENSOR MONITOR
+            //
+            //
+
+                        //
+            //
+            //      HALBACH MONITOR
+            //
+            //
+
+            HalbachService.updateRealtimeData();
+            $scope.halbach = HalbachService;
+
+            //
+            //          END
+            //      HALBACH MONITOR
             //
             //
             //
