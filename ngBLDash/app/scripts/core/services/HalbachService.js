@@ -5,6 +5,10 @@ angular
 
     var self = this;
     
+    this.leftStatus = "stable";
+    this.rightStatus = "stable";
+
+    
     self.wheels = [ 
     {name: "Left1", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
     {name: "Left2", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
@@ -47,7 +51,7 @@ angular
       } else if (gap < 2.56) {
         self.wheels[wheel].gaptype = 'medium label label-danger';
       } else {
-        self.wheels[wheel].temptype = 'medium label label-default';
+        self.wheels[wheel].gaptype = 'medium label label-default';
 
       }
 
@@ -70,7 +74,7 @@ angular
       } else if (rpm > 6000) {
         self.wheels[wheel].rpmtype = 'big label label-danger';
       } else {
-        self.wheels[wheel].temptype = 'big label label-default';
+        self.wheels[wheel].rpmtype = 'big label label-default';
       }
     
     }
