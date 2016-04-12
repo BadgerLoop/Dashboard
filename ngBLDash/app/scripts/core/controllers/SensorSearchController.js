@@ -29,7 +29,7 @@ angular
         $scope.$apply();
       }
 
-    };
+    }; 
 
     $scope.getPagedDataAsync = function(pageSize, page, searchText) {
       setTimeout(function() {
