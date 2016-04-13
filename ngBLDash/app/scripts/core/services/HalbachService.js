@@ -46,7 +46,7 @@ angular
       //GAP EVAL
       if (gap > 4.55) {
         self.wheels[wheel].gaptype = 'medium label label-success';
-      } else if (2.55 < gap < 4.55) {
+      } else if (2.55 < gap && gap < 4.55) {
         self.wheels[wheel].gaptype = 'medium label label-warning';
       } else if (gap < 2.56) {
         self.wheels[wheel].gaptype = 'medium label label-danger';
@@ -58,7 +58,7 @@ angular
       //TEMP EVAL
       if (temp < 80) {
         self.wheels[wheel].temptype = 'medium label label-success';
-      } else if (80 < temp < 119) {
+      } else if (80 < temp && temp < 119) {
         self.wheels[wheel].temptype = 'medium label label-warning';
       } else if (temp > 119) {
         self.wheels[wheel].temptype = 'medium label label-danger';
@@ -69,7 +69,7 @@ angular
       //RPM EVAL
       if (rpm < 5500) {
         self.wheels[wheel].rpmtype = 'big label label-success';
-      } else if (5500 < rpm < 5999) {
+      } else if (5500 < rpm && rpm < 5999) {
         self.wheels[wheel].rpmtype = 'big label label-warning';
       } else if (rpm > 6000) {
         self.wheels[wheel].rpmtype = 'big label label-danger';
