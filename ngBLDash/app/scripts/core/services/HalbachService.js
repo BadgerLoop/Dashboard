@@ -10,19 +10,18 @@ angular
 
     
     self.wheels = [ 
-    {name: "Left1", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Left2", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Left3", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Left4", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Left5", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''},
-    {name: "Right1", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Right2", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Right3", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Right4", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}, 
-    {name: "Right5", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: ''}
+    {name: "Left1", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Left2", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Left3", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Left4", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Left5", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''},
+    {name: "Right1", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Right2", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Right3", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype:''}, 
+    {name: "Right4", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}, 
+    {name: "Right5", rpm: 0, temp: 0, gap: 0, gaptype: '', temptype: '', rpmtype: '', totaltype: ''}
 
     ];
-
     
     
 
@@ -40,13 +39,14 @@ angular
       var gaptype = self.wheels[wheel].gaptype;
       var temptype = self.wheels[wheel].temptype;
       var rpmtype = self.wheels[wheel].rpmtype;
-      console.log("gap: " + gap + " rpm: " + rpm + " temp: " + temp + " " + gaptype + " " + rpmtype + " " + temptype)
+      var totaltype = self.wheels[wheel].totaltype;
+      console.log("gap: " + gap + " rpm: " + rpm + " temp: " + temp + " " + gaptype + " " + rpmtype + " " + temptype + " " + totaltype)
       
 
       //GAP EVAL
       if (gap > 4.55) {
         self.wheels[wheel].gaptype = 'medium label label-success';
-      } else if (2.55 < gap && gap < 4.55) {
+      } else if ((2.55 < gap) && (gap < 4.55)) {
         self.wheels[wheel].gaptype = 'medium label label-warning';
       } else if (gap < 2.56) {
         self.wheels[wheel].gaptype = 'medium label label-danger';
@@ -58,7 +58,7 @@ angular
       //TEMP EVAL
       if (temp < 80) {
         self.wheels[wheel].temptype = 'medium label label-success';
-      } else if (80 < temp && temp < 119) {
+      } else if ((80 < temp) && (temp < 119)) {
         self.wheels[wheel].temptype = 'medium label label-warning';
       } else if (temp > 119) {
         self.wheels[wheel].temptype = 'medium label label-danger';
@@ -69,14 +69,25 @@ angular
       //RPM EVAL
       if (rpm < 5500) {
         self.wheels[wheel].rpmtype = 'big label label-success';
-      } else if (5500 < rpm && rpm < 5999) {
+      } else if ((5500 < rpm) && (rpm < 5999)) {
         self.wheels[wheel].rpmtype = 'big label label-warning';
       } else if (rpm > 6000) {
         self.wheels[wheel].rpmtype = 'big label label-danger';
       } else {
         self.wheels[wheel].rpmtype = 'big label label-default';
       }
-    
+
+      // total success/warning/danger EVAL
+      if((gap < 2.56) || (temp > 119) || (rpm > 6000)){
+        self.wheels[wheel].totaltype = 'big label label-danger';
+      }
+/*      else if(((2.55 < gap) && (gap < 4.55)) || ((80 < temp) && (temp < 119))|| ((5500 < rpm) && (rpm < 5999))){
+        self.wheels[wheel].totaltype = '';
+      }*/
+      else{
+        self.wheels[wheel].totaltype = 'big label label-success';
+      }
+
     }
     return self.wheels;
   }
