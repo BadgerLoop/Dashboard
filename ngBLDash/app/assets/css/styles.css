@@ -1,3 +1,11 @@
+
+.middle{
+	border-bottom-style: hidden !important;
+	border-left-style: hidden !important;
+	border-top-style: hidden !important;
+}
+
+
 @-webkit-keyframes invalid {
   from { background-color: red; }
   to { background-color: inherit; }
