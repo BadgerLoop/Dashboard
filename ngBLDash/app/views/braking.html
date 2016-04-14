@@ -16,8 +16,8 @@
                                 <tr>
                                     <th style="text-align:left; color: white" width="15%">Wheels</th>
                                     <th style="text-align:center; color: white" width="15%">Status</th>
-                                    <th style="text-align:center; color: white" width="20%">Readout</th>
-                                    <th style="text-align:center; color: white" width="20%">Readout</th>
+                                    <th style="text-align:left; color: white" colspan="2" width="20%">Readout</th>                                  
+                                    <th style="text-align:right; color: white" colspan="2" width="20%">Readout</th>
                                     <th style="text-align:center; color: white" width="15%">Status</th>
                                     <th style="text-align:right; color: white" width="15%">Wheels</th>
                                 </tr>
@@ -26,42 +26,52 @@
                                 <tr>
                                     <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #1</td>
                                     <td class="noborder"><span class="btn btn-danger-alt btn-block">Danger</span></td>
-                                    <td class="noborder invalid" align="center"><span class="big label label-default">{{halbach.wheels[0].rpm}} RPM</span> <span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
-                                    <td class="noborder" align="center"><span class="medium label label-info">2.00 mm</span> <span class="big label label-default"> 4000 RPM </span></td>
+                                    <td class="noborder invalid" align="right"><span class="big label label-default">{{halbach.wheels[0].rpm}} RPM</span></td>
+                                    <td class="noborder" align="left"><span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="right"><span class="medium label label-info">2.00 mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="left"><span class="big label label-default"> 4000 RPM </span></td>
                                     <td style="border-bottom-style: hidden"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td align="right" style="color: white">Right Wheel #1 <span class="medium label label-primary">20 C </span></td>
+                                    <td align="right" style="color: white; border-bottom-style: hidden">Right Wheel #1 <span class="medium label label-primary">20 C </span></td>
                                 </tr>
                                 <tr>
-                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #2</td>
+                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #1</td>
                                     <td class="noborder"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td class="noborder" align="center"><span class="big label label-default"> 4000 RPM </span> <span class="medium label label-info"> 2.00 mm</span></td>
-                                    <td class="noborder" align="center"><span class="medium label label-info"> 2.50 mm</span> <span class="big label label-default"> 4000 RPM </span></td>
+                                    <td class="noborder" align="right"><span class="big label label-default">4000 RPM</span></td>
+                                    <td class="noborder" align="left"><span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="right"><span class="medium label label-info">2.00 mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="left"><span class="big label label-default"> 4000 RPM </span></td>
                                     <td style="border-bottom-style: hidden"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td align="right" style="color: white">Right Wheel #2 <span class="medium label label-primary">20 C </span></td>
+                                    <td align="right" style="color: white; border-bottom-style: hidden">Right Wheel #1 <span class="medium label label-primary">20 C </span></td>
                                 </tr>
                                 <tr>
-                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #3</td>
+                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #1</td>
                                     <td class="noborder"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td class="noborder" align="center"><span class="big label label-default"> 4000 RPM </span> <span class="medium label label-info"> 2.00 mm</span></td>
-                                    <td class="noborder" align="center"><span class="medium label label-info"> 2.00 mm</span> <span class="big label label-default"> 4000 RPM </span></td>
-                                    <td style="border-bottom-style: hidden"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td align="right" style="color: white">Right Wheel #3 <span class="medium label label-primary">20 C </span></td>
-                                </tr>
-                                <tr>
-                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #4</td>
-                                    <td class="noborder"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td class="noborder" align="center"><span class="big label label-default"> 5200 RPM </span> <span class="medium label label-info"> 2.00 mm</span></td>
-                                    <td class="noborder" align="center"><span class="medium label label-info"> 2.00 mm</span> <span class="big label label-default"> 4000 RPM </span></td>
+                                    <td class="noborder" align="right"><span class="big label label-default">4000 RPM</span></td>
+                                    <td class="noborder" align="left"><span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="right"><span class="medium label label-info">2.00 mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="left"><span class="big label label-default"> 4000 RPM </span></td>
                                     <td style="border-bottom-style: hidden"><span class="btn btn-danger-alt btn-block">Danger</span></td>
-                                    <td class="invalid" align="right" style="color: white">Right Wheel #4 <span class="medium label label-primary">90 C </span></td>
+                                    <td class="invalid" align="right" style="color: white; border-bottom-style: hidden">Right Wheel #1 <span class="medium label label-primary">90 C </span></td>
                                 </tr>
                                 <tr>
-                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #5</td>
+                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #1</td>
                                     <td class="noborder"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td class="noborder" align="center"><span class="big label label-default"> 4000 RPM </span> <span class="medium label label-info"> 2.00 mm</span></td>
-                                    <td class="noborder"align="center"><span class="medium label label-info"> 2.00 mm</span> <span class="big label label-default"> 4000 RPM </span></td>
+                                    <td class="noborder" align="right"><span class="big label label-default">4000 RPM</span></td>
+                                    <td class="noborder" align="left"><span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="right"><span class="medium label label-info">2.00 mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="left"><span class="big label label-default"> 4000 RPM </span></td>
                                     <td style="border-bottom-style: hidden"><span class="btn btn-success-alt btn-block">Stable</span></td>
-                                    <td align="right" style="color: white">Right Wheel #5 <span class="medium label label-primary">20 C </span></td>
+                                    <td align="right" style="color: white; border-bottom-style: hidden">Right Wheel #1 <span class="medium label label-primary">20 C </span></td>
+                                </tr>
+                                <tr>
+                                    <td style="color: white; border-bottom-style: hidden"><span align="left" class="medium label label-primary">20 C </span>  Left Wheel #1</td>
+                                    <td class="noborder"><span class="btn btn-success-alt btn-block">Stable</span></td>
+                                    <td class="noborder" align="right"><span class="big label label-default">4000 RPM</span></td>
+                                    <td class="noborder" align="left"><span class="medium label label-info">{{halbach.wheels[0].gap}} mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder invalid" align="right"><span class="medium label label-info">2.00 mm</span></td>
+                                    <td style="border-bottom-style: hidden" class="noborder" align="left"><span class="big label label-default"> 4000 RPM </span></td>
+                                    <td style="border-bottom-style: hidden"><span class="btn btn-danger-alt btn-block">Danger</span></td>
+                                    <td align="right" style="color: white">Right Wheel #1 <span class="medium label label-primary">20 C </span></td>
                                 </tr>
                                 
                             </tbody>
