@@ -11,6 +11,12 @@ angular
       iconClasses: 'ti ti-home',
       html: '<span class="badge badge-info"></span>',
       url: '#/',
+    },
+    {
+      label: 'Demo',
+      iconClasses: 'ti ti-home',
+      html: '<span class="badge badge-info"></span>',
+      url: '#/demo',
     },  {
       label: 'Sub-Teams',
       iconClasses: 'ti ti-settings',

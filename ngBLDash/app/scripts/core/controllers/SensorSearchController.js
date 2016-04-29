@@ -28,7 +28,6 @@ angular
         console.log("if set");
         $scope.$apply();
       }
-
     };
 
     $scope.getPagedDataAsync = function(pageSize, page, searchText) {

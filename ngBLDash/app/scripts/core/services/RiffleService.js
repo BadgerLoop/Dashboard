@@ -6,7 +6,11 @@ angular
 
         var self = this;
 
+    	this.data = 0;
+
         //subscribe to endpoint
-        $riffle.subscribe("temp", SensorService.getMessageList);
+        //$riffle.subscribe("temp", SensorService.getMessageList);
+
+        $riffle.subscribe("demo", SensorService.getDemoData);
 
     }]);

@@ -1,0 +1,174 @@
+<ol class="breadcrumb">
+    <li><a href="#/demo">Demo</a></li>
+    <li class="active">Dashboard</li>
+</ol>
+<div class="container-fluid" ng-controller="DashboardController">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="info-tile tile-orange">
+                <div class="tile-icon"><i class="ti ti-server"></i></div>
+                <div class="tile-heading"><span>No. Of Nodes Running</span></div>
+                <div class="tile-body"><span>3</span></div>
+                <div class="tile-footer"><span class="text-success">100% <i class="fa fa-level-up"></i></span></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-tile tile-success">
+                <div class="tile-heading"><span>Battery Voltage: {{batt.currentBatVoltage}}V</span></div>
+                <div class="tile-body">
+                    <span>
+                    <div flot-chart style="width: 100%;height: 74px" class="centered"
+                            data-flot-data="batt.realtimeData"
+                            data-flot-options="batt.realtimeOptions">
+                    </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-tile tile-dark">
+                <div class="tile-icon"><i class="ti ti-bar-chart-alt"></i></div>
+                <div class="tile-heading"><span>Halbach Wheels (Left)</span></div>
+                <div class="tile-body"><span>{{wheel.currentRPMleft}} RPM</span></div>
+                
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-tile tile-orange">
+                <div class="tile-icon"><i class="ti ti-bar-chart-alt"></i></div>
+                <div class="tile-heading"><span>Halbach Wheels (Right)</span></div>
+                <div class="tile-body"><span>{{wheel.currentRPMright}} RPM</span></div>
+                
+            </div>
+        </div>
+    </div>
+    <div data-widget-group="group1">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel" data-widget='{"id" : "wiget9", "draggable": "false"}'>
+                    <div class="panel-heading">
+                        <h2>Pod Velocity | {{telem.currentVelocity}} MPH</h2>
+                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        </div>
+                    </div>
+                    <div class="panel-editbox" data-widget-controls=""></div>
+                    <div class="panel-body">
+                        <div class="mt-sm mb-sm" flot-chart style="width: 100%;height: 272px;" data-flot-data="telem.plotVelAccelData" data-flot-options="telem.plotVelAccelOptions"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel" data-widget='{"draggable": "false"}'>
+                    <div class="panel-heading">
+                        <h2>Recent CAN Messages</h2>
+                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        </div>
+                    </div>
+                    <div class="panel-body scroll-pane" style="height: 320px;">
+                        <div class="scroll-content">
+                            <ul class="mini-timeline">
+                                <li class="mini-timeline-danger" ng-repeat="message in sensor.messageList track by $index | limitTo:50 ">
+                                    <div class="timeline-icon"></div>
+                                    <div class="timeline-body">
+                                        <div class="timeline-content">
+                                            <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
+                                            <span class="time">{{sensor.timeSince(message.timeStamp)}} ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="panel" data-widget='{"draggable": "false"}' style="height: 370px;">
+                    <div class="panel-heading">
+                        <h2>Module Message Distribution</h2>
+                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        </div>
+                    </div>
+                    <div class="panel-body no-padding">
+                        <table class="table browsers m-n">
+                            <tbody>
+                                <tr ng-repeat="module in sensor.getModuleDistribution() | orderBy: '-value'" style="height: 63px;">
+                                    <td ng-bind="module.name"></td>
+                                    <td class="text-right">{{sensor.getModulePercentage(module)}}%</td>
+                                    <td class="vam" style="width: 56px;">
+                                        <div class="progress m-n">
+                                            <div class="progress-bar progress-bar-teal" style="width: {{sensor.getModulePercentage(module)}}%"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6" ng-controller="SensorSearchController">
+            <div class="panel panel-transparent">
+                <div class="panel-body">
+                    <div class="input mb-xl">
+                        <input type="text" ng-model="filterOptions.filterText" class="form-control" placeholder="Search Sensors...">
+                    </div>
+                    <div class="panel">
+                        <div class="panel-body no-padding">
+                            <div style="height: 554px;" ng-grid="gridOptions"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <panel panel-class="panel-sky" heading="Selected Sensor Message List | {{sensor.selectedSensorMessageList().length}} messages">
+                <div class="table-responsive" style="height: 576px !important;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th style="padding-right: 200px">Message</th>
+                                <th>Time Stamp</th>
+                                <th>Module</th>
+                                <th>Type</th>
+                                <th>Sensor</th>
+                                <th>Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="message in sensor.selectedSensorMessageList() | orderBy: 'timeStamp' : true">
+                                <td>{{message.id}}</td>
+                                <td><strong>{{message.data}}</strong></td>
+                                <td>{{sensor.timeSince(message.timeStamp)}} ago</td>
+                                <td>{{message.module}}</td>
+                                <td>{{message.type}}</td>
+                                <td>{{message.sensor}}</td>
+                                <td>{{message.location}}</td>
+                            </tr>
+                            <tr ng-if="sensor.selectedSensorMessageList().length === 0">
+                                <td></td>
+                                <td><strong>NO MESSAGES FROM SELECTED SENSORS</strong></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        <caption>List of messages from selected sensors</caption>
+                        <ul class="demo-btns">
+                                <button type="button" class="btn btn-xs btn-danger-alt btn-label selectedSensorButtons" ng-click="sensor.removeAll()"><i class="ti ti-trash"></i>Remove All</button>
+                            <li ng-repeat="sensor in sensor.selectedSensors" class="selectedSensorButtons">
+                                <button type="button" class="btn btn-xs btn-danger btn-label" ng-click="removeSensorFromList(sensor)"><i class="ti ti-close"></i>{{sensor.Module}} - {{sensor.Name}}</button>
+                            </li>
+                        </ul>
+                    </table>
+                </div>
+            </panel>
+        </div>
+    </div>
+</div>
+</div>
+<!-- container-fluid -->

@@ -6,8 +6,10 @@ angular
         var self = this;
 
         self.selectedSensors = [];
-
-
+        self.demoData = 0;
+        var time = 0;
+        self.demoDataArray = [];
+        var tdata = 0;
         var currentMessageList = [];
         var updateInterval = 1000;
         var map = {'BPM1': 0, 'BPM2': 1, 'MCM': 2, "VCM": 3, 'ECM': 4};
@@ -17,6 +19,46 @@ angular
          * Create random message, increment module count, timestamp, add to list
          * @return {[Messages]} List of all messages 
          */
+
+    var dxta = [],
+      totalPoints = 150;
+    var updateInterval = 300;
+
+    var time = 0;
+
+    /**
+     * Create random data point for velocity. voltage
+     * @return {[Int]} list of last totalPoints of velocity 
+     */
+    var getRandomData = function(data) {
+      if (dxta.length > 0) {
+        dxta = dxta.slice(1);
+      }
+
+      while (dxta.length < totalPoints) {
+        var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 50,
+            y =  Math.random() * 30 + 100;
+
+        if (y < 0) {
+            y = 0;
+            // $scope.severeAlert('BATTERY LEVEL ZERO', 'This needs electrical team attention immediately.');
+        } else if (y > 160) {
+            y = 160;
+        }
+
+        dxta.push(y);
+      }
+      dxta.push(data);
+      var res = [];
+
+      time++;
+      
+      for (var i = 0; i < dxta.length; ++i) {
+        res.push([time+i, dxta[i]]);
+      }
+      return res;
+
+    }
         this.getMessageList = function(message) {
             modulesMessageCount[map[message.module]].value += 1;
             message.timeStamp = new Date();
@@ -24,6 +66,15 @@ angular
         }
 
 
+        this.getDemoData = function(data) {
+          self.demoDataArray = [getRandomData(data)]
+          self.demoData = data;
+          time++;
+        }
+        
+
+
+        
         /**
          * @return {[Messages]} List of messages only sent from those who are selected 
          */
@@ -87,6 +138,15 @@ angular
             
             
           
+        }
+        this.getHaProxyData = function() {
+            // $timeout(function() {
+                $http.get('assets/haproxydata.json').success(function(stuff) {
+                    console.log(stuff)
+                    //if (data.up)
+                });
+            // }, 3000);
+
         }
 
        
