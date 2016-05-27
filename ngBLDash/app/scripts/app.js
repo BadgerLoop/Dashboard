@@ -1,4 +1,3 @@
-var haStats = require('haproxy-stats');
 angular
     .module('themesApp', [
         'theme', 'ngRiffle'
