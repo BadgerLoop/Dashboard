@@ -1,0 +1,62 @@
+#topnav .navbar-brand{
+	width: 200px !important;
+
+}
+
+.ngGrid .ngRow.selected{
+	background-color: #378fbf;
+	opacity: .4;
+}
+
+.ngGrid .ngRow.selected .ngCellText{
+	color: white;
+}
+
+.selectedSensorButtons{
+	display:inline;
+    padding: 10px 15px;
+}
+
+table.browsers > tbody > tr > td:first-child{
+	padding-top: 20px;
+}
+
+table.browsers > tbody > tr > td{
+	padding-top: 20px;
+}
+
+table.browsers > tbody > tr > td:last-child{
+	padding-bottom: 20px;
+}
+
+.static-content-wrapper{
+
+	background-image: url("space.jpg");
+        
+	//background: #134E5E; /* fallback for old browsers */
+	//background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
+	//background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+	//background: #F0C27B; /* fallback for old browsers */
+	//background: -webkit-linear-gradient(to left, #F0C27B , #4B1248); /* Chrome 10-25, Safari 5.1-6 */
+	//background: linear-gradient(to left, #F0C27B , #4B1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.panel .panel-heading{
+	background-color: #263238;
+	//background-image: url("metallic.jpg");
+}
+
+#topnav.navbar-default{
+	//background: #263238;
+	background-image: url("metallic.jpg");
+}
+
+.page-content > .breadcrumb{
+	//background: rgb(69, 90, 100) !important;
+	background-color: #263238 !important;
+}
+.center {
+	
+	text-align: center;
+}
