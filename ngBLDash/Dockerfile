@@ -9,4 +9,5 @@ WORKDIR /usr/share/nginx/html
 
 # Expose ports.
 EXPOSE 80
+EXPOSE 8081
 EXPOSE 443

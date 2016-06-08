@@ -5522,7 +5522,7 @@ angular
 
 // Config for Exis
 .config(function($riffleProvider) {
-    $riffleProvider.setFabric("ws://192.168.99.100:8000");
+    $riffleProvider.setFabric("ws://192.168.1.26:8000");
     $riffleProvider.setDomain("xs.node.sender");
     //$riffleProvider.setDomain("xs.demo.badgerloop.blapp.Container.spammer");
     // $riffleProvider.setFabricLocal(); FOR LOCAL NODE USE
