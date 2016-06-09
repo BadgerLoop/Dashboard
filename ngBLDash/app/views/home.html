@@ -4,7 +4,43 @@
 </ol>
 <div class="container-fluid" ng-controller="DashboardController">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Magnetic Control Module</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Vehicle Navigation Module</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Vehicle Safety Module</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+<!--         <div class="col-md-3">
             <div class="info-tile tile-orange">
                 <div class="tile-icon"><i class="ti ti-server"></i></div>
                 <div class="tile-heading"><span>No. Of Nodes Running</span></div>
@@ -40,9 +76,9 @@
                 <div class="tile-body"><span>{{wheel.currentRPMright}} RPM</span></div>
                 
             </div>
-        </div>
+        </div> -->
     </div>
-    <div data-widget-group="group1">
+<!--     <div data-widget-group="group1">
         <div class="row">
             <div class="col-md-6">
                 <div class="panel" data-widget='{"id" : "wiget9", "draggable": "false"}'>
@@ -61,23 +97,6 @@
                 <div class="panel" data-widget='{"draggable": "false"}'>
                     <div class="panel-heading">
                         <h2>Recent CAN Messages</h2>
-                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
-                        </div>
-                    </div>
-                    <div class="panel-body scroll-pane" style="height: 320px;">
-                        <div class="scroll-content">
-                            <ul class="mini-timeline">
-                                <li class="mini-timeline-danger" ng-repeat="message in sensor.messageList track by $index | limitTo:50 ">
-                                    <div class="timeline-icon"></div>
-                                    <div class="timeline-body">
-                                        <div class="timeline-content">
-                                            <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
-                                            <span class="time">{{sensor.timeSince(message.timeStamp)}} ago</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -106,9 +125,45 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row">
-        <div class="col-md-6" ng-controller="SensorSearchController">
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Braking Control Module 1</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Braking Control Module 2</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel" data-widget='{"draggable": "false"}'>
+                <div class="panel-heading">
+                    <h2>Battery Control Module</h2>
+                </div>
+                <div class="panel-body">
+                    <div>
+                        <p>TODO: Add Data</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+<!--         <div class="col-md-6" ng-controller="SensorSearchController">
             <div class="panel panel-transparent">
                 <div class="panel-body">
                     <div class="input mb-xl">
@@ -167,7 +222,7 @@
                     </table>
                 </div>
             </panel>
-        </div>
+        </div> -->
     </div>
 </div>
 </div>

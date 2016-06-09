@@ -1,0 +1,44 @@
+    <ol class="breadcrumb">
+        <li><a href="#/">Dashboard</a></li>
+        <li class="active">Navigation</li>
+    </ol>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <panel panel-class="panel-heading" heading="Progress">
+                <br>
+                <progressbar  ng-controller="ProgressbarController" class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
+                <small><em>Object (changes type based on value)</em></small>
+            </panel>
+        </div>
+    </div>
+        <div class="row">
+        <div class="col-md-5">
+            <panel panel-class="panel-heading" heading="Position | Velocity | Acceleration" ng-controller="VNMController">
+                   <h2>Pod Velocity | {{telem.currentVelocity}} MPH</h2>
+                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        </div>
+                    </div>
+                    <div class="panel-editbox" data-widget-controls=""></div>
+                    <div class="panel-body">
+                        TODO: add line graph
+<!--                         <div class="mt-sm mb-sm" flot-chart style="width: 100%;height: 272px;" data-flot-data="data" data-flot-options="options"></div> -->
+                    </div>
+            </panel>
+        </div>
+        <div class="col-md-5">
+            <panel panel-class="panel-heading" heading="Position | Velocity | Acceleration" ng-controller="VNMController">
+                   <h2>Pod Velocity | {{telem.currentVelocity}} MPH</h2>
+                        <div class="panel-ctrls button-icon-bg" data-actions-container="" data-action-collapse='{"target": ".panel-body"}'>
+                        </div>
+                    </div>
+                    <div class="panel-editbox" data-widget-controls=""></div>
+                    <div class="panel-body">
+                        TODO: add line graph
+<!--                         <div class="mt-sm mb-sm" flot-chart style="width: 100%;height: 272px;" data-flot-data="data" data-flot-options="options"></div> -->
+                    </div>
+            </panel>
+        </div>
+    </div>
+</div>

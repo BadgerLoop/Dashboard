@@ -1,21 +1,12 @@
-angular
-  .module('theme.core.services')
-  .service('TelemetryService',['$timeout', function($timeout) {
+angular.module('theme.core.VNM_controller', ['theme.core.services'])
+  .controller('VNMController', ['$scope', '$filter', '$http', 'SensorService' ,'$interval', function($scope, $filter, $http, SensorService, $interval) {
     'use strict';
 
-    var self = this;
-
-    this.currentVelocity = 0;
-    var dxta = [],
-      totalPoints = 150;
-    var updateInterval = 300;
-    this.plotVelAccelData = [{ data: [0], label: "Velocity" }];
+	console.log("Injected VNM controller");
+    var dxta = []
+    var totalPoints = 200;
     var time = 0;
-
-    /**
-     * Create random data point for velocity. voltage
-     * @return {[Int]} list of last totalPoints of velocity 
-     */
+    $scope.data = [[0,25],[0,15]];
     var getRandomData = function() {
       if (dxta.length > 0) {
         dxta = dxta.slice(1);
@@ -32,8 +23,6 @@ angular
             y = 160;
         }
 
-        self.currentVelocity = Math.round(y);
-
         dxta.push(y);
       }
       var res = [];
@@ -43,18 +32,17 @@ angular
       for (var i = 0; i < dxta.length; ++i) {
         res.push([time+i, dxta[i]]);
       }
-      
+      //console.log(res)
+      $scope.data = res
       return res;
 
     }
+//TODO: add chart data service
+  //    $interval(function() {
+		// getRandomData()
+  //   }, 5);
 
-    /**
-     * Graph info. for Accel
-     */
-    self.plotVelAccelData = [getRandomData()]
-    //this.plotVelAccelData = [{ data: getRandomData(), label: "Velocity" }];
-
-    this.plotVelAccelOptions = {
+    $scope.options = {
       series: {
         lines: {
           show: true,
@@ -95,25 +83,5 @@ angular
       }
 
     };
-
-    /**
-     * Starts the constant update of fake data for velocity data
-     */
-
-    var promise;
-    this.updateRealtimeData = function() {
-      self.plotVelAccelData = [getRandomData()];
-      console.log(self.plotVelAccelData);
-      $timeout.cancel(promise);
-      promise = $timeout(self.updateRealtimeData, updateInterval);
-    };
-
-    /**
-     * @return {Int} current vel./200 -> into percentage
-     */
-    this.getVelPercentage = function() {
-      var perc = self.currentVelocity/200;
-      return Math.round(perc*100);
-    }
-
+    
   }]);

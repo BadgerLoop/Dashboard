@@ -1,5 +1,4 @@
-angular
-    .module('theme.core.services')
+angular.module('theme.core.services')
     .service('RiffleService', ['$timeout', '$riffle', '$rootScope', 'SensorService', function($timeout,
         $riffle, $rootScope, SensorService) {
         'use strict';

@@ -27,6 +27,8 @@ angular
     'theme.core.boxed_layout',
     //'theme.core.google_maps',
     'theme.core.ng_grid',
+    'theme.core.MCM_controller',
+    'theme.core.VNM_controller',
   ])
   .constant('nanoScrollerDefaults', {
     nanoClass: 'scroll-pane',

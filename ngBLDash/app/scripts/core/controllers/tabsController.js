@@ -1,4 +1,3 @@
-angular
   angular.module('theme.core.tabs_controller', ['theme.core.services'])
   .controller('TabsAndAccordionsDemoController', ['$scope', function($scope) {
     'use strict';

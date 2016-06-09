@@ -1,6 +1,5 @@
-angular
   angular.module('theme.core.progress_bars_controller', ['theme.core.services'])
-  .controller('ProgressbarController', ['$scope', function($scope) {
+  .controller('ProgressbarController', ['$scope','$interval', function($scope, $interval) {
     'use strict';
     $scope.rootPanels = [{
       active: false
@@ -9,9 +8,10 @@ angular
     }];
 
     $scope.max = 200;
-
+    $scope.dynamic = 1;
     $scope.random = function() {
-      var value = Math.floor((Math.random() * 100) + 1);
+      var value = $scope.dynamic
+      //Math.floor((Math.random() * 100) + 1);
       var type;
 
       if (value < 25) {
@@ -26,7 +26,7 @@ angular
 
       $scope.showWarning = (type === 'danger' || type === 'warning');
 
-      $scope.dynamic = value;
+      // $scope.dynamic = value;
       $scope.type = type;
     };
     $scope.random();
@@ -43,5 +43,13 @@ angular
         });
       }
     };
+
     $scope.randomStacked();
+    $interval(function() {
+        $scope.dynamic = $scope.dynamic + 1;
+        $scope.random();
+        // console.log($scope.dynamic);
+        //TODO:  ADD labels and logic for determining progress
+    }, 3000);
+
   }]);

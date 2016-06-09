@@ -1,12 +1,12 @@
-angular
-    .module('themesApp', [
-        'theme', 'ngRiffle'
+angular.module('badgerloop-dash', [
+        'theme', 
+        'ngRiffle'
     ])
     .config(['$provide', '$routeProvider', function($provide, $routeProvider) {
         'use strict';
         $routeProvider
             .when('/', {
-                templateUrl: 'views/index.html',
+                templateUrl: 'views/home.html',
             })
             .when('/:templateFile', {
                 templateUrl: function(param) {
@@ -14,14 +14,13 @@ angular
                 }
             })
             .when('#', {
-                templateUrl: 'views/index.html',
+                templateUrl: 'views/home.html',
             })
             .otherwise({
                 redirectTo: '/'
             });
 
     }])
-
 // Config for Exis
 .config(function($riffleProvider) {
     $riffleProvider.setDomain("xs.demo.badgerloop.blapp.Container.spammer");
@@ -39,6 +38,6 @@ angular
 
 //Connect to Exis
 .run(function($riffle, $rootScope) {
-    $riffle.setToken("zXMXlKCSoPpQatu9opgKYodSuHdrAzRsTUU9yzr4J4cN.sYp9a3pAO4M.LgCsdt2uF.1TCRq0gDcqkFvi5CTDQMo92MmSxGFRWyi0eGOF3OIbiNNNtc5bNL5FAPsqvzVTYsEMbBQqOGQKuFGuSalQxaNykoCzKySlL8G3a.Xu2g_");
+    //$riffle.setToken("zXMXlKCSoPpQatu9opgKYodSuHdrAzRsTUU9yzr4J4cN.sYp9a3pAO4M.LgCsdt2uF.1TCRq0gDcqkFvi5CTDQMo92MmSxGFRWyi0eGOF3OIbiNNNtc5bNL5FAPsqvzVTYsEMbBQqOGQKuFGuSalQxaNykoCzKySlL8G3a.Xu2g_");
     $riffle.join();
 });

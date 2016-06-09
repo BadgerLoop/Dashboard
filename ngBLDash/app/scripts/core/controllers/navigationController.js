@@ -3,7 +3,7 @@ angular
   .controller('NavigationController', ['$scope', '$location', '$timeout', function($scope, $location, $timeout) {
     'use strict';
     $scope.menu = [{
-      label: 'OUR TEAM',
+      label: 'VIEWS',
       iconClasses: '',
       separator: true
     }, {
@@ -12,32 +12,32 @@ angular
       html: '<span class="badge badge-info"></span>',
       url: '#/',
     },  {
-      label: 'Sub-Teams',
+      label: 'Views',
       iconClasses: 'ti ti-settings',
       children: [{
-        label: 'Braking',
-        url: '#/braking'
+        label: 'MCM',
+        url: '#/magnet'
        } ,{
-        label: 'Electrical',
-        url: '#/ui-typography'
+        label: 'VNM',
+        url: '#/navigation'
       }, {
-        label: 'Controls',
-        url: '#/ui-buttons'
+        label: 'VSM',
+        url: '#/safety'
       }, {
-        label: 'Levitation',
-        url: '#/ui-modals'
+        label: 'BCM1',
+        url: '#/braking1'
       }, {
-        label: 'Operations',
-        url: '#/ui-progressbars'
+        label: 'BCM2',
+        url: '#/braking2'
       }, {
-        label: 'Safety',
-        url: '#/ui-progressbars'
+        label: 'BATT',
+        url: '#/blank'
       },{
-        label: 'Software',
-        url: '#/ui-progressbars'
+        label: 'WCM',
+        url: '#/blank'
       }, {
-        label: 'Structural',
-        url: '#/ui-progressbars'
+        label: 'CAN',
+        url: '#/blank'
       }]
     }];
 
