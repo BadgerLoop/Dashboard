@@ -506,19 +506,19 @@ module.exports = function (grunt) {
     'ngtemplates',
     'useminPrepare',
     'concurrent:dist',
-    'less:dist',
+    // 'less:dist',
     'autoprefixer',
     'concat',
-    // 'ngmin',
+    'ngmin',
     'copy:dist',
     // 'copy:fonts',
     // 'cdnify',
     'cssmin',
-    'uglify',
+    // 'uglify',
     'rev',
     'usemin',
     'processhtml:dist',
-    // 'htmlmin'
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
