@@ -12,36 +12,57 @@
                 <div class="tile-footer"><span class="text-success">100% <i class="fa fa-level-up"></i></span></div>
             </div>
         </div>
-        <div class="col-md-3">
-            <div class="info-tile tile-success">
-                <div class="tile-heading"><span>Battery Voltage: {{batt.currentBatVoltage}}V</span></div>
-                <div class="tile-body">
-                    <span>
-                    <div flot-chart style="width: 100%;height: 74px" class="centered"
-                            data-flot-data="batt.realtimeData"
-                            data-flot-options="batt.realtimeOptions">
-                    </div>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="info-tile tile-dark">
-                <div class="tile-icon"><i class="ti ti-bar-chart-alt"></i></div>
-                <div class="tile-heading"><span>Halbach Wheels (Left)</span></div>
-                <div class="tile-body"><span>{{wheel.currentRPMleft}} RPM</span></div>
+        <div class="col-md-6">
+            <div class="info-tile tile-orange">
+                <div class="tile-icon"><i class="ti ti-magnet"></i></div>
+                <div class="tile-heading"><span>Left Side - Average Halbach WHeel RPM</span></div>
+                <div class="tile-body"><span>5195 RPM</span></div>
                 
             </div>
         </div>
         <div class="col-md-3">
             <div class="info-tile tile-orange">
-                <div class="tile-icon"><i class="ti ti-bar-chart-alt"></i></div>
-                <div class="tile-heading"><span>Halbach Wheels (Right)</span></div>
-                <div class="tile-body"><span>{{wheel.currentRPMright}} RPM</span></div>
+                <div class="tile-icon"><i class="ti ti-control-record"></i></div>
+                <div class="tile-heading"><span>Ambient Tube Pressure</span></div>
+                <div class="tile-body"><span>820 Pa</span></div>
                 
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-3">
+                <div class="info-tile tile-success">
+                    <div class="tile-heading"><span>Battery Voltage: {{batt.currentBatVoltage}}V</span></div>
+                    <div class="tile-body">
+                        <span>
+                        <div flot-chart style="width: 100%;height: 74px" class="centered"
+                                data-flot-data="batt.realtimeData"
+                                data-flot-options="batt.realtimeOptions">
+                        </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="col-md-6">
+            <div class="info-tile tile-orange">
+                <div class="tile-icon"><i class="ti ti-magnet"></i></div>
+                <div class="tile-heading"><span>Right Side - Average Halbach WHeel RPM</span></div>
+                <div class="tile-body"><span>5199 RPM</span></div>
+                
+            </div>
+        </div>
+         <div class="col-md-3">
+            <div class="info-tile tile-orange">
+                <div class="tile-icon"><i class="ti ti-control-record"></i></div>
+                <div class="tile-heading"><span>Ambient Tube Temperature</span></div>
+                <div class="tile-body"><span>30 C</span></div>
+                
+            </div>
+        </div>
+    </div>
+
+    
     <div data-widget-group="group1">
         <div class="row">
             <div class="col-md-6">
@@ -57,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="panel" data-widget='{"draggable": "false"}'>
                     <div class="panel-heading">
                         <h2>Recent CAN Messages</h2>
@@ -67,12 +88,22 @@
                     <div class="panel-body scroll-pane" style="height: 320px;">
                         <div class="scroll-content">
                             <ul class="mini-timeline">
-                                <li class="mini-timeline-danger" ng-repeat="message in sensor.messageList track by $index | limitTo:50 ">
+                                <li class="mini-timeline-danger">
                                     <div class="timeline-icon"></div>
                                     <div class="timeline-body">
                                         <div class="timeline-content">
-                                            <a href="#/" class="name">{{message.sensor}}</a> sent a new message <strong>{{message.data}}</strong>
-                                            <span class="time">{{sensor.timeSince(message.timeStamp)}} ago</span>
+                                            <a href="#/" class="name">WCM</a> ------------------------------- <strong>Migrating to Node 2 (healthy)</strong>
+                                            <span class="time">5 ago</span>
+                                            <a href="#/" class="name">VNM</a> ------------------------------- <strong>1000ft remaining</strong>
+                                            <span class="time">5 ago</span>
+                                             <a href="#/" class="name">WCM</a> ------------------------------- <strong>Node 1 restored</strong>
+                                            <span class="time">5 ago</span>
+                                            <a href="#/" class="name">BCM1</a> ------------------------------ <strong>Bogie Deployed</strong>
+                                            <span class="time">3 ago</span>
+                                            <a href="#/" class="name">BCM2</a> ------------------------------ <strong>Bogie Deployed</strong>
+                                            <span class="time">3 ago</span>
+                                            <a href="#/" class="name">VNM</a> ------------------------------- <strong>500ft remaining</strong>
+                                            <span class="time">1 ago</span>
                                         </div>
                                     </div>
                                 </li>
@@ -81,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="panel" data-widget='{"draggable": "false"}' style="height: 370px;">
                     <div class="panel-heading">
                         <h2>Module Message Distribution</h2>
@@ -104,10 +135,11 @@
                         </table>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
-    <div class="row">
+    
+    <!-- <div class="row">
         <div class="col-md-6" ng-controller="SensorSearchController">
             <div class="panel panel-transparent">
                 <div class="panel-body">
@@ -121,8 +153,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
+        </div> -->
+        <!-- <div class="col-md-6">
             <panel panel-class="panel-sky" heading="Selected Sensor Message List | {{sensor.selectedSensorMessageList().length}} messages">
                 <div class="table-responsive" style="height: 576px !important;">
                     <table class="table">
@@ -167,7 +199,7 @@
                     </table>
                 </div>
             </panel>
-        </div>
+        </div> -->
     </div>
 </div>
 </div>

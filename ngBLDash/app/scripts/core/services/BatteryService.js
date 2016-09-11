@@ -21,13 +21,13 @@ angular
 
       while (dxta.length < totalPoints) {
         var prev = dxta.length > 0 ? dxta[dxta.length - 1] : 25,
-            y =  Math.random() * 12;
+            y =  Math.random() + 119;
 
         if (y < 0) {
             y = 0;
             // $scope.severeAlert('BATTERY LEVEL ZERO', 'This needs electrical team attention immediately.');
-        } else if (y > 12) {
-            y = 12;
+        } else if (y > 120) {
+            y = 120;
         }
 
         self.currentBatVoltage = Math.round(y);
@@ -66,8 +66,8 @@ angular
         },
         yaxis: {
             min: 0,
-            max: 15,
-            ticks: [0, 8, 15],
+            max: 130,
+            ticks: [0, 70, 130],
             tickColor: '#f5f5f5', 
             font: {color: '#bdbdbd', size: 12}
         },
