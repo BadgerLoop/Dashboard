@@ -128,7 +128,7 @@ table.browsers > tbody > tr > td:last-child{
 
 .mnames {
 	color: #FFFFFF;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .headers {
@@ -144,4 +144,16 @@ table.browsers > tbody > tr > td:last-child{
 .hud_mph {
 	font-size: 72px;
 	color: #FFFFFF;
+
 }
+
+.hud_unit {
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
+.state {
+	width: 112.5px;
+	height: 40px;
+}
+

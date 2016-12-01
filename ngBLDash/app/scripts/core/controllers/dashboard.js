@@ -25,30 +25,30 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             $scope.vsm_prog = 0;
             $scope.vnm_prog = 0;
 
-            $scope.mcm_status = "Initialized";
-            $scope.bcm_status = "";
-            $scope.vsm_status = "";
-            $scope.vnm_status = "";
+            $scope.mcm_status = 'btn btn-inverse-alt';
+            $scope.bcm_status = 'btn btn-inverse-alt';
+            $scope.vsm_status = 'btn btn-inverse-alt';
+            $scope.vnm_status = 'btn btn-inverse-alt';
 
             $riffle.subscribe("exis", function(data) {
                 $scope.mcm_prog = data.mcm_prog;
                 if($scope.mcm_prog == 100) {
-                    $scope.mcm_status = "Initialized";
+                    $scope.mcm_status = 'btn btn-success-alt';
                 } 
 
                 $scope.bcm_prog = data.bcm_prog;
                 if($scope.bcm_prog == 100) {
-                    $scope.bcm_status = "Initialized";
+                    $scope.bcm_status = 'btn btn-success-alt';
                 } 
 
                 $scope.vsm_prog = data.vsm_prog;
                 if($scope.vsm_prog == 100) {
-                    $scope.vsm_status = "Initialized";
+                    $scope.vsm_status = 'btn btn-success-alt';
                 }
 
                 $scope.vnm_prog = data.vnm_prog;
                 if($scope.vnm_prog == 100) {
-                    $scope.vnm_status = "Initialized";
+                    $scope.vnm_status = 'btn btn-success-alt';
                 }
 
                 $scope.data = data;

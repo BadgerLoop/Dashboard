@@ -6,18 +6,74 @@
     <div class="row">
         <div class="col-md-4">
             <div class="panel">
-                <div class="headers panel-heading">Launch Control</div>
+                <div class="headers panel-heading">Control Modules</div>
                 <div class="panel-body">
-                        <p class="mnames" align="center">Data</p>
+                        <!-- <p class="mnames" align="center">Data</p> -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="{{mcm_status}}">MCM</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="{{bcm_status}}">BCM</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="{{vsm_status}}">VSM</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="{{vnm_status}}">VNM</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="mcm_prog" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="bcm_prog" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="vsm_prog" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="vnm_prog" type="success"></progressbar>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div class="panel">
-                <div class="headers panel-heading">Launch Control</div>
+                <div class="headers panel-heading">Backend Nodes</div>
                 <div class="panel-body">
-                        <p class="mnames" align="center">Data</p>
+                        <!-- <p class="mnames" align="center">Data</p> -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="btn btn-success" style="float: right;">Node 1</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-success-alt" style="float: right;">Node 2</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-success-alt" style="float: right;">Node 3</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-success-alt" style="float: right;">Node 4</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
+                        </div>
+                        <div class="col-md-3">
+                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,13 +84,13 @@
             <div class="panel">
                 <div class="panel-heading">Control System</div>
                 <div class="panel-body">
-                        <p class="mnames">MCM <span class="modules btn btn-success-alt">{{mcm_status}}</span></p>
+                        <p class="mnames">Scrolling messages</p>
                         <progressbar class="mstatus" animate="false" value="mcm_prog" type="success"></progressbar>
-                        <p class="mnames">BCM <span class="modules btn btn-success-alt">{{bcm_status}}</span></p>
+                        <p class="mnames">Scrolling messages</p>
                         <progressbar class="mstatus" animate="false" value="bcm_prog" type="success"></progressbar>
-                        <p class="mnames">VSM <span class="modules btn btn-success-alt">{{vsm_status}}</span></p>
+                       <p class="mnames">Scrolling messages</p>
                         <progressbar class="mstatus" animate="false" value="vsm_prog" type="success"></progressbar>
-                        <p class="mnames">VNM <span class="modules btn btn-success-alt">{{vnm_status}}</span></p>
+                       <p class="mnames">Scrolling messages</p>
                         <progressbar class="mstatus" animate="false" value="vnm_prog" type="success"></progressbar>
                     
                 </div>
@@ -45,10 +101,10 @@
                 <div class="headers panel-heading">HUD</div>
                 <div class="headers panel-body">
                     <div class="row">
-                        <div class="col-md-3">20</div>
                         <div class="col-md-3"></div>
                         <div class="col-md-3"></div>
-                        <div class="col-md-3">20</div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
                     </div>
                     <div class="row"></div>
                     <div class="row">
@@ -58,15 +114,20 @@
                     </div>
                     <div class="row"></div>
                     <div class="row">
-                        <div class="col-md-3">20</div>
                         <div class="col-md-3"></div>
                         <div class="col-md-3"></div>
-                        <div class="col-md-3">20</div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="mnames" align="center">MPH</p><br><br>
-                            <progressbar class="mstatus" animate="false" value="70" type="warning"></progressbar>
+                            <p class="hud_unit" align="center">MPH</p><br><br>
+                            <progress class="progress-striped active">
+                                <bar value="40" type="success"></bar>
+                                <bar value="20" type="warning"></bar>
+                                <bar value="40" type="danger"></bar>
+                            </progress> 
+                            <button class="state btn btn-success-alt">Accelerating</button>
                         </div>
                     </div>
                 </div>
