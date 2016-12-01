@@ -78,15 +78,9 @@ table.browsers > tbody > tr > td:last-child{
 
 .static-content-wrapper{
 
-	background-image: url("space.jpg");
+	background-image: url("space.jpg"); 
         
-	//background: #134E5E; /* fallback for old browsers */
-	//background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
-	//background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
-	//background: #F0C27B; /* fallback for old browsers */
-	//background: -webkit-linear-gradient(to left, #F0C27B , #4B1248); /* Chrome 10-25, Safari 5.1-6 */
-	//background: linear-gradient(to left, #F0C27B , #4B1248); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .panel .panel-heading{
@@ -139,4 +133,15 @@ table.browsers > tbody > tr > td:last-child{
 
 .headers {
 	text-align: center;
+}
+
+.speed {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 48px;
+}
+
+.hud_mph {
+	font-size: 72px;
+	color: #FFFFFF;
 }

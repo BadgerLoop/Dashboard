@@ -16,7 +16,7 @@ angular
       iconClasses: 'ti ti-settings',
       children: [{
         label: 'Braking',
-        url: '#/braking'
+        url: '#/charts-flot'
        } ,{
         label: 'Electrical',
         url: '#/ui-typography'
@@ -31,13 +31,13 @@ angular
         url: '#/ui-progressbars'
       }, {
         label: 'Safety',
-        url: '#/ui-progressbars'
+        url: '#/ui-modals'
       },{
         label: 'Software',
-        url: '#/ui-progressbars'
+        url: '#/ui-panels'
       }, {
         label: 'Structural',
-        url: '#/ui-progressbars'
+        url: '#/ui-components'
       }]
     }];
 
