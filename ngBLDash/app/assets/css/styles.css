@@ -49,11 +49,11 @@
 }
 
 .big{
-	font-size: 26px !important;
+	font-size: 24px !important;
 }
 
 .medium{
-	font-size: 16px !important;
+	font-size: 14px !important;
 }
 
 .status {
@@ -94,6 +94,11 @@ table.browsers > tbody > tr > td:last-child{
 	//background-image: url("metallic.jpg");
 }
 
+.panel .panel-body{
+	background-color: #262727;
+	//background-image: url("metallic.jpg");
+}
+
 
 
 #topnav.navbar-default{
@@ -107,5 +112,31 @@ table.browsers > tbody > tr > td:last-child{
 }
 .center {
 	
+	text-align: center;
+}
+
+.modules {
+	font-size: 12px !important;
+}
+
+.mstatus {
+	background-color: #262727;
+}
+
+.rpm {
+	color: #FFFFFF;
+}
+
+.outline {
+	color: #616161;
+	font-size: 18px;
+}
+
+.mnames {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+
+.headers {
 	text-align: center;
 }

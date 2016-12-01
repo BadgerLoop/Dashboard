@@ -40,7 +40,7 @@ angular
       var gaptype = self.wheels[wheel].gaptype;
       var temptype = self.wheels[wheel].temptype;
       var rpmtype = self.wheels[wheel].rpmtype;
-      console.log("gap: " + gap + " rpm: " + rpm + " temp: " + temp + " " + gaptype + " " + rpmtype + " " + temptype)
+      // console.log("gap: " + gap + " rpm: " + rpm + " temp: " + temp + " " + gaptype + " " + rpmtype + " " + temptype)
       
 
       //GAP EVAL

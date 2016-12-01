@@ -16,6 +16,31 @@ angular
      * Create random data point for velocity. voltage
      * @return {[Int]} list of last totalPoints of velocity 
      */
+     var sendVeloData = function() {
+        if (dxta.length > 0) {
+        dxta = dxta.slice(1);
+      }
+      var incr = 0;
+      while (dxta.length < totalPoints) {
+        var y =  incr;
+  
+
+        self.currentVelocity = y;
+
+        dxta.push(y);
+        incr++;
+      }
+      var res = [];
+
+      time++;
+      
+      for (var i = 0; i < dxta.length; ++i) {
+        res.push([time+i, dxta[i]]);
+      }
+      
+      return res;
+    }
+
     var getRandomData = function() {
       if (dxta.length > 0) {
         dxta = dxta.slice(1);
@@ -77,7 +102,7 @@ angular
       },
       yaxis: {
         min: 0,
-        max: 200,
+        max: 250,
         tickColor: '#f5f5f5',
         font: {
           color: '#bdbdbd'
