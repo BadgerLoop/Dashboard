@@ -18,8 +18,8 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
 
             $scope.messages = {
                 modules_ready: '[ Control Module Initialization: 100% ]',
-                nodes_ready: '[Backend Configuration: All nodes online ]'
-                nodes_set: '[ Node 1: Set to active ]'
+                nodes_ready: '[Backend Configuration: All nodes online ]',
+                nodes_set: '[ Node 1: Set to active ]',
                 safety_check: '[ Internal Safety Check: Complete ]',
                 ready_status: 'messages'
             };
@@ -44,19 +44,19 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
 
 
             $scope.initialize = function() {
-                $scope.modules_ready = '[ Module: ' + $scope.mcm + ' is initialized ]';
-                $scope.nodes_ready = '[ Backend: Four nodes up and running ]';
-                $scope.node_set = '[ Node 1: Set to active ]';
-                $scope.safety_check = '[ Internal Safety Check: Complete ]'
-                $scope.ready_status = 'messages';
+                $scope.messages.modules_ready = '[ Module: ' + $scope.mcm + ' is initialized ]';
+                $scope.messages.nodes_ready = '[ Backend: Four nodes up and running ]';
+                $scope.messages.node_set = '[ Node 1: Set to active ]';
+                $scope.messages.safety_check = '[ Internal Safety Check: Complete ]'
+                $scope.messages.ready_status = 'messages';
             }
 
             function showHUD() {
-                $scope.done_loading = '';
+                $scope.hud.done_loading = '';
             }
 
             $scope.endLoading = function() {
-                $scope.show_load = false;
+                $scope.hud.show_load = false;
                 $timeout(showHUD, 2000);
 
             }
