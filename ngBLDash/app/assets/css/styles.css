@@ -167,7 +167,7 @@ table.browsers > tbody > tr > td:last-child{
  white-space: nowrap;
  width: 30em;
  overflow: hidden;
- animation: type 4s steps(60, end);
+ animation: type 2s steps(60, end);
 }
 
 .messages:nth-child(2){

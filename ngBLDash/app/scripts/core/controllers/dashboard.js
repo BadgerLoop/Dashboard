@@ -5,7 +5,30 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             TelemetryService, HalbachService, SensorService, $riffle, $rootScope, RiffleService) {
             'use strict';
 
-            $scope.velocity = 0;
+            $scope.pod = {
+                velocity: 0,
+                stateColor: 'btn btn-inverse-alt',
+                state: 'Standby',
+            };
+
+            $scope.hud = {
+                show_load: true,
+                done_loading: 'hide_hud',
+            };
+
+            $scope.messages = {
+                modules_ready: '[ Control Module Initialization: 100% ]',
+                nodes_ready: '[Backend Configuration: All nodes online ]'
+                nodes_set: '[ Node 1: Set to active ]'
+                safety_check: '[ Internal Safety Check: Complete ]',
+                ready_status: 'messages'
+            };
+
+            $scope.mcm = {name: 'Magnetic Control Module', progress: 0, status: 'btn btn-inverse-alt'};
+            $scope.bcm = {name: 'Battery Control Module', progress: 0, status: 'btn btn-inverse-alt'};
+            $scope.vsm = {name: 'Vehicle Safety Module', progress: 0, status: 'btn btn-inverse-alt'};
+            $scope.vnm = {name: 'Vehicle Navigation Module', progress: 0, status: 'btn btn-inverse-alt'};
+
             $scope.data = {
             "lw1_rpm" : 0,
             "lw1_tmp" : 0,
@@ -19,28 +42,12 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "velocity" : 0 
             }
 
-            $scope.mcm_prog = 0;
-            $scope.bcm_prog = 0;
-            $scope.vsm_prog = 0;
-            $scope.vnm_prog = 0;
-
-            $scope.mcm_status = 'btn btn-inverse-alt';
-            $scope.bcm_status = 'btn btn-inverse-alt';
-            $scope.vsm_status = 'btn btn-inverse-alt';
-            $scope.vnm_status = 'btn btn-inverse-alt';
-
-            $scope.pod_state_color = 'btn btn-inverse-alt';
-            $scope.pod_state = 'Standby';
-
-            $scope.modules_ready = '';
-            $scope.nodes_ready = '';
-            $scope.ready_status = '';
-            $scope.done_loading = 'hide_hud';
-            $scope.show_load = true;
 
             $scope.initialize = function() {
-                $scope.modules_ready = 'All microcontrollers have been initialized';
-                $scope.nodes_ready = 'Backend has four nodes up and running';
+                $scope.modules_ready = '[ Module: ' + $scope.mcm + ' is initialized ]';
+                $scope.nodes_ready = '[ Backend: Four nodes up and running ]';
+                $scope.node_set = '[ Node 1: Set to active ]';
+                $scope.safety_check = '[ Internal Safety Check: Complete ]'
                 $scope.ready_status = 'messages';
             }
 
@@ -50,7 +57,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
 
             $scope.endLoading = function() {
                 $scope.show_load = false;
-                $timeout(showHUD, 3000);
+                $timeout(showHUD, 2000);
 
             }
 
