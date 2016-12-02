@@ -4,6 +4,8 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
         function($scope, $sce, $theme, $timeout, $window, pinesNotifications, BatteryService, WheelService,
             TelemetryService, HalbachService, SensorService, $riffle, $rootScope, RiffleService) {
             'use strict';
+            
+            $scope.posts = [];
 
             $scope.pod = {
                 velocity: 0,
@@ -21,13 +23,13 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
                 nodes_ready: '[Backend Configuration: All nodes online ]',
                 nodes_set: '[ Node 1: Set to active ]',
                 safety_check: '[ Internal Safety Check: Complete ]',
-                ready_status: 'messages'
+                ready_status: ''
             };
 
-            $scope.mcm = {name: 'Magnetic Control Module', progress: 0, status: 'btn btn-inverse-alt'};
-            $scope.bcm = {name: 'Battery Control Module', progress: 0, status: 'btn btn-inverse-alt'};
-            $scope.vsm = {name: 'Vehicle Safety Module', progress: 0, status: 'btn btn-inverse-alt'};
-            $scope.vnm = {name: 'Vehicle Navigation Module', progress: 0, status: 'btn btn-inverse-alt'};
+            $scope.mcm = {name: 'Magnetic Control Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
+            $scope.bcm = {name: 'Battery Control Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
+            $scope.vsm = {name: 'Vehicle Safety Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
+            $scope.vnm = {name: 'Vehicle Navigation Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
 
             $scope.data = {
             "lw1_rpm" : 0,
@@ -44,11 +46,10 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
 
 
             $scope.initialize = function() {
-                $scope.messages.modules_ready = '[ Module: ' + $scope.mcm + ' is initialized ]';
-                $scope.messages.nodes_ready = '[ Backend: Four nodes up and running ]';
-                $scope.messages.node_set = '[ Node 1: Set to active ]';
-                $scope.messages.safety_check = '[ Internal Safety Check: Complete ]'
-                $scope.messages.ready_status = 'messages';
+
+                $scope.mcm.progress = 100;
+                $scope.mcm.printMsg = 'messages';
+                $scope.posts.push({ message: '[ ' + $scope.mcm.name + ': Initialized ]', owner: $scope.mcm.printMsg});
             }
 
             function showHUD() {
@@ -62,24 +63,26 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             }
 
             $riffle.subscribe("exis", function(data) {
-                $scope.mcm_prog = data.mcm_prog;
-                if($scope.mcm_prog == 100) {
-                    $scope.mcm_status = 'btn btn-success-alt';
+
+                $scope.mcm.progress = data.mcm_prog;
+                if($scope.mcm.progress == 100) {
+                    $scope.mcm.status = 'btn btn-success-alt';
+                    $scope.posts.push('[ ' + $scope.mcm.name + ': Initialized');
                 } 
 
-                $scope.bcm_prog = data.bcm_prog;
-                if($scope.bcm_prog == 100) {
-                    $scope.bcm_status = 'btn btn-success-alt';
+                $scope.bcm.progress = data.bcm_prog;
+                if($scope.bcm.progress == 100) {
+                    $scope.bcm.status = 'btn btn-success-alt';
                 } 
 
-                $scope.vsm_prog = data.vsm_prog;
-                if($scope.vsm_prog == 100) {
-                    $scope.vsm_status = 'btn btn-success-alt';
+                $scope.vsm.progress = data.vsm_prog;
+                if($scope.vsm.progress == 100) {
+                    $scope.vsm.status = 'btn btn-success-alt';
                 }
 
-                $scope.vnm_prog = data.vnm_prog;
-                if($scope.vnm_prog == 100) {
-                    $scope.vnm_status = 'btn btn-success-alt';
+                $scope.vnm.progress = data.vnm_prog;
+                if($scope.vnm.progress == 100) {
+                    $scope.vnm.status = 'btn btn-success-alt';
                 }
 
                 $scope.data = data;
