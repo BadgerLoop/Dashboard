@@ -18,7 +18,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "rw2_tmp" : 0,
             "velocity" : 0 
             }
- 
 
             $scope.mcm_prog = 0;
             $scope.bcm_prog = 0;
@@ -29,6 +28,31 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             $scope.bcm_status = 'btn btn-inverse-alt';
             $scope.vsm_status = 'btn btn-inverse-alt';
             $scope.vnm_status = 'btn btn-inverse-alt';
+
+            $scope.pod_state_color = 'btn btn-inverse-alt';
+            $scope.pod_state = 'Standby';
+
+            $scope.modules_ready = '';
+            $scope.nodes_ready = '';
+            $scope.ready_status = '';
+            $scope.done_loading = 'hide_hud';
+            $scope.show_load = true;
+
+            $scope.initialize = function() {
+                $scope.modules_ready = 'All microcontrollers have been initialized';
+                $scope.nodes_ready = 'Backend has four nodes up and running';
+                $scope.ready_status = 'messages';
+            }
+
+            function showHUD() {
+                $scope.done_loading = '';
+            }
+
+            $scope.endLoading = function() {
+                $scope.show_load = false;
+                $timeout(showHUD, 3000);
+
+            }
 
             $riffle.subscribe("exis", function(data) {
                 $scope.mcm_prog = data.mcm_prog;

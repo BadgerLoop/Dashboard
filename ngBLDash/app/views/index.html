@@ -11,7 +11,7 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="{{mcm_status}}">MCM</button>
+                            <button class="{{mcm_status}}" ng-click="initialize()">MCM</button>
                         </div>
                         <div class="col-md-3">
                             <button class="{{bcm_status}}">BCM</button>
@@ -84,14 +84,14 @@
             <div class="panel">
                 <div class="panel-heading">Control System</div>
                 <div class="panel-body">
-                        <p class="mnames">Scrolling messages</p>
-                        <progressbar class="mstatus" animate="false" value="mcm_prog" type="success"></progressbar>
-                        <p class="mnames">Scrolling messages</p>
-                        <progressbar class="mstatus" animate="false" value="bcm_prog" type="success"></progressbar>
+                        <p class="{{ready_status}} mnames">{{modules_ready}}</p>
+                        <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
+                        <p class="{{ready_status}} mnames">{{nodes_ready}}</p>
+                        <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
                        <p class="mnames">Scrolling messages</p>
-                        <progressbar class="mstatus" animate="false" value="vsm_prog" type="success"></progressbar>
+                        <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
                        <p class="mnames">Scrolling messages</p>
-                        <progressbar class="mstatus" animate="false" value="vnm_prog" type="success"></progressbar>
+                        <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
                     
                 </div>
             </div>
@@ -109,25 +109,25 @@
                     <div class="row"></div>
                     <div class="row">
                         <div class="col-md-4"></div>
-                        <div class="col-md-4 hud_mph">200</div>
+                        <div class="col-md-4 {{done_loading}} hud_mph"><p>0</p></div>
                         <div class="col-md-4"></div>
                     </div>
-                    <div class="row"></div>
-                    <div class="row">
+                    <div class="loader" ng-show="show_load"></div>
+                    <!-- <div class="row">
                         <div class="col-md-3"></div>
                         <div class="col-md-3"></div>
                         <div class="col-md-3"></div>
                         <div class="col-md-3"></div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="col-md-12">
-                            <p class="hud_unit" align="center">MPH</p><br><br>
+                            <p class="{{done_loading}} hud_unit" align="center">MPH</p><br><br>
                             <progress class="progress-striped active">
                                 <bar value="40" type="success"></bar>
                                 <bar value="20" type="warning"></bar>
                                 <bar value="40" type="danger"></bar>
                             </progress> 
-                            <button class="state btn btn-success-alt">Accelerating</button>
+                            <button class="state {{pod_state_color}}" ng-click="endLoading()">{{pod_state}}</button>
                         </div>
                     </div>
                 </div>
