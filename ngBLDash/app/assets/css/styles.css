@@ -78,7 +78,7 @@ table.browsers > tbody > tr > td:last-child{
 
 .static-content-wrapper{
 
-	background-image: url("space.jpg"); 
+	background-image: url("blur.png"); 
         
         
 }
@@ -143,12 +143,16 @@ table.browsers > tbody > tr > td:last-child{
 
 .hud_mph {
 	font-size: 72px;
-	color: #FFFFFF;
+	color: #757575;
 
 }
 
+.panel-marg {
+	margin-top: 65%;
+}
+
 .hud_unit {
-	color: #FFFFFF;
+	color: #757575;
 	font-size: 22px;
 }
 
@@ -160,6 +164,7 @@ table.browsers > tbody > tr > td:last-child{
 	width: 125px;
 	height: 40px;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 
 
