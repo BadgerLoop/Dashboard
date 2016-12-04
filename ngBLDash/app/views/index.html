@@ -5,9 +5,51 @@
 <div class="container-fluid" ng-controller="DashboardController">
     
     <div class="row">
-        <div class="col-md-3">
-        <div class=" panel-marg panel-group">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel-group">
             <div class="panel">
+                <div class="headers panel-heading">HUD</div>
+                <div class="headers panel-body">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 hud_mph"><p>0</p></div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="hud_unit" align="center">MPH</p><br><br>
+                            
+                            <button class="state {{pod.stateColor}}" ng-click="endLoading()">{{pod.state}}</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-body">
+                    <progress class="progress-striped active">
+                        <bar value="40" type="success"></bar>
+                        <bar value="20" type="warning"></bar>
+                        <bar value="40" type="danger"></bar>
+                    </progress> 
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+        <div class="panel-group">
+            <div class="panel" style="background-color: #262727;">
                 <div class="headers panel-heading">Control Modules</div>
                 <div class="panel-body">
                         <!-- <p class="mnames" align="center">Data</p> -->
@@ -27,7 +69,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="mcm_prog" type="success"></progressbar>
+                            <progressbar class="mstatus" animate="false" value="10" type="success"></progressbar>
                         </div>
                         <div class="col-md-3">
                             <progressbar class="mstatus" animate="false" value="bcm_prog" type="success"></progressbar>
@@ -58,116 +100,14 @@
                         <div class="col-md-3">
                             <button class="btn btn-success-alt" style="float: right;">Node 4</button>
                         </div>
-                    </div><br>
-                    <!-- <div class="row">
-                        <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
-                        </div>
-                        <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
-                        </div>
-                        <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
-                        </div>
-                        <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="0" type="success"></progressbar>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel-group" style="margin-top: 10%;">
-            <div class="panel">
-                <div class="headers panel-heading">HUD</div>
-                <div class="headers panel-body">
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                    </div>
-                    <div class="row"></div>
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4 {{hud.done_loading}} hud_mph"><p>0</p></div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="loader" ng-show="hud.show_load"></div>
-                    <!-- <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                    </div> -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="{{hud.done_loading}} hud_unit" align="center">MPH</p><br><br>
-                            
-                            <button class="state {{pod.stateColor}}" ng-click="endLoading()">{{pod.state}}</button>
-                            
-                        </div>
                     </div>
                 </div>
             </div>
-            <div class="panel">
-                <div class="panel-body">
-                    <progress class="progress-striped active">
-                        <bar value="40" type="{{hud.done_loading}} success"></bar>
-                        <bar value="20" type="{{hud.done_loading}} warning"></bar>
-                        <bar value="40" type="{{hud.done_loading}} danger"></bar>
-                    </progress> 
-                </div>
-            </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-        <div class=" panel-marg panel-group">
-            <div class="panel">
-                <div class="panel-heading">Control System</div>
-                <div class="panel-body">
-                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
-
-                        <p class="{{posts[1].owner}} mnames">[ Battery Control Module Initialized ]</p>
-
-                        <p class="{{posts[2].owner}} mnames">{{posts[2].message}}</p>
-
-                        <p class="{{posts[3].owner}} mnames">{{posts[3].message}}</p>
-
-                        <p class="{{posts[4].owner}} mnames">{{posts[4].message}}</p>
-
-                        <p class="{{posts[5].owner}} mnames">{{posts[5].message}}</p>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="headers panel-heading">Control Modules</div>
-                <div class="panel-body">
-                        <!-- <p class="mnames" align="center">Data</p> -->
-                    <div class="row">
-                        <div class="col-md-3">
-                            <button class="btn btn-success-alt" ng-click="initialize()">Start</button>
-                        </div>
-                        <div class="col-md-6" style="text-align: center;">
-                            <button class="btn btn-warning-alt">Launch</button>
-                        </div>
-                        <div class="col-md-3">
-                            <button class="btn btn-danger-alt">Stop</button>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
         </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <!-- <panel panel-class="panel-heading" heading="Propulsion"> -->
+        <div class="col-sm-6">
             <div class="panel">
-                <!-- <div class="panel-heading">Propulsion</div> -->
-                <div class="panel-body" style="background-color: #262727">
-                    <!-- <h1 align="center" style="color: white">FRONT</h1> -->
+                <div class="panel-body" style="background-color: #262727;">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -203,25 +143,45 @@
                                 
                             </tbody>
                         </table>   
-                    <!-- <h1 align="center" style="color: white">REAR</h1>   -->
                     </div>                   
             <!-- </panel> -->
             </div>
         </div>
-    </div>
-     <div class="row">
-        
-        
+
         <div class="col-md-3">
-            <div class="panel" data-widget='{"id" : "wiget9", "draggable": "false"}'>
-                <div class="headers panel-heading">Pod Velocity | {{data.velocity}}</div>
-                <div class="panel-editbox" data-widget-controls=""></div>
+        <div class="panel-group">
+            <div class="panel">
+                <div class="headers panel-heading">Control Modules</div>
                 <div class="panel-body">
-                    <div class="mt-sm mb-sm" flot-chart style="width: 100%;height: 272px;" data-flot-data="telem.plotVelAccelData" data-flot-options="telem.plotVelAccelOptions"></div>
+                        <!-- <p class="mnames" align="center">Data</p> -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <button class="btn btn-success-alt" ng-click="initialize()">Start</button>
+                        </div>
+                        <div class="col-md-6" style="text-align: center;">
+                            <button class="btn btn-warning-alt">Launch</button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-danger-alt">Stop</button>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
+
+            <div class="panel">
+                <div class="panel-heading">Control System</div>
+                <div class="panel-body">
+                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
+                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
+                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
+                </div>
+            </div>
+            
+        </div>
         </div>
     </div>
+   
     
     
 </div>
