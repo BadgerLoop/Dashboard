@@ -25,7 +25,7 @@ angular
 // Config for Exis
 .config(function($riffleProvider) {
     $riffleProvider.setDomain("xs.node");
-    $riffleProvider.setFabric("ws://badgerloop-nuc-1:8000");
+    $riffleProvider.setFabric("ws://badgerloop-nuc-1:9000");
     // $riffleProvider.setFabricLocal(); FOR LOCAL NODE USE
 })
 
