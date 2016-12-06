@@ -20,13 +20,13 @@
                         <div class="row"></div>
                         <div class="row">
                             <div class="col-md-4"></div>
-                            <div class="col-md-4 hud_mph"><p>{{data.velocity}}</p></div>
+                            <div class="col-md-4 hud_mph"><p>{{pod.velocity}}</p></div>
                             <div class="col-md-4"></div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="hud_unit" align="center">MPH</p><br><br>
-                                <button class="state {{pod.stateColor}}" ng-click="endLoading()">{{pod.state}}</button>
+                                <button class="state" ng-class="{'btn-inverse-alt': s_index == 4, 'btn-success-alt': s_index < 2, 'btn-warning-alt': s_index == 2, 'btn-danger-alt': s_index == 3}">{{states[s_index]}}</button>
                             </div>
                         </div>
                     </div>
@@ -154,10 +154,10 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn btn-success-alt">Start</button>
+                            <button class="btn" ng-class="{'btn-success': pod.start == 1, 'btn-success-alt': pod.start == 0}">Start</button>
                         </div>
                         <div class="col-md-6" style="text-align: center;">
-                            <button class="btn btn-warning-alt">Launch</button>
+                            <button class="btn" ng-class="{'btn-warning': pod.launch == 1, 'btn-warning-alt': pod.launch == 0}">Launch</button>
                         </div>
                         <div class="col-md-3">
                             <button class="btn btn-danger-alt">Stop</button>

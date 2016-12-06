@@ -4,7 +4,7 @@
         <li class="active">Braking Module</li>
     </ol>
 
-<div class="container-fluid" ng-controller="">
+<div class="container-fluid" ng-controller="DashboardController">
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -13,10 +13,10 @@
                 <div class="panel-body">
                     <div class="row">
                         <div class="col-sm-4">
-                            <button class="launch btn btn-success-alt" style="float: left;">Start</button>
+                            <button class="launch btn btn-success-alt" ng-click="initialize()" style="float: left;">Start</button>
                         </div>
                         <div class="col-sm-4">
-                            <button class="launch btn btn-warning-alt btn-block">Launch</button>
+                            <button class="launch btn btn-warning-alt btn-block" ng-click="launch_pod()">Launch</button>
                         </div>
                         <div class="col-sm-4">
                             <button class="launch btn btn-danger-alt" style="float: right;">Stop</button>

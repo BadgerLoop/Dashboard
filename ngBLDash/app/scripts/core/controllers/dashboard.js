@@ -6,13 +6,17 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             'use strict';
             
             $scope.posts = [];
-            
+            $scope.states = ["Initializing", "Accelerating", "Coasting", "Braking", "Standby"];
+            $scope.s_index = 4;
+
             $scope.format = 'M/d/yy h:mm:ss a';
 
             $scope.pod = {
                 velocity: 0,
                 stateColor: 'btn btn-inverse-alt',
                 state: 'Standby',
+                start: 0,
+                launch: 0,
             };
 
             $scope.hud = {
@@ -44,7 +48,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "lw2_tmp" : 0,
             "rw2_rpm" : 0,
             "rw2_tmp" : 0,
-            "velocity" : 0,
 
             "node1_prog" : 0,
             "node2_prog" : 0,
@@ -73,18 +76,30 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
                 $scope.vnm.progress = data.vnm_prog;
 
                 $scope.progress.accel = data.accel_prog;
-                if($scope.progress.accel > 0 && $scope.progress.accel < 100) $scope.pod.state = 'Accelerating';
+                // if($scope.progress.accel > 0 && $scope.progress.accel < 33) $scope.pod.state = 'Accelerating';
+
                 $scope.progress.coast = data.coast_prog;
-                if($scope.progress.coast > 0 && $scope.progress.coast < 100) $scope.pod.state = 'Coasting';
+                // if($scope.progress.coast > 0 && $scope.progress.coast < 17) $scope.pod.state = 'Coasting';
 
                 $scope.progress.braking = data.slow_prog;
-                if($scope.progress.braking > 0 && $scope.progress.braking < 100) $scope.pod.state = 'Braking';
+                // if($scope.progress.braking > 0 && $scope.progress.braking < 50) $scope.pod.state = 'Braking';
 
+                $scope.s_index = data.state;
+                $scope.pod.velocity = data.velocity;
+                $scope.pod.start = data.start;
+                $scope.pod.launch = data.launch;
                 $scope.data = data;
 
             });
-
-           
+            
+            $scope.initialize = function() {
+                $riffle.publish("cmd", "init");    
+            }
+            
+            $scope.launch_pod = function() {
+                $riffle.publish("cmd", "run");    
+            }
+            
             //
             //
             // ALERTS
