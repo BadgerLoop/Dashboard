@@ -5,6 +5,10 @@
 	border-top-style: hidden !important;
 }
 
+body.ipad {
+	background-color: #541117;
+}
+
 
 @-webkit-keyframes invalid {
   from { background-color: red; }
@@ -189,6 +193,11 @@ table.browsers > tbody > tr > td:last-child{
 
 .launch {
 	display: inline-block;
+}
+
+.l_panel {
+	width: 60px;
+	height: 32px;
 }
 
 .messages{
