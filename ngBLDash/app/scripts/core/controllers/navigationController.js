@@ -15,10 +15,10 @@ angular
       label: 'Sub-Teams',
       iconClasses: 'ti ti-settings',
       children: [{
-        label: 'Launch Panel',
+        label: 'iPhone',
         url: '#/levitation'
        } ,{
-        label: 'Electrical',
+        label: 'iPad',
         url: '#/braking'
       }, {
         label: 'Controls',
