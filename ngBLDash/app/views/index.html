@@ -8,40 +8,38 @@
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <div class="panel-group">
-            <div class="panel">
-                <div class="headers panel-heading">HUD</div>
-                <div class="headers panel-body">
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
-                    </div>
-                    <div class="row"></div>
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4 hud_mph"><p>0</p></div>
-                        <div class="col-md-4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="hud_unit" align="center">MPH</p><br><br>
-                            
-                            <button class="state {{pod.stateColor}}" ng-click="endLoading()">{{pod.state}}</button>
-                            
+                <div class="panel">
+                    <div class="headers panel-heading">HUD</div>
+                    <div class="headers panel-body">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                            <div class="col-md-3"></div>
+                        </div>
+                        <div class="row"></div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4 hud_mph"><p>{{data.velocity}}</p></div>
+                            <div class="col-md-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="hud_unit" align="center">MPH</p><br><br>
+                                <button class="state {{pod.stateColor}}" ng-click="endLoading()">{{pod.state}}</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel">
-                <div class="panel-body">
-                    <progress class="progress-striped active">
-                        <bar value="40" type="success"></bar>
-                        <bar value="20" type="warning"></bar>
-                        <bar value="40" type="danger"></bar>
-                    </progress> 
+                <div class="panel">
+                    <div class="panel-body">
+                        <progress class="progress-striped">
+                            <bar value="progress.accel" type="success"></bar>
+                            <bar value="progress.coast" type="warning"></bar>
+                            <bar value="progress.braking" type="danger"></bar>
+                        </progress> 
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
         <div class="col-md-3"></div>
@@ -55,30 +53,30 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="{{mcm.status}}" ng-click="initialize()">MCM</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': mcm.progress < 100}">MCM</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="{{bcm.status}}">BCM</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': bcm.progress < 100}">BCM</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="{{vsm.status}}">VSM</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': vsm.progress < 100}">VSM</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="{{vnm.status}}">VNM</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': vnm.progress < 100}">VNM</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="10" type="success"></progressbar>
+                            <progressbar class="mstatus" animate="false" value="mcm.progress" type="success"></progressbar>
                         </div>
                         <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="bcm_prog" type="success"></progressbar>
+                            <progressbar class="mstatus" animate="false" value="bcm.progress" type="success"></progressbar>
                         </div>
                         <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="vsm_prog" type="success"></progressbar>
+                            <progressbar class="mstatus" animate="false" value="vsm.progress" type="success"></progressbar>
                         </div>
                         <div class="col-md-3">
-                            <progressbar class="mstatus" animate="false" value="vnm_prog" type="success"></progressbar>
+                            <progressbar class="mstatus" animate="false" value="vnm.progress" type="success"></progressbar>
                         </div>
                     </div>
                 </div>
@@ -89,16 +87,16 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn btn-success" style="float: right;">Node 1</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node1_prog < 100}" style="float: right;">Node 1</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="btn btn-success-alt" style="float: right;">Node 2</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node2_prog < 100}" style="float: right;">Node 2</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="btn btn-success-alt" style="float: right;">Node 3</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node3_prog < 100}" style="float: right;">Node 3</button>
                         </div>
                         <div class="col-md-3">
-                            <button class="btn btn-success-alt" style="float: right;">Node 4</button>
+                            <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node4_prog < 100}" style="float: right;">Node 4</button>
                         </div>
                     </div>
                 </div>
@@ -106,8 +104,8 @@
         </div>
         </div>
         <div class="col-sm-6">
-            <div class="panel">
-                <div class="panel-body" style="background-color: #262727;">
+            <div class="panel" style="background-color: #262727;">
+                <div class="panel-body">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -173,8 +171,7 @@
                 <div class="panel-heading">Control System</div>
                 <div class="panel-body">
                         <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
-                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
-                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
+                        
                 </div>
             </div>
             

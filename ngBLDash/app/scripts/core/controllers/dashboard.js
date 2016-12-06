@@ -30,6 +30,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             $scope.bcm = {name: 'Battery Control Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
             $scope.vsm = {name: 'Vehicle Safety Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
             $scope.vnm = {name: 'Vehicle Navigation Module', progress: 0, status: 'btn btn-inverse-alt', printMsg: ''};
+            $scope.progress = {accel: 0, coast: 0, braking: 0};
 
             $scope.data = {
             "lw1_rpm" : 0,
@@ -41,7 +42,12 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "lw2_tmp" : 0,
             "rw2_rpm" : 0,
             "rw2_tmp" : 0,
-            "velocity" : 0 
+            "velocity" : 0,
+
+            "node1_prog" : 0,
+            "node2_prog" : 0,
+            "node3_prog" : 0,
+            "node4_prog" : 0, 
             }
 
 
@@ -65,25 +71,20 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             $riffle.subscribe("exis", function(data) {
 
                 $scope.mcm.progress = data.mcm_prog;
-                if($scope.mcm.progress == 100) {
-                    $scope.mcm.status = 'btn btn-success-alt';
-                    $scope.posts.push('[ ' + $scope.mcm.name + ': Initialized');
-                } 
 
                 $scope.bcm.progress = data.bcm_prog;
-                if($scope.bcm.progress == 100) {
-                    $scope.bcm.status = 'btn btn-success-alt';
-                } 
-
+                
                 $scope.vsm.progress = data.vsm_prog;
-                if($scope.vsm.progress == 100) {
-                    $scope.vsm.status = 'btn btn-success-alt';
-                }
-
+                
                 $scope.vnm.progress = data.vnm_prog;
-                if($scope.vnm.progress == 100) {
-                    $scope.vnm.status = 'btn btn-success-alt';
-                }
+
+                $scope.progress.accel = data.accel_prog;
+                if($scope.progress.accel > 0 && $scope.progress.accel < 100) $scope.pod.state = 'Accelerating';
+                $scope.progress.coast = data.coast_prog;
+                if($scope.progress.coast > 0 && $scope.progress.coast < 100) $scope.pod.state = 'Coasting';
+
+                $scope.progress.braking = data.slow_prog;
+                if($scope.progress.braking > 0 && $scope.progress.braking < 100) $scope.pod.state = 'Braking';
 
                 $scope.data = data;
 
