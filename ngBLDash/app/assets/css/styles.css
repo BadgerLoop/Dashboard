@@ -78,7 +78,7 @@ table.browsers > tbody > tr > td:last-child{
 
 .static-content-wrapper{
 
-	background-image: url("dash_reveal2.png");
+	background-image: url("dash_reveal5.png");
 	background-repeat: no-repeat;
 	background-position: center; 
         
@@ -165,6 +165,9 @@ table.browsers > tbody > tr > td:last-child{
 	margin-bottom: 20px;
 }
 
+.launch {
+	display: inline-block;
+}
 
 .messages{
  white-space: nowrap;

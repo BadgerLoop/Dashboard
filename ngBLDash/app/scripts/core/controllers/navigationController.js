@@ -15,8 +15,8 @@ angular
       label: 'Sub-Teams',
       iconClasses: 'ti ti-settings',
       children: [{
-        label: 'Braking',
-        url: '#/charts-flot'
+        label: 'Launch Panel',
+        url: '#/levitation'
        } ,{
         label: 'Electrical',
         url: '#/ui-typography'

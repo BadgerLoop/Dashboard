@@ -6,6 +6,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             'use strict';
             
             $scope.posts = [];
+            
             $scope.format = 'M/d/yy h:mm:ss a';
 
             $scope.pod = {
