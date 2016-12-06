@@ -1,0 +1,6 @@
+deploy
+dist
+.tmp
+bower_components
+node_modules
+app/bower_components

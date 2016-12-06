@@ -1,0 +1,239 @@
+
+.middle{
+	border-bottom-style: hidden !important;
+	border-left-style: hidden !important;
+	border-top-style: hidden !important;
+}
+
+body.ipad {
+	background-color: #541117;
+}
+
+
+@-webkit-keyframes invalid {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@-moz-keyframes invalid {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@-o-keyframes invalid {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+@keyframes invalid {
+  from { background-color: red; }
+  to { background-color: inherit; }
+}
+.invalid {
+  -webkit-animation: invalid 1s infinite; /* Safari 4+ */
+  -moz-animation:    invalid 1s infinite; /* Fx 5+ */
+  -o-animation:      invalid 1s infinite; /* Opera 12+ */
+  animation:         invalid 1s infinite; /* IE 10+ */
+}
+
+#topnav .navbar-brand{
+	width: 200px !important;
+
+}
+
+.ngGrid .ngRow.selected{
+	background-color: #378fbf;
+	opacity: .4;
+}
+
+.ngGrid .ngRow.selected .ngCellText{
+	color: white;
+}
+
+.selectedSensorButtons{
+	display:inline;
+    padding: 10px 15px;
+}
+
+.big{
+	font-size: 24px !important;
+}
+
+.medium{
+	font-size: 14px !important;
+}
+
+.status {
+	font-size: 18px !important;
+}
+
+.noborder, .noborder tr, .noborder th, .noborder td { border: none !important; }
+
+
+
+table.browsers > tbody > tr > td:first-child{
+	padding-top: 20px;
+}
+
+table.browsers > tbody > tr > td{
+	padding-top: 20px;
+}
+
+table.browsers > tbody > tr > td:last-child{
+	padding-bottom: 20px;
+}
+
+.static-content-wrapper{
+
+	background-image: url("dash_reveal5.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+        
+        
+}
+
+.panel .panel-heading{
+	background-color: #263238;
+	//background-image: url("metallic.jpg");
+}
+
+.panel .panel-body{
+	background-color: #262727;
+	//background-image: url("metallic.jpg");
+}
+
+
+
+#topnav.navbar-default{
+	//background: #263238;
+	background-image: url("metallic.jpg");
+}
+
+.page-content > .breadcrumb{
+	//background: rgb(69, 90, 100) !important;
+	background-color: #263238 !important;
+}
+.center {
+	
+	text-align: center;
+}
+
+.modules {
+	font-size: 12px !important;
+}
+
+.mstatus {
+	background-color: #262727;
+}
+
+.rpm {
+	color: #FFFFFF;
+}
+
+.outline {
+	color: #616161;
+	font-size: 18px;
+}
+
+.mnames {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.headers {
+	text-align: center;
+}
+
+.speed {
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 48px;
+}
+
+.hud_mph {
+	font-size: 72px;
+	color: #FFFFFF;
+	text-align: center;
+
+}
+
+.hud_unit {
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
+.hide_hud {
+	color: #262727;
+}
+
+.state {
+	width: 125px;
+	height: 40px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.distance {
+	margin-top: 20px;
+}
+
+.distance_num {
+	font-size: 28px;
+	color: #FFFFFF;
+}
+
+.dis_warn {
+	color: #ffc107;
+}
+
+.dis_succ {
+	color: #8bc34a;
+}
+
+.dis_dang {
+	color: #e51c23;
+}
+
+
+.launch {
+	display: inline-block;
+}
+
+.l_panel {
+	width: 60px;
+	height: 32px;
+}
+
+.idevices {
+	background-color: #541117;
+}
+
+.messages{
+ white-space: nowrap;
+ width: 30em;
+ overflow: hidden;
+ animation: type 2s steps(60, end);
+}
+
+.messages:nth-child(2){
+ animation: type2 8s steps(60, end);
+}
+
+.messages:span{
+ animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+ from { width: 0; } 
+}
+
+@keyframes type2{
+ 0%{width: 0;}
+ 50%{width: 0;}
+ 100%{ width: 100; } 
+}
+
+@keyframes blink{
+ to{opacity: .0;}
+}
+
+
+
+
