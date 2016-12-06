@@ -162,10 +162,10 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn" ng-class="{'btn-success': pod.start == 1, 'btn-success-alt': pod.start == 0}">Start</button>
+                            <button class="btn" ng-class="{'btn-success': pod.start == true, 'btn-success-alt': pod.start == false}">Start</button>
                         </div>
                         <div class="col-md-6" style="text-align: center;">
-                            <button class="btn" ng-class="{'btn-warning': pod.launch == 1, 'btn-warning-alt': pod.launch == 0}">Launch</button>
+                            <button class="btn" ng-class="{'btn-warning': pod.launch == true, 'btn-warning-alt': pod.launch == false}">Launch</button>
                         </div>
                         <div class="col-md-3">
                             <button class="btn btn-danger-alt">Stop</button>

@@ -49,16 +49,16 @@
                 <div class="panel-body">
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node1_prog < 100}">Node 1</button>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node2_prog < 100}">Node 2</button>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node3_prog < 100}">Node 3</button>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-sm-3">
                             <button class="btn btn-success-alt" ng-class="{'btn-inverse-alt': data.node4_prog < 100}">Node 4</button>
                         </div>
                     </div>
@@ -71,10 +71,10 @@
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn l_panel" ng-class="{'btn-success': pod.start == 1, 'btn-success-alt': pod.start == 0}">Start</button>
+                            <button class="btn l_panel" ng-class="{'btn-success': pod.start == true, 'btn-success-alt': pod.start == false}">Start</button>
                         </div>
                         <div class="col-md-6" style="text-align: center;">
-                            <button class="btn btn-block" ng-class="{'btn-warning': pod.launch == 1, 'btn-warning-alt': pod.launch == 0}">Launch</button>
+                            <button class="btn btn-block" ng-class="{'btn-warning': pod.launch == true, 'btn-warning-alt': pod.launch == false}">Launch</button>
                         </div>
                         <div class="col-md-3">
                             <button class="btn btn-danger-alt l_panel" style="float: right;">Stop</button>

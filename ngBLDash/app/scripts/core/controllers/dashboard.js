@@ -15,8 +15,8 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
                 velocity: 0,
                 stateColor: 'btn btn-inverse-alt',
                 state: 'Standby',
-                start: 0,
-                launch: 0,
+                start: false,
+                launch: false,
                 dt: 0,
                 db: 4280
             };
