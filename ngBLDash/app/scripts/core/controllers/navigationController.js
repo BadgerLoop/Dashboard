@@ -19,7 +19,7 @@ angular
         url: '#/levitation'
        } ,{
         label: 'Electrical',
-        url: '#/ui-typography'
+        url: '#/braking'
       }, {
         label: 'Controls',
         url: '#/ui-buttons'

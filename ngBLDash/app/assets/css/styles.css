@@ -165,6 +165,28 @@ table.browsers > tbody > tr > td:last-child{
 	margin-bottom: 20px;
 }
 
+.distance {
+	margin-top: 20px;
+}
+
+.distance_num {
+	font-size: 28px;
+	color: #FFFFFF;
+}
+
+.dis_warn {
+	color: #ffc107;
+}
+
+.dis_succ {
+	color: #8bc34a;
+}
+
+.dis_dang {
+	color: #e51c23;
+}
+
+
 .launch {
 	display: inline-block;
 }

@@ -17,6 +17,8 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
                 state: 'Standby',
                 start: 0,
                 launch: 0,
+                dt: 0,
+                db: 4280
             };
 
             $scope.hud = {
@@ -52,7 +54,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "node1_prog" : 0,
             "node2_prog" : 0,
             "node3_prog" : 0,
-            "node4_prog" : 0, 
+            "node4_prog" : 0
             }
 
             function showHUD() {
@@ -88,6 +90,9 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
                 $scope.pod.velocity = data.velocity;
                 $scope.pod.start = data.start;
                 $scope.pod.launch = data.launch;
+                $scope.pod.dt = data.dt;
+                $scope.pod.db = data.db;
+
                 $scope.data = data;
 
             });

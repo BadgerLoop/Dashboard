@@ -24,9 +24,17 @@
                             <div class="col-md-4"></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-4">
+                                <br><br><p class="distance" ng-class="{'dis_succ': s_index == 1, 'dis-warn': s_index == 2, 'dis-dang': s_index == 3}">Distance Travelled (ft)</p>
+                                <p class="distance_num">{{pod.dt}}</p>
+                            </div>
+                            <div class="col-md-4">
                                 <p class="hud_unit" align="center">MPH</p><br><br>
                                 <button class="state" ng-class="{'btn-inverse-alt': s_index == 4, 'btn-success-alt': s_index < 2, 'btn-warning-alt': s_index == 2, 'btn-danger-alt': s_index == 3}">{{states[s_index]}}</button>
+                            </div>
+                            <div class="col-md-4">
+                                <br><br><p class="distance" ng-class="{'dis_succ': s_index == 1, 'dis-warn': s_index == 2, 'dis-dang': s_index == 3}">Distance To Braking (ft)</p>
+                                <p class="distance_num">{{pod.db}}</p>
                             </div>
                         </div>
                     </div>
@@ -149,7 +157,7 @@
         <div class="col-md-3">
         <div class="panel-group">
             <div class="panel">
-                <div class="headers panel-heading">Launch Panel</div>
+                <div class="headers panel-heading">Launch Status</div>
                 <div class="panel-body">
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
