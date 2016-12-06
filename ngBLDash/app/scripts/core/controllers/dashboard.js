@@ -6,6 +6,7 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             'use strict';
             
             $scope.posts = [];
+            $scope.format = 'M/d/yy h:mm:ss a';
 
             $scope.pod = {
                 velocity: 0,
@@ -48,14 +49,6 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             "node2_prog" : 0,
             "node3_prog" : 0,
             "node4_prog" : 0, 
-            }
-
-
-            $scope.initialize = function() {
-
-                $scope.mcm.progress = 100;
-                $scope.mcm.printMsg = 'messages';
-                $scope.posts.push({ message: '[ ' + $scope.mcm.name + ': Initialized ]', owner: $scope.mcm.printMsg});
             }
 
             function showHUD() {
@@ -186,4 +179,34 @@ angular.module('theme.core.dashboard', ['theme.core.services'])
             //
            
         }
-]);
+])
+
+.directive('myCurrentTime', ['$interval', 'dateFilter', function($interval, dateFilter) {
+
+  function link(scope, element, attrs) {
+    var format,
+        timeoutId;
+
+    function updateTime() {
+      element.text(dateFilter(new Date(), format));
+    }
+
+    scope.$watch(attrs.myCurrentTime, function(value) {
+      format = value;
+      updateTime();
+    });
+
+    element.on('$destroy', function() {
+      $interval.cancel(timeoutId);
+    });
+
+    // start the UI update process; save the timeoutId for canceling
+    timeoutId = $interval(function() {
+      updateTime(); // update DOM
+    }, 1000);
+  }
+
+  return {
+    link: link
+  };
+}]);

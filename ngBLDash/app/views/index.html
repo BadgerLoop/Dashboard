@@ -149,12 +149,12 @@
         <div class="col-md-3">
         <div class="panel-group">
             <div class="panel">
-                <div class="headers panel-heading">Control Modules</div>
+                <div class="headers panel-heading">Launch Panel</div>
                 <div class="panel-body">
                         <!-- <p class="mnames" align="center">Data</p> -->
                     <div class="row">
                         <div class="col-md-3">
-                            <button class="btn btn-success-alt" ng-click="initialize()">Start</button>
+                            <button class="btn btn-success-alt">Start</button>
                         </div>
                         <div class="col-md-6" style="text-align: center;">
                             <button class="btn btn-warning-alt">Launch</button>
@@ -168,9 +168,10 @@
             </div>
 
             <div class="panel">
-                <div class="panel-heading">Control System</div>
+                <div class="panel-heading">System</div>
                 <div class="panel-body">
-                        <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p>
+                        <!-- <p class="{{posts[0].owner}} mnames">[ Magnetic Control Module Initialized ]</p> -->
+                        <span my-current-time="format"></span>
                         
                 </div>
             </div>
