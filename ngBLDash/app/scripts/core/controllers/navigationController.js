@@ -12,7 +12,7 @@ angular
       html: '<span class="badge badge-info"></span>',
       url: '#/',
     },  {
-      label: 'Sub-Teams',
+      label: 'Devices',
       iconClasses: 'ti ti-settings',
       children: [{
         label: 'iPhone',
@@ -20,24 +20,6 @@ angular
        } ,{
         label: 'iPad',
         url: '#/braking'
-      }, {
-        label: 'Controls',
-        url: '#/ui-buttons'
-      }, {
-        label: 'Levitation',
-        url: '#/levitation'
-      }, {
-        label: 'Operations',
-        url: '#/ui-progressbars'
-      }, {
-        label: 'Safety',
-        url: '#/ui-modals'
-      },{
-        label: 'Software',
-        url: '#/ui-panels'
-      }, {
-        label: 'Structural',
-        url: '#/ui-components'
       }]
     }];
 

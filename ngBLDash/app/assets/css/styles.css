@@ -150,6 +150,7 @@ table.browsers > tbody > tr > td:last-child{
 .hud_mph {
 	font-size: 72px;
 	color: #FFFFFF;
+	text-align: center;
 
 }
 
@@ -198,6 +199,10 @@ table.browsers > tbody > tr > td:last-child{
 .l_panel {
 	width: 60px;
 	height: 32px;
+}
+
+.idevices {
+	background-color: #541117;
 }
 
 .messages{

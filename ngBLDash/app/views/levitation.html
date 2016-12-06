@@ -4,30 +4,53 @@
         <li class="active">Braking Module</li>
     </ol>
 
-<div class="container-fluid" ng-controller="DashboardController">
+<div class="container-fluid idevices" ng-controller="DashboardController">
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
+        <div class="panel-group">
+            <div class="panel">
+                <div class="headers panel-body">
+                    <div class="row">
+                        <div class="col-md-4 hud_mph"><p>{{pod.velocity}}</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p class="hud_unit" align="center">MPH</p><br><br>
+                            <button class="state" ng-class="{'btn-inverse-alt': s_index == 4, 'btn-success-alt': s_index < 2, 'btn-warning-alt': s_index == 2, 'btn-danger-alt': s_index == 3}">{{states[s_index]}}</button>
+                            <progress class="progress-striped">
+                                <bar value="progress.accel" type="success"></bar>
+                                <bar value="progress.coast" type="warning"></bar>
+                                <bar value="progress.braking" type="danger"></bar>
+                            </progress> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
             <div class="panel">
                 <div class="panel-body">
-                    <button class="btn l_panel" ng-class="{'btn-success': pod.start == true, 'btn-success-alt': pod.start == false}">Start</button>
+                    <button class="btn btn-block btn-success">Start</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-xs-6">
+            <div class="panel">
+                <div class="panel-body">
+                    <button class="btn btn-block btn-warning">Launch</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
             <div class="panel">
                 <div class="panel-body">
-                    <button class="btn btn-block" ng-class="{'btn-warning': pod.launch == true, 'btn-warning-alt': pod.launch == false}">Launch</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="panel">
-                <div class="panel-body">
-                    <button class="btn btn-block btn-danger-alt l_panel">Stop</button>
+                    <button class="btn btn-block btn-danger">Stop</button>
                 </div>
             </div>
         </div>
